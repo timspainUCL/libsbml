@@ -284,12 +284,12 @@ macro(ADD_FUNCTION directory)
 
 endmacro(ADD_FUNCTION)
 
-foreach (directory annotation common conversion extension sbml math
-                   units util validator validator/constraints)
-
-	ADD_FUNCTION(${directory})
-				       
-endforeach()
+#foreach (directory annotation common conversion extension sbml math
+#                   units util validator validator/constraints)
+#
+#	ADD_FUNCTION(${directory})
+#				       
+#endforeach()
 
 ###############################################################################
 #
@@ -359,6 +359,11 @@ set(LIBSBML_SOURCES ${LIBSBML_SOURCES} ${COMPRESS_SOURCES})
 #
 
 set(XML_SOURCES)
+set(XML_SOURCES ${XML_SOURCES}
+	sbml/xml/sbmlStubs.cpp
+	sbml/xml/sbmlStubs.h
+	)
+
 set(XML_SOURCES ${XML_SOURCES}
 
   sbml/xml/XMLAttributes.cpp

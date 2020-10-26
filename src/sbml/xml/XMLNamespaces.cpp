@@ -43,9 +43,10 @@
 #include <sbml/xml/XMLNamespaces.h>
 #include <sbml/xml/XMLAttributes.h>
 #include <sbml/xml/XMLConstructorException.h>
-#include <sbml/SBMLNamespaces.h>
+//#include <sbml/SBMLNamespaces.h>
 #include <sbml/util/List.h>
 
+#include <sbml/xml/sbmlStubs.h>
 
 /** @cond doxygenIgnored */
 using namespace std;
@@ -122,17 +123,17 @@ XMLNamespaces::add (const std::string& uri, const std::string prefix)
   {
     // there is already a uri with this prefix
     // is it the sbml ns
-    const List * supportedNS = SBMLNamespaces::getSupportedNamespaces();
-    for (unsigned int i = 0; i < supportedNS->getSize(); i++)
+    std::list<SBMLNamespaces> supportedNS = SBMLNamespaces::getSupportedNamespaces();
+    for (std::list<SBMLNamespaces>::iterator iter = supportedNS.begin(); iter != supportedNS.end(); iter++)
     {
-      const SBMLNamespaces * current = (const SBMLNamespaces *) supportedNS->get(i);
-      if (getURI(prefix) == current->getURI())
+      //const SBMLNamespaces current = (const SBMLNamespaces *) supportedNS->get(i);
+      if (getURI(prefix) == iter->getURI())
       {
         sbmlCoreNS = true;
         break;
       }
     }    
-    SBMLNamespaces::freeSBMLNamespaces(const_cast<List*>(supportedNS));    
+    SBMLNamespaces::freeSBMLNamespaces(supportedNS);
   }
 
   if (sbmlCoreNS == true)

@@ -1237,16 +1237,16 @@ endif()
 #
 # Include options for all libSBML packages
 #
-set(LIBSBML_PACKAGE_INCLUDES)
-set(LIBSBML_PACKAGE_SUMMARY)
-file(GLOB PACKAGE_OPTIONS "*package.cmake")
-foreach(package ${PACKAGE_OPTIONS})
-    include(${package})
-endforeach()
-
-if (LIBSBML_PACKAGE_INCLUDES)
-  list(REMOVE_DUPLICATES LIBSBML_PACKAGE_INCLUDES)
-endif()
+#set(LIBSBML_PACKAGE_INCLUDES)
+#set(LIBSBML_PACKAGE_SUMMARY)
+#file(GLOB PACKAGE_OPTIONS "*package.cmake")
+#foreach(package ${PACKAGE_OPTIONS})
+#    include(${package})
+#endforeach()
+#
+#if (LIBSBML_PACKAGE_INCLUDES)
+#  list(REMOVE_DUPLICATES LIBSBML_PACKAGE_INCLUDES)
+#endif()
 
 ###############################################################################
 #

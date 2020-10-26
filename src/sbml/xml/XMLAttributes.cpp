@@ -47,6 +47,7 @@
 #include <sbml/xml/XMLOutputStream.h>
 #include <sbml/util/util.h>
 /** @endcond */
+#include <sbml/xml/sbmlStubs.h>
 
 /** @cond doxygenIgnored */
 using namespace std;
