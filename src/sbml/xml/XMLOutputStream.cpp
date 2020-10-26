@@ -192,6 +192,7 @@ bool XMLOutputStream::mWriteTimestamp = true;
 std::string XMLOutputStream::mLibraryName = "libSBML";
 
 // the version of the library writing the file
+// TODO: Replace with a libSBXML version string
 std::string XMLOutputStream::mLibraryVersion = getLibSBMLDottedVersion();
 
 
