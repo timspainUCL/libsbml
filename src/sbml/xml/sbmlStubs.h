@@ -7,11 +7,11 @@
  *      Author: Timothy Spain
  */
 
-#ifndef SRC_SBML_XML_SBMLSTUBS_H_
-#define SRC_SBML_XML_SBMLSTUBS_H_
+#ifndef SBMLSTUBS_H
+#define SBMLSTUBS_H
 
-#include <ctype.h>
 #include <list>
+#include <sbml/xml/sbmlMemoryStubs.h>
 
 /**
  * LIBSBML_DOTTED_VERSION:
@@ -40,9 +40,6 @@
 #define LIBSBML_VERSION_STRING	"51803"
 
 
-extern "C"
-char* safe_strdup(const char* s);
-void* safe_malloc (size_t size);
 
 class SBMLNamespaces {
 public:
@@ -56,4 +53,4 @@ const char*
 getLibSBMLDottedVersion ();
 
 
-#endif /* SRC_SBML_XML_SBMLSTUBS_H_ */
+#endif /*ndef SBMLSTUBS_H */

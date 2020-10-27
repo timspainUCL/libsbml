@@ -1,0 +1,19 @@
+/*
+ * sbmlMemoryStubs.h
+ *
+ *  Created on: 27 October 2020
+ *      Author: Timothy Spain
+ */
+
+#ifndef SBMLMEMORYSTUBS_H
+#define SBMLMEMORYSTUBS_H
+
+#include <ctype.h>
+
+extern "C"
+char* safe_strdup(const char* s);
+extern "C"
+void* safe_malloc (size_t size);
+
+
+#endif /*ndef SBMLMEMORYSTUBS_H */

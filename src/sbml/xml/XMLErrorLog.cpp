@@ -43,6 +43,8 @@
 
 #include <sbml/xml/XMLErrorLog.h>
 
+#include <sbml/xml/sbmlStubs.h>
+
 /** @cond doxygenIgnored */
 using namespace std;
 /** @endcond */

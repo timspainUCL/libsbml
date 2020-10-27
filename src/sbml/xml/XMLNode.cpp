@@ -46,6 +46,8 @@
 /** @endcond */
 
 #include <sbml/xml/XMLNode.h>
+#include <sbml/xml/sbmlMemoryStubs.h>
+
 
 /** @cond doxygenIgnored */
 using namespace std;

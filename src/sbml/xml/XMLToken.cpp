@@ -40,6 +40,7 @@
 #include <sbml/xml/XMLOutputStream.h>
 #include <sbml/util/util.h>
 #include <sbml/xml/XMLConstructorException.h>
+#include <sbml/xml/sbmlMemoryStubs.h>
 /** @endcond */
 #include <sbml/xml/XMLToken.h>
 

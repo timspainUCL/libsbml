@@ -38,6 +38,7 @@
 #include <sbml/util/util.h>
 #include <sbml/xml/XMLAttributes.h>
 #include <sbml/xml/XMLConstructorException.h>
+#include <sbml/xml/sbmlMemoryStubs.h>
 
 /** @cond doxygenIgnored */
 using namespace std;
