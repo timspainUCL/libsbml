@@ -457,21 +457,11 @@
 #ifndef SBMLError_h
 #define SBMLError_h
 
-#include <sbml/common/extern.h>
-#include <sbml/xml/XMLError.h>
-#include <sbml/SBMLNamespaces.h>
-
-
-LIBSBML_CPP_NAMESPACE_BEGIN
-BEGIN_C_DECLS
-
 /**
- * @enum SBMLErrorSeverity_t
- * Severity codes for SBMLError diagnostics.
+ * @enum SBXMLErrorSeverity_t
+ * Severity codes for SBXMLError diagnostics.
  *
  * The only publicly-reported values of this type are the four from #XMLErrorSeverity_t.
- * All other values are used internally only, with translation of those
- * codes done in SBMLError.cpp
  *
  * @see XMLErrorSeverity_t
  */
@@ -479,36 +469,12 @@ typedef enum
 {
   /** @cond doxygenLibsbmlInternal **/
 
-  /* The following are used internally in SBMLErrorTable, but publicly,
-   * we only report one of the 4 XMLError_Severity values.  Translation
-   * of the codes is done in SBMLError.cpp.
-   */
+  /* The following is used in initializing the XMLError class   */
 
-    LIBSBML_SEV_SCHEMA_ERROR    = (LIBSBML_SEV_FATAL + 1)
-    /*!< The XML content does not conform to
-     * the relevant version of the SBML XML
-     * Schema.  The content is not valid SBML. */
-
-  , LIBSBML_SEV_GENERAL_WARNING
-    /*!< The XML content is invalid for some
-     * levels/versions of SBML, and while it
-     * may be valid in others, it is something
-     * that is best avoided anyway.  LibSBML
-     * will issue warnings in those cases it
-     * can recognize. */
-
-  , LIBSBML_SEV_NOT_APPLICABLE
-    /*!< This error code is only a placeholder
-     * for errors that have relevance to some
-     * versions of SBML but not others. */
-
-  , LIBSBML_SEV_UNKNOWN
-  /*!< This error code is used as the default argument to the SBMLError constructor, so the constructor can know if the caller deliberately set the severity or not. */
+  LIBSBXML_SEV_UNKNOWN
+  /*!< This error code is used as the default argument to the XMLError constructor, so the constructor can know if the caller deliberately set the severity or not. */
 
   /** @endcond **/
-} SBMLErrorSeverity_t;
-
-END_C_DECLS
-LIBSBML_CPP_NAMESPACE_END
+} SBXMLErrorSeverity_t;
 
 #endif /* SBMLError_h */

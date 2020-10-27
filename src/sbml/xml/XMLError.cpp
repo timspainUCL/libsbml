@@ -414,7 +414,7 @@ XMLError::XMLError (  const int errorId
 
   // Other initializations.
 
-  if (severity == LIBSBML_SEV_UNKNOWN) {
+  if (severity == LIBSBXML_SEV_UNKNOWN) {
     mSeverity = LIBSBML_SEV_ERROR;
   }
   else {
