@@ -46,6 +46,7 @@
 #include <sbml/xml/XMLAttributes.h>
 #include <sbml/xml/XMLConstructorException.h>
 #include <sbml/xml/sbmlMemoryStubs.h>
+#include <sbml/xml/sbmlStubs.h>
 #include <sbml/util/util.h>
 #include <sbml/common/common.h>
 #include <sbml/common/libsbml-version.h>

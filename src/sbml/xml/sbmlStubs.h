@@ -46,6 +46,7 @@ public:
 	static std::list<SBMLNamespaces> getSupportedNamespaces();
 	static void freeSBMLNamespaces(std::list<SBMLNamespaces> nmsp);
 	std::string getURI();
+	SBMLNamespaces* clone() const;
 };
 
 extern "C"

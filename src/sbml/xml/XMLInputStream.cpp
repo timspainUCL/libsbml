@@ -41,6 +41,8 @@
 
 #include <sbml/xml/XMLInputStream.h>
 
+#include <sbml/xml/sbmlStubs.h>
+
 using namespace std;
 
 LIBSBML_CPP_NAMESPACE_BEGIN

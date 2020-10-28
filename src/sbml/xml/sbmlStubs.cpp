@@ -60,6 +60,10 @@ std::string SBMLNamespaces::getURI()
 	return std::string("");
 }
 
+SBMLNamespaces* SBMLNamespaces::clone() const {
+	return new SBMLNamespaces(*this);
+}
+
 const char*
 getLibSBMLDottedVersion ()
 {
