@@ -15,5 +15,6 @@ char* safe_strdup(const char* s);
 extern "C"
 void* safe_malloc (size_t size);
 
+#define safe_free  free
 
 #endif /*ndef SBMLMEMORYSTUBS_H */
