@@ -43,6 +43,7 @@
 #include <sbml/xml/XMLAttributes.h>
 #include <sbml/xml/XMLConstructorException.h>
 #include <sbml/SBMLError.h>
+#include <sbml/xml/operationReturnValues.h>
 
 /** @cond doxygenIgnored */
 using namespace std;
@@ -705,7 +706,7 @@ int
 XMLError::setLine (unsigned int line)
 {
   mLine = line;
-  return LIBSBML_OPERATION_SUCCESS;
+  return LIBSBXML_OPERATION_SUCCESS;
 }
 
 
@@ -716,7 +717,7 @@ int
 XMLError::setColumn (unsigned int column)
 {
   mColumn = column;
-  return LIBSBML_OPERATION_SUCCESS;
+  return LIBSBXML_OPERATION_SUCCESS;
 }
 
 

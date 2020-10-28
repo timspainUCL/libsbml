@@ -42,6 +42,8 @@
 #include <sbml/xml/XMLInputStream.h>
 
 #include <sbml/xml/sbmlStubs.h>
+#include <sbml/xml/operationReturnValues.h>
+
 
 using namespace std;
 
@@ -481,7 +483,7 @@ LIBLAX_EXTERN
 int
 XMLInputStream_setErrorLog (XMLInputStream_t *stream, XMLErrorLog_t *log)
 {
-  if (stream == NULL ) return LIBSBML_OPERATION_FAILED;
+  if (stream == NULL ) return LIBSBXML_OPERATION_FAILED;
   return stream->setErrorLog(log);
 }
 

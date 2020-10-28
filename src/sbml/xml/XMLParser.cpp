@@ -53,6 +53,8 @@
 
 #include <sbml/xml/XMLErrorLog.h>
 #include <sbml/xml/XMLParser.h>
+#include <sbml/xml/operationReturnValues.h>
+
 
 using namespace std;
 
@@ -130,7 +132,7 @@ XMLParser::setErrorLog (XMLErrorLog* log)
   }
   else
   {
-    return LIBSBML_OPERATION_FAILED;
+    return LIBSBXML_OPERATION_FAILED;
   }
 }
 

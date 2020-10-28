@@ -47,6 +47,8 @@
 
 #include <sbml/xml/XMLNode.h>
 #include <sbml/xml/sbmlMemoryStubs.h>
+#include <sbml/xml/operationReturnValues.h>
+
 
 
 /** @cond doxygenIgnored */
@@ -246,18 +248,18 @@ XMLNode::addChild (const XMLNode& node)
     * an end element
     */
     if (isEnd()) unsetEnd();
-    return LIBSBML_OPERATION_SUCCESS;
+    return LIBSBXML_OPERATION_SUCCESS;
   }
   else if (isEOF())
   {
     mChildren.push_back(new XMLNode(node));
     // this causes strange things to happen when node is written out
     //   this->mIsStart = true;
-    return LIBSBML_OPERATION_SUCCESS;
+    return LIBSBXML_OPERATION_SUCCESS;
   }
   else
   {
-    return LIBSBML_INVALID_XML_OPERATION;
+    return LIBSBXML_INVALID_XML_OPERATION;
   }
 
 }
@@ -314,7 +316,7 @@ XMLNode::removeChildren()
       ++curIt;
       }
   mChildren.clear(); 
-  return LIBSBML_OPERATION_SUCCESS;
+  return LIBSBXML_OPERATION_SUCCESS;
 }
 
 
@@ -779,7 +781,7 @@ LIBLAX_EXTERN
 int
 XMLNode_addChild (XMLNode_t *node, const XMLNode_t *child)
 {
-  if (node == NULL || child == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL || child == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->addChild(*child);
 }
 
@@ -810,7 +812,7 @@ LIBLAX_EXTERN
 int
 XMLNode_removeChildren (XMLNode_t *node)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->removeChildren();
 }
 
@@ -828,7 +830,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_setTriple(XMLNode_t *node, const XMLTriple_t *triple)
 {
-  if(node == NULL || triple == NULL) return LIBSBML_INVALID_OBJECT;
+  if(node == NULL || triple == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->setTriple(*triple);
 }
 
@@ -940,7 +942,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_setAttributes(XMLNode_t *node, const XMLAttributes_t* attributes)
 {
-  if (node == NULL || attributes == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL || attributes == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->setAttributes(*attributes);
 }
 
@@ -949,7 +951,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_addAttr ( XMLNode_t *node,  const char* name, const char* value )
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->addAttr(name, value, "", "");
 }
 
@@ -961,7 +963,7 @@ XMLNode_addAttrWithNS ( XMLNode_t *node,  const char* name
                         , const char* namespaceURI
                         , const char* prefix      )
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->addAttr(name, value, namespaceURI, prefix);
 }
 
@@ -971,7 +973,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_addAttrWithTriple (XMLNode_t *node, const XMLTriple_t *triple, const char* value)
 {
-  if (node == NULL || triple == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL || triple == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->addAttr(*triple, value);
 }
 
@@ -980,7 +982,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_removeAttr (XMLNode_t *node, int n)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->removeAttr(n);
 }
 
@@ -989,7 +991,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_removeAttrByName (XMLNode_t *node, const char* name)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->removeAttr(name, "");
 }
 
@@ -998,7 +1000,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_removeAttrByNS (XMLNode_t *node, const char* name, const char* uri)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->removeAttr(name, uri);
 }
 
@@ -1007,7 +1009,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_removeAttrByTriple (XMLNode_t *node, const XMLTriple_t *triple)
 {
-  if (node == NULL || triple == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL || triple == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->removeAttr(*triple);
 }
 
@@ -1016,7 +1018,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_clearAttributes(XMLNode_t *node)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->clearAttributes();
 }
 
@@ -1202,7 +1204,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_setNamespaces(XMLNode_t *node, const XMLNamespaces_t* namespaces)
 {
-  if (node == NULL || namespaces == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL || namespaces == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->setNamespaces(*namespaces);
 }
 
@@ -1211,7 +1213,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_addNamespace (XMLNode_t *node, const char* uri, const char* prefix)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->addNamespace(uri, prefix);
 }
 
@@ -1220,7 +1222,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_removeNamespace (XMLNode_t *node, int index)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->removeNamespace(index);
 }
 
@@ -1229,7 +1231,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_removeNamespaceByPrefix (XMLNode_t *node, const char* prefix)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->removeNamespace(prefix);
 }
 
@@ -1238,7 +1240,7 @@ LIBLAX_EXTERN
 int 
 XMLNode_clearNamespaces (XMLNode_t *node)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->clearNamespaces();
 }
 
@@ -1436,7 +1438,7 @@ LIBLAX_EXTERN
 int
 XMLNode_setEnd (XMLNode_t *node)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->setEnd();
 }
 
@@ -1445,7 +1447,7 @@ LIBLAX_EXTERN
 int
 XMLNode_setEOF (XMLNode_t *node)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->setEOF();
 }
 
@@ -1454,7 +1456,7 @@ LIBLAX_EXTERN
 int
 XMLNode_unsetEnd (XMLNode_t *node)
 {
-  if (node == NULL) return LIBSBML_INVALID_OBJECT;
+  if (node == NULL) return LIBSBXML_INVALID_OBJECT;
   return node->unsetEnd();
 }
 /** @endcond */

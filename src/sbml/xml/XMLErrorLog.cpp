@@ -44,6 +44,8 @@
 #include <sbml/xml/XMLErrorLog.h>
 
 #include <sbml/xml/sbmlStubs.h>
+#include <sbml/xml/operationReturnValues.h>
+
 
 /** @cond doxygenIgnored */
 using namespace std;
@@ -241,9 +243,9 @@ XMLErrorLog::getSeverityOverride() const
 /*
  * Set the severity override. 
  * 
- * If set to LIBSBML_OVERRIDE_DISABLED (default) all errors will be 
- * logged as specified in the error. Set to LIBSBML_OVERRIDE_DONT_LOG
- * no error will be logged. When set to LIBSBML_OVERRIDE_WARNING, then
+ * If set to LIBSBXML_OVERRIDE_DISABLED (default) all errors will be
+ * logged as specified in the error. Set to LIBSBXML_OVERRIDE_DONT_LOG
+ * no error will be logged. When set to LIBSBXML_OVERRIDE_WARNING, then
  * all errors will be logged as warnings. 
  *
  */
@@ -297,9 +299,9 @@ XMLErrorLog::setParser (const XMLParser* p)
   mParser = p;
 
   if (mParser != NULL)
-    return LIBSBML_OPERATION_SUCCESS;
+    return LIBSBXML_OPERATION_SUCCESS;
   else
-    return LIBSBML_OPERATION_FAILED;
+    return LIBSBXML_OPERATION_FAILED;
 }
 /** @endcond */
 
