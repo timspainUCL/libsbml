@@ -340,7 +340,7 @@
 
 
 #include <sbml/xml/XMLExtern.h>
-#include <sbml/common/sbmlfwd.h>
+#include <sbml/xml/common/sbxmlfwd.h>
 #include <sbml/util/util.h>
 
 LIBSBML_CPP_NAMESPACE_BEGIN

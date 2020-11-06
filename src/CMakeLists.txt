@@ -365,6 +365,10 @@ set(XML_SOURCES ${XML_SOURCES}
 	)
 
 set(XML_SOURCES ${XML_SOURCES}
+	sbml/xml/common/libsbxml-version.cpp
+	)
+	
+set(XML_SOURCES ${XML_SOURCES}
 
   sbml/xml/XMLAttributes.cpp
   sbml/xml/XMLBuffer.cpp

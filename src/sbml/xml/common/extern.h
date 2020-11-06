@@ -1,6 +1,6 @@
 /**
  * @file    extern.h
- * @brief   Definitions of LIBSBML_EXTERN and related things.
+ * @brief   Definitions of LIBSBXML_EXTERN and related things.
  * @author  Ben Bornstein
  * 
  * <!--------------------------------------------------------------------------
@@ -34,8 +34,8 @@
  * also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#ifndef LIBSBML_EXTERN_H
-#define LIBSBML_EXTERN_H
+#ifndef LIBSBXML_EXTERN_H
+#define LIBSBXML_EXTERN_H
 
 #include <sbml/common/libsbml-namespace.h>
 
@@ -48,19 +48,19 @@
  * compiled with the LIBSBML_EXPORTS symbol defined on the command line.
  * This symbol should not be defined on any project that uses this
  * DLL. This way any other project whose source files include this file see
- * LIBSBML_EXTERN functions as being imported from a DLL, wheras this DLL
+ * LIBSBXML_EXTERN functions as being imported from a DLL, wheras this DLL
  * sees symbols defined with this macro as being exported.
  *
  * (From Andrew Finney's sbwdefs.h, with "SBW" replaced by "LIBSBML" :)
  */
-#if defined(LIBSBML_EXPORTS)
-#  define LIBSBML_EXTERN __declspec(dllexport)
+#if defined(LIBSBXML_EXPORTS)
+#  define LIBSBXML_EXTERN __declspec(dllexport)
 #else
-#  define LIBSBML_EXTERN __declspec(dllimport)
+#  define LIBSBXML_EXTERN __declspec(dllimport)
 #endif
 
 #else
-#  define LIBSBML_EXTERN
+#  define LIBSBXML_EXTERN
 #endif  /* LIBSBML_STATIC */
 
 /**
@@ -87,14 +87,14 @@
 #else
 
 /**
- * LIBSBML_EXTERN is used under Windows to simplify exporting functions
+ * LIBSBXML_EXTERN is used under Windows to simplify exporting functions
  * from a DLL.  When compiling under Windows, all files within this DLL are
  * compiled with the LIBSBML_EXPORTS symbol defined on the command line.
  * This in turn causes extern.h to define a different version of
- * LIBSBML_EXTERN that is appropriate for exporting functions to client
+ * LIBSBXML_EXTERN that is appropriate for exporting functions to client
  * code that uses the DLL.
  */
-#define LIBSBML_EXTERN
+#define LIBSBXML_EXTERN
 
 #endif  /* WIN32 */
 
@@ -110,5 +110,5 @@
 #endif
 
 
-#endif  /** LIBSBML_EXTERN_H **/
+#endif  /** LIBSBXML_EXTERN_H **/
 

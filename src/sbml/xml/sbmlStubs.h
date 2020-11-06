@@ -18,7 +18,7 @@
  *
  * A version string of the form "1.2.3".
  */
-#define LIBSBML_DOTTED_VERSION	"5.18.3"
+// #define LIBSBML_DOTTED_VERSION	"5.18.3"
 
 
 /**
@@ -29,7 +29,7 @@
  * libSBML is released, making it easy to use less-than and greater-than
  * comparisons when testing versions numbers.
  */
-#define LIBSBML_VERSION		51803
+// #define LIBSBML_VERSION		51803
 
 
 /**
@@ -37,7 +37,7 @@
  *
  * The numeric version as a string: version 1.2.3 becomes "10203".
  */
-#define LIBSBML_VERSION_STRING	"51803"
+// #define LIBSBML_VERSION_STRING	"51803"
 
 
 
@@ -49,9 +49,10 @@ public:
 	SBMLNamespaces* clone() const;
 };
 
+/*
 extern "C"
 const char*
 getLibSBMLDottedVersion ();
-
+*/
 
 #endif /*ndef SBMLSTUBS_H */

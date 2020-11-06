@@ -112,7 +112,7 @@ static const int SBML_INT_MIN = -2147483647 - 1;
 #define LIBSBML_USE_LEGACY_MATH 1
 
 
-#include <sbml/common/extern.h>
+#include <sbml/xml/common/extern.h>
 //#include <sbml/util/memory.h>
 //#include <sbml/util/util.h>
 

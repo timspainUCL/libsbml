@@ -59,7 +59,7 @@
 #ifndef XMLConstructorException_h
 #define XMLConstructorException_h
 
-#include <sbml/common/sbmlfwd.h>
+#include <sbml/xml/common/sbxmlfwd.h>
 
 #ifdef __cplusplus
 
@@ -69,7 +69,7 @@
 
 LIBSBML_CPP_NAMESPACE_BEGIN
 
-class LIBSBML_EXTERN XMLConstructorException : public std::invalid_argument
+class LIBSBXML_EXTERN XMLConstructorException : public std::invalid_argument
 {
 public:
 

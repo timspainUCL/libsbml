@@ -56,7 +56,7 @@ LIBSBML_CPP_NAMESPACE_BEGIN
 
 class LIBLAX_EXTERN XMLToken;
 
-class LIBSBML_EXTERN XMLTokenizer : public XMLHandler
+class LIBSBXML_EXTERN XMLTokenizer : public XMLHandler
 {
 public:
 
