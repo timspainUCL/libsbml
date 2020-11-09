@@ -34,7 +34,7 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
+#include <sbml/xml/common/common.h>
 #include <sbml/xml/XMLTriple.h>
 #include <sbml/xml/XMLNamespaces.h>
 #include <sbml/xml/XMLToken.h>

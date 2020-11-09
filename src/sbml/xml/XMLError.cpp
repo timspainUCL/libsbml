@@ -38,7 +38,7 @@
 #include <iomanip>
 #include <sstream>
 
-#include <sbml/common/common.h>
+#include <sbml/xml/common/common.h>
 #include <sbml/xml/XMLError.h>
 #include <sbml/xml/XMLAttributes.h>
 #include <sbml/xml/XMLConstructorException.h>

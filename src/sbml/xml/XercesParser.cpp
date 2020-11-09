@@ -57,7 +57,7 @@
 #include <sbml/compress/CompressCommon.h>
 #include <sbml/compress/InputDecompressor.h>
 
-#include <sbml/common/common.h>
+#include <sbml/xml/common/common.h>
 
 using namespace std;
 using namespace xercesc;
