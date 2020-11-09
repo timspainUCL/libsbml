@@ -47,10 +47,8 @@
 #include <sbml/xml/XMLConstructorException.h>
 #include <sbml/xml/sbmlMemoryStubs.h>
 #include <sbml/xml/sbmlStubs.h>
-//#include <sbml/util/util.h>
 #include <sbml/xml/common/common.h>
 #include <sbml/xml/common/libsbxml-version.h>
-//#include <sbml/SBMLNamespaces.h>
 #if defined CYGWIN
 #include <string.h>
 #endif
