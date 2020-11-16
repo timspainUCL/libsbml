@@ -45,7 +45,7 @@
 #include <sbml/xml/XMLAttributes.h>
 /** @cond doxygenLibsbmlInternal */
 #include <sbml/xml/XMLOutputStream.h>
-#include <sbml/util/util.h>
+//#include <sbml/util/util.h>
 /** @endcond */
 #include <sbml/xml/sbmlStubs.h>
 #include <sbml/xml/operationReturnValues.h>
@@ -54,7 +54,7 @@
 using namespace std;
 /** @endcond */
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 /*
  * @return s with whitespace removed from the beginning and end.
@@ -1720,6 +1720,6 @@ XMLAttributes_readIntoStringByTriple (XMLAttributes_t *xa,
 }
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 /** @endcond */
 

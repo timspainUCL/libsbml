@@ -228,7 +228,7 @@ foo:myattribute="7"
 #define XMLAttributes_h
 
 #include <sbml/xml/XMLExtern.h>
-#include <sbml/common/sbmlfwd.h>
+#include <sbml/xml/common/sbxmlfwd.h>
 #include <sbml/common/operationReturnValues.h>
 
 
@@ -241,7 +241,7 @@ foo:myattribute="7"
 
 #include <sbml/xml/XMLTriple.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class XMLErrorLog;
 /** @cond doxygenLibsbmlInternal */
@@ -2798,7 +2798,7 @@ XMLAttributes_readIntoStringByTriple (XMLAttributes_t *xa,
                                int required);
 
 END_C_DECLS
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 

@@ -47,7 +47,7 @@
 #include <sbml/xml/ExpatAttributes.h>
 #include <sbml/xml/ExpatHandler.h>
 
-#include <sbml/util/util.h>
+//#include <sbml/util/util.h>
 
 using namespace std;
 
