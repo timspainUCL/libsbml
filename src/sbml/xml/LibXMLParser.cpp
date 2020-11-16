@@ -47,7 +47,7 @@
 #include <sbml/xml/LibXMLHandler.h>
 #include <sbml/xml/LibXMLParser.h>
 
-#include <sbml/compress/CompressCommon.h>
+#include <sbml/xml/compress/CompressCommon.h>
 
 
 using namespace std;

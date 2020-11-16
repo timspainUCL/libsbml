@@ -54,8 +54,8 @@
 #include <sbml/xml/XercesTranscode.h>
 #include <sbml/xml/XercesParser.h>
 
-#include <sbml/compress/CompressCommon.h>
-#include <sbml/compress/InputDecompressor.h>
+#include <sbml/xml/compress/CompressCommon.h>
+#include <sbml/xml/compress/InputDecompressor.h>
 
 #include <sbml/xml/common/common.h>
 

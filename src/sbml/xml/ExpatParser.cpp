@@ -49,7 +49,7 @@
 #include <sbml/xml/ExpatHandler.h>
 #include <sbml/xml/ExpatParser.h>
 
-#include <sbml/compress/CompressCommon.h>
+#include <sbml/xml/compress/CompressCommon.h>
 
 using namespace std;
 
