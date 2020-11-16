@@ -46,7 +46,7 @@
 
 
 #include <sbml/xml/common/libsbxml-namespace.h>
-#include <sbml/common/libsbml-config.h>
+//#include <sbml/common/libsbml-config.h>
 #include <sbml/xml/common/libsbxml-version.h>
 
 
@@ -64,7 +64,7 @@
 #  define CLASS_OR_STRUCT struct
 #endif  /* __cplusplus */
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 typedef CLASS_OR_STRUCT XMLError                  XMLError_t;
 
@@ -121,7 +121,7 @@ typedef CLASS_OR_STRUCT XMLOutputStream           XMLOutputStream_t;
 typedef CLASS_OR_STRUCT XMLTriple                 XMLTriple_t;
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #undef CLASS_OR_STRUCT
 

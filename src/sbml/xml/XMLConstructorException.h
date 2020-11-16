@@ -67,7 +67,7 @@
 #include <string>
 #include <stdexcept>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class LIBSBXML_EXTERN XMLConstructorException : public std::invalid_argument
 {
@@ -82,7 +82,7 @@ public:
 };
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
@@ -90,12 +90,12 @@ LIBSBML_CPP_NAMESPACE_END
 
 #ifndef SWIG
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 
 END_C_DECLS
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 
