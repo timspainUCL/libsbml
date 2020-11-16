@@ -37,7 +37,7 @@
 #ifndef LIBSBXML_EXTERN_H
 #define LIBSBXML_EXTERN_H
 
-#include <sbml/common/libsbml-namespace.h>
+#include <sbml/xml/common/libsbxml-namespace.h>
 
 #if ( defined(WIN32) && !defined(CYGWIN) && !defined(__MINGW32__))
 

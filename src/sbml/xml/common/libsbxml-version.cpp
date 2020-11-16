@@ -59,7 +59,7 @@
 #include <bzlib.h>
 #endif
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 LIBSBXML_EXTERN
 int 
@@ -209,6 +209,6 @@ getLibSBXMLDependencyVersionOf(const char* option)
 
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 
