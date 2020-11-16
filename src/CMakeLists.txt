@@ -303,19 +303,19 @@ endmacro(ADD_FUNCTION)
 #
 set (COMPRESS_SOURCES)
 set(COMPRESS_SOURCES ${COMPRESS_SOURCES}
-    sbml/compress/CompressCommon.h
-    sbml/compress/CompressCommon.cpp
-    sbml/compress/InputDecompressor.cpp
-    sbml/compress/InputDecompressor.h
-    sbml/compress/OutputCompressor.cpp
-    sbml/compress/OutputCompressor.h
+    sbml/xml/compress/CompressCommon.h
+    sbml/xml/compress/CompressCommon.cpp
+    sbml/xml/compress/InputDecompressor.cpp
+    sbml/xml/compress/InputDecompressor.h
+    sbml/xml/compress/OutputCompressor.cpp
+    sbml/xml/compress/OutputCompressor.h
     )
 
 if(WITH_BZIP2)
 
   set(COMPRESS_SOURCES ${COMPRESS_SOURCES}
-        sbml/compress/bzfstream.h
-        sbml/compress/bzfstream.cpp
+        sbml/xml/compress/bzfstream.h
+        sbml/xml/compress/bzfstream.cpp
         )
   include_directories(${LIBBZ_INCLUDE_DIR})
   set(LIBSBML_LIBS ${LIBSBML_LIBS} ${LIBBZ_LIBRARY})
@@ -325,18 +325,18 @@ endif()
 if(WITH_ZLIB)
 
 set(COMPRESS_SOURCES ${COMPRESS_SOURCES}
-        sbml/compress/zip.c
-        sbml/compress/zip.h
-        sbml/compress/unzip.h
-        sbml/compress/unzip.c
-        sbml/compress/ioapi.h
-        sbml/compress/ioapi.c
-        sbml/compress/ioapi_mem.h
-        sbml/compress/ioapi_mem.c
-        sbml/compress/zfstream.h
-        sbml/compress/zfstream.cpp
-        sbml/compress/zipfstream.cpp
-        sbml/compress/zipfstream.h
+        sbml/xml/compress/zip.c
+        sbml/xml/compress/zip.h
+        sbml/xml/compress/unzip.h
+        sbml/xml/compress/unzip.c
+        sbml/xml/compress/ioapi.h
+        sbml/xml/compress/ioapi.c
+        sbml/xml/compress/ioapi_mem.h
+        sbml/xml/compress/ioapi_mem.c
+        sbml/xml/compress/zfstream.h
+        sbml/xml/compress/zfstream.cpp
+        sbml/xml/compress/zipfstream.cpp
+        sbml/xml/compress/zipfstream.h
     )
 
     if (WIN32)
@@ -346,8 +346,8 @@ set(COMPRESS_SOURCES ${COMPRESS_SOURCES}
         # no symbols. So it will only be included on windows.
         #
         set(COMPRESS_SOURCES ${COMPRESS_SOURCES}
-            sbml/compress/iowin32.c
-            sbml/compress/iowin32.h
+            sbml/xml/compress/iowin32.c
+            sbml/xml/compress/iowin32.h
         )
     endif()
 
