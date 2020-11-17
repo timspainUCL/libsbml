@@ -35,7 +35,6 @@
  * ---------------------------------------------------------------------- -->*/
 
 #include <sbml/xml/XMLTriple.h>
-//#include <sbml/util/util.h>
 #include <sbml/xml/XMLAttributes.h>
 #include <sbml/xml/XMLConstructorException.h>
 #include <sbml/xml/sbmlMemoryStubs.h>

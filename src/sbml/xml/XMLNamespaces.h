@@ -66,7 +66,6 @@
 
 #include <sbml/xml/XMLExtern.h>
 #include <sbml/xml/common/sbxmlfwd.h>
-//#include <sbml/common/operationReturnValues.h>
 
 
 #ifdef __cplusplus

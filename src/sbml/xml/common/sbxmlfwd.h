@@ -46,7 +46,6 @@
 
 
 #include <sbml/xml/common/libsbxml-namespace.h>
-//#include <sbml/common/libsbml-config.h>
 #include <sbml/xml/common/libsbxml-version.h>
 
 

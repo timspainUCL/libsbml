@@ -113,8 +113,5 @@ static const int SBML_INT_MIN = -2147483647 - 1;
 
 
 #include <sbml/xml/common/extern.h>
-//#include <sbml/util/memory.h>
-//#include <sbml/util/util.h>
-
 
 #endif  /* LIBSBML_COMMON_H */

@@ -45,7 +45,6 @@
 #include <sbml/xml/XMLAttributes.h>
 /** @cond doxygenLibsbmlInternal */
 #include <sbml/xml/XMLOutputStream.h>
-//#include <sbml/util/util.h>
 /** @endcond */
 #include <sbml/xml/sbmlStubs.h>
 #include <sbml/xml/operationReturnValues.h>

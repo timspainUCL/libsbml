@@ -112,8 +112,6 @@
 #include <sbml/xml/XMLExtern.h>
 #include <sbml/xml/XMLToken.h>
 #include <sbml/xml/common/sbxmlfwd.h>
-//#include <sbml/common/operationReturnValues.h>
-//#include <sbml/SBMLNamespaces.h>
 
 
 #ifdef __cplusplus

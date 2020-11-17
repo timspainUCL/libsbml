@@ -37,8 +37,6 @@
 #ifndef LIBSBXML_OPERATION_RETURN_VALUES_H
 #define LIBSBXML_OPERATION_RETURN_VALUES_H
 
-//#include <sbml/common/extern.h>
-
 /**
  * @enum OperationReturnValues_t
  * LibSBML diagnostic return codes.

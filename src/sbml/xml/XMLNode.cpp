@@ -36,9 +36,6 @@
 
 #include <sstream>
 
-//#include <sbml/util/memory.h>
-//#include <sbml/util/util.h>
-
 /** @cond doxygenLibsbmlInternal */
 #include <sbml/xml/XMLInputStream.h>
 #include <sbml/xml/XMLOutputStream.h>
