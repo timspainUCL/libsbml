@@ -124,14 +124,14 @@
 #include <sbml/xml/XMLOutputStream.h>
 /** @endcond */
 #include <sbml/xml/XMLToken.h>
-#include <sbml/common/sbmlfwd.h>
+#include <sbml/xml/common/sbxmlfwd.h>
 
 
 #ifdef __cplusplus
 
 #include <string>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 /** @cond doxygenLibsbmlInternal */
 class XMLOutputStream;
@@ -1187,13 +1187,13 @@ protected:
   /** @endcond */
 };
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
 #ifndef SWIG
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 /**
@@ -2412,7 +2412,7 @@ XMLToken_unsetEnd (XMLToken_t *token);
 
 
 END_C_DECLS
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLToken_h */

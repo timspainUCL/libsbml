@@ -51,7 +51,7 @@
 
 #include <string>
 #include <sbml/xml/XMLExtern.h>
-#include <sbml/common/operationReturnValues.h>
+//#include <sbml/common/operationReturnValues.h>
 
 LIBSBML_CPP_NAMESPACE_BEGIN
 

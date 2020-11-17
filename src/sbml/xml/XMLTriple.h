@@ -76,14 +76,14 @@
 #define XMLTriple_h
 
 #include <sbml/xml/XMLExtern.h>
-#include <sbml/common/sbmlfwd.h>
+#include <sbml/xml/common/sbxmlfwd.h>
 
 
 #ifdef __cplusplus
 
 #include <string>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class LIBLAX_EXTERN XMLTriple
 {
@@ -233,13 +233,13 @@ bool operator==(const XMLTriple& lhs, const XMLTriple& rhs);
 bool operator!=(const XMLTriple& lhs, const XMLTriple& rhs);
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
 #ifndef SWIG
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 /**
@@ -403,7 +403,7 @@ XMLTriple_notEqualTo(const XMLTriple_t *lhs, const XMLTriple_t* rhs);
 
 
 END_C_DECLS
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLTriple_h */

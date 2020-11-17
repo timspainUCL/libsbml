@@ -36,8 +36,8 @@
 
 #include <sstream>
 
-#include <sbml/util/memory.h>
-#include <sbml/util/util.h>
+//#include <sbml/util/memory.h>
+//#include <sbml/util/util.h>
 
 /** @cond doxygenLibsbmlInternal */
 #include <sbml/xml/XMLInputStream.h>
@@ -55,7 +55,7 @@
 using namespace std;
 /** @endcond */
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 
 /*
@@ -1461,4 +1461,4 @@ XMLNode_unsetEnd (XMLNode_t *node)
 }
 /** @endcond */
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END

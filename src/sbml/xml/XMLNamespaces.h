@@ -65,8 +65,8 @@
 #define XMLNamespaces_h
 
 #include <sbml/xml/XMLExtern.h>
-#include <sbml/common/sbmlfwd.h>
-#include <sbml/common/operationReturnValues.h>
+#include <sbml/xml/common/sbxmlfwd.h>
+//#include <sbml/common/operationReturnValues.h>
 
 
 #ifdef __cplusplus
@@ -74,7 +74,7 @@
 #include <string>
 #include <vector>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 /** @cond doxygenLibsbmlInternal */
 class XMLOutputStream;
@@ -422,14 +422,14 @@ protected:
 };
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
 
 #ifndef SWIG
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 /**
@@ -752,7 +752,7 @@ XMLNamespaces_hasNS(const XMLNamespaces_t *ns, const char* uri, const char* pref
 
 
 END_C_DECLS
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLNamespaces_h */

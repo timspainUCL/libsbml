@@ -111,9 +111,9 @@
 
 #include <sbml/xml/XMLExtern.h>
 #include <sbml/xml/XMLToken.h>
-#include <sbml/common/sbmlfwd.h>
-#include <sbml/common/operationReturnValues.h>
-#include <sbml/SBMLNamespaces.h>
+#include <sbml/xml/common/sbxmlfwd.h>
+//#include <sbml/common/operationReturnValues.h>
+//#include <sbml/SBMLNamespaces.h>
 
 
 #ifdef __cplusplus
@@ -122,7 +122,7 @@
 
 #include <sbml/xml/XMLTokenizer.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class XMLErrorLog;
 class XMLParser;
@@ -426,14 +426,14 @@ protected:
   /** @endcond */
 };
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
 
 #ifndef SWIG
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 BEGIN_C_DECLS
 
@@ -637,7 +637,7 @@ XMLInputStream_setErrorLog (XMLInputStream_t *stream, XMLErrorLog_t *log);
 
 END_C_DECLS
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLInputStream_h */

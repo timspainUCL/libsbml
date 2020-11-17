@@ -229,7 +229,7 @@ foo:myattribute="7"
 
 #include <sbml/xml/XMLExtern.h>
 #include <sbml/xml/common/sbxmlfwd.h>
-#include <sbml/common/operationReturnValues.h>
+//#include <sbml/common/operationReturnValues.h>
 
 
 #ifdef __cplusplus

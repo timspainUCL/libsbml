@@ -341,9 +341,9 @@
 
 #include <sbml/xml/XMLExtern.h>
 #include <sbml/xml/common/sbxmlfwd.h>
-#include <sbml/util/util.h>
+//#include <sbml/util/util.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 BEGIN_C_DECLS
 
@@ -558,7 +558,7 @@ typedef enum
 END_C_DECLS
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 
 #ifdef __cplusplus
@@ -566,9 +566,9 @@ LIBSBML_CPP_NAMESPACE_END
 
 #include <iosfwd>
 #include <string>
-#include <sbml/common/operationReturnValues.h>
+//#include <sbml/common/operationReturnValues.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class LIBLAX_EXTERN XMLError
 {
@@ -1195,7 +1195,7 @@ typedef struct {
 
 #endif  /* !SWIG */
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
@@ -1203,7 +1203,7 @@ LIBSBML_CPP_NAMESPACE_END
 
 #ifndef SWIG
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 /**
@@ -1470,7 +1470,7 @@ XMLError_print (const XMLError_t *error, FILE *stream);
 
 
 END_C_DECLS
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLError_h */

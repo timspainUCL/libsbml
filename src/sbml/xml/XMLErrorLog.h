@@ -84,7 +84,7 @@
 
 #include <sbml/xml/XMLExtern.h>
 #include <sbml/xml/XMLError.h>
-#include <sbml/common/sbmlfwd.h>
+#include <sbml/xml/common/sbxmlfwd.h>
 
 
 #ifdef __cplusplus
@@ -94,7 +94,7 @@
 #include <vector>
 #include <list>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class XMLParser;
 
@@ -574,7 +574,7 @@ XMLErrorLog_setSeverityOverride (XMLErrorLog_t *log, XMLErrorSeverityOverride_t 
 
 
 END_C_DECLS
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLErrorLog_h */

@@ -235,7 +235,7 @@ on yyyy-MM-dd HH:mm with libSBML version <libsbml version>. -->
 
 #include <sbml/xml/XMLExtern.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class XMLTriple;
 
@@ -993,7 +993,7 @@ public:
 /** @endcond */
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
@@ -1001,7 +1001,7 @@ LIBSBML_CPP_NAMESPACE_END
 
 #ifndef SWIG
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 
@@ -1396,7 +1396,7 @@ XMLOutputStream_getString(XMLOutputStream_t* stream);
 
 
 END_C_DECLS
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLOutputStream_h */

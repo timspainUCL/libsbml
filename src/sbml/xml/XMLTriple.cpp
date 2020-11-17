@@ -35,7 +35,7 @@
  * ---------------------------------------------------------------------- -->*/
 
 #include <sbml/xml/XMLTriple.h>
-#include <sbml/util/util.h>
+//#include <sbml/util/util.h>
 #include <sbml/xml/XMLAttributes.h>
 #include <sbml/xml/XMLConstructorException.h>
 #include <sbml/xml/sbmlMemoryStubs.h>
@@ -44,7 +44,7 @@
 using namespace std;
 /** @endcond */
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 
 /*
@@ -326,4 +326,4 @@ XMLTriple_notEqualTo(const XMLTriple_t *lhs, const XMLTriple_t* rhs)
 }
 /** @endcond */
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END

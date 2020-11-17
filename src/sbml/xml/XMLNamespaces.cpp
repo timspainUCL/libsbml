@@ -36,7 +36,7 @@
 
 /** @cond doxygenLibsbmlInternal */
 #include <sbml/xml/XMLOutputStream.h>
-#include <sbml/util/util.h>
+//#include <sbml/util/util.h>
 /** @endcond */
 
 #include <sbml/xml/XMLTriple.h>

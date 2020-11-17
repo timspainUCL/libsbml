@@ -38,7 +38,7 @@
 
 /** @cond doxygenLibsbmlInternal */
 #include <sbml/xml/XMLOutputStream.h>
-#include <sbml/util/util.h>
+//#include <sbml/util/util.h>
 #include <sbml/xml/XMLConstructorException.h>
 #include <sbml/xml/sbmlMemoryStubs.h>
 /** @endcond */
