@@ -44,7 +44,7 @@
 #include <libxml/parser.h>
 #include <sbml/xml/XMLNamespaces.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 /** @cond doxygenLibsbmlInternal */
 
@@ -67,7 +67,7 @@ public:
 
 /** @endcond */
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 #endif  /* LibXMLNamespaces_h */

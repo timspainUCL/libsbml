@@ -47,7 +47,7 @@
 
 using namespace std;
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 /**
  * The functions below are internal to this file.  They simply redirect to
@@ -359,6 +359,6 @@ LibXMLHandler::getLine () const
 }
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 /** @endcond */

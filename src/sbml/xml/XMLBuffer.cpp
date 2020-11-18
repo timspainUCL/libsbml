@@ -38,7 +38,7 @@
 
 #include <sbml/xml/XMLBuffer.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 /*
  * Creates a new XMLBuffer.
@@ -55,5 +55,5 @@ XMLBuffer::~XMLBuffer ()
 {
 }
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 /** @endcond */

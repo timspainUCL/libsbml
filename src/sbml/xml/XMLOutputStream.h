@@ -222,7 +222,7 @@ on yyyy-MM-dd HH:mm with libSBML version <libsbml version>. -->
 #ifndef XMLOutputStream_h
 #define XMLOutputStream_h
 
-#include <sbml/common/sbmlfwd.h>
+#include <sbml/xml/common/sbxmlfwd.h>
 #ifdef __cplusplus
 
 #include <iostream>
@@ -234,6 +234,8 @@ on yyyy-MM-dd HH:mm with libSBML version <libsbml version>. -->
 
 
 #include <sbml/xml/XMLExtern.h>
+
+#include <sbml/xml/sbmlStubs.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

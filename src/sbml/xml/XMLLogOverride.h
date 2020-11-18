@@ -49,7 +49,7 @@
 #include <sbml/xml/XMLExtern.h>
 #include <sbml/xml/XMLError.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class LIBSBXML_EXTERN XMLLogOverride
 {
@@ -64,7 +64,7 @@ protected:
   /** @endcond */
 };
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 

@@ -46,7 +46,7 @@
 #include <libxml/parser.h>
 #include <sbml/xml/XMLAttributes.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class LibXMLAttributes : public XMLAttributes
 {
@@ -66,7 +66,7 @@ public:
   virtual ~LibXMLAttributes ();
 };
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 #endif  /* LibXMLAttributes_h */

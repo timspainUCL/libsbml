@@ -41,7 +41,7 @@
 
 using namespace std;
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 /*
  * Creates a XMLBuffer based on the given sequence of bytes in buffer.
@@ -103,5 +103,5 @@ XMLMemoryBuffer::error ()
 }
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 /** @endcond */

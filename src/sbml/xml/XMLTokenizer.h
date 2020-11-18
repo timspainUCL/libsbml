@@ -52,7 +52,7 @@
 #include <sbml/xml/XMLExtern.h>
 #include <sbml/xml/XMLHandler.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class LIBLAX_EXTERN XMLToken;
 
@@ -198,7 +198,7 @@ protected:
 };
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 #endif  /* XMLTokenizer_h */

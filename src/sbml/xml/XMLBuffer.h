@@ -41,7 +41,7 @@
 
 #include <sbml/xml/XMLExtern.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class LIBLAX_EXTERN XMLBuffer
 {
@@ -79,7 +79,7 @@ protected:
   XMLBuffer& operator= (const XMLBuffer&);
 };
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* XMLBuffer_h */
 /** @endcond */

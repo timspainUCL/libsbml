@@ -51,7 +51,7 @@
 using namespace std;
 /** @endcond */
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 
 /*
@@ -624,4 +624,4 @@ XMLNamespaces_hasNS(const XMLNamespaces_t *ns, const char* uri, const char* pref
 }
 /** @endcond */
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END

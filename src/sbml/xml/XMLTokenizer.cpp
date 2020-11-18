@@ -43,7 +43,7 @@
 
 using namespace std;
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 /*
  * Creates a new XMLTokenizer.
@@ -659,6 +659,6 @@ XMLTokenizer::containsChild(bool & valid,
 
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 /** @endcond */

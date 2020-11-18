@@ -48,7 +48,7 @@
 
 using namespace std;
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 /*
  * Creates a XMLBuffer based on the given file.  The file will be opened
@@ -149,5 +149,5 @@ XMLFileBuffer::error ()
   else return true;
 }
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 /** @endcond */

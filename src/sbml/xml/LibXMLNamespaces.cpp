@@ -43,7 +43,7 @@ using namespace std;
 
 /** @endcond */
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 /** @cond doxygenLibsbmlInternal */
 
@@ -75,4 +75,4 @@ LibXMLNamespaces::~LibXMLNamespaces ()
 
 /** @endcond */
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END

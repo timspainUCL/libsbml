@@ -50,7 +50,7 @@
 #include <string>
 #include <sbml/xml/XMLExtern.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class XMLToken;
 
@@ -133,7 +133,7 @@ public:
   virtual void characters (const XMLToken& data);
 };
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 #endif  /* XMLHandler_h */

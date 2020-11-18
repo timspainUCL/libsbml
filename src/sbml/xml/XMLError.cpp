@@ -49,7 +49,7 @@
 using namespace std;
 /** @endcond */
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 
 /** @cond doxygenLibsbmlInternal **/
@@ -999,6 +999,6 @@ XMLError_print (const XMLError_t *error, FILE *stream)
 
 }
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 /** @endcond */
 

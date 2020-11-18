@@ -48,7 +48,7 @@
 #include <sbml/xml/LibXMLHandler.h>
 #include <sbml/xml/XMLErrorLog.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 
 class XMLBuffer;
@@ -162,7 +162,7 @@ private:
 };
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 #endif  /* LibXMLParser_h */

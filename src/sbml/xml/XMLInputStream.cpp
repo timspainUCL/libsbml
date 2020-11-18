@@ -47,7 +47,7 @@
 
 using namespace std;
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class XMLParser;
 
@@ -488,5 +488,5 @@ XMLInputStream_setErrorLog (XMLInputStream_t *stream, XMLErrorLog_t *log)
 }
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 /** @endcond */

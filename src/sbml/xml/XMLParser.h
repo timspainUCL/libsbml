@@ -52,7 +52,7 @@
 #include <string>
 #include <sbml/xml/XMLExtern.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class XMLErrorLog;
 class XMLHandler;
@@ -187,7 +187,7 @@ protected:
 };
 
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 #endif  /* XMLParser_h */

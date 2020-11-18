@@ -41,7 +41,7 @@
 
 #include <sbml/xml/XMLBuffer.h>
 
-LIBSBML_CPP_NAMESPACE_BEGIN
+LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class XMLMemoryBuffer : public XMLBuffer
 {
@@ -93,7 +93,7 @@ private:
   unsigned int  mOffset;
 };
 
-LIBSBML_CPP_NAMESPACE_END
+LIBSBXML_CPP_NAMESPACE_END
 
 #endif  /* XMLMemoryBuffer_h */
 /** @endcond */
