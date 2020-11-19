@@ -37,6 +37,8 @@
 #include <sbml/xml/common/common.h>
 #include <sbml/xml/XMLNamespaces.h>
 
+#include <sbml/xml/operationReturnValues.h>
+
 #include <check.h>
 
 #if defined(__cplusplus)

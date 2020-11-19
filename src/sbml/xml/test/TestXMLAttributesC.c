@@ -44,14 +44,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
 #include <XMLAttributes.h>
 #include <XMLTriple.h>
 #include <XMLErrorLog.h>
-#include <util/memory.h>
-#include <util/util.h>
+//#include <util/memory.h>
+//#include <util/util.h>
 #include <check.h>
 
 #include <sbml/xml/common/extern.h>
+
+#include <sbmlMemoryStubs.h>
 
 #if defined(__cplusplus)
 LIBSBXML_CPP_NAMESPACE_USE
@@ -649,9 +652,9 @@ START_TEST (test_XMLAttributes_readInto_double_C)
   fail_unless( XMLAttributes_readIntoDouble(attrs, "str5", &value, NULL, 0) != 0 );
   fail_unless( value == 0 );
   fail_unless( XMLAttributes_readIntoDouble(attrs, "str6", &value, NULL, 0) != 0 );
-  fail_unless( value == util_PosInf() );
+  fail_unless( isinf(value) && (value > 0.0) );// == util_PosInf() );
   fail_unless( XMLAttributes_readIntoDouble(attrs, "str7", &value, NULL, 0) != 0 );
-  fail_unless( value == util_NegInf() );
+  fail_unless( isinf(value) && (value < 0.0) );//value == util_NegInf() );
   fail_unless( XMLAttributes_readIntoDouble(attrs, "str8", &value, NULL, 0) != 0 );
   fail_unless( value != value );
   fail_unless( XMLAttributes_readIntoDouble(attrs, "str9", &value, NULL, 0) == 0 );
@@ -671,9 +674,9 @@ START_TEST (test_XMLAttributes_readInto_double_C)
   fail_unless( XMLAttributes_readIntoDoubleByTriple(attrs, trp5, &value, NULL, 0) != 0 );
   fail_unless( value == 0 );
   fail_unless( XMLAttributes_readIntoDoubleByTriple(attrs, trp6, &value, NULL, 0) != 0 );
-  fail_unless( value == util_PosInf() );
+  fail_unless( isinf(value) && (value > 0.0) );//value == util_PosInf() );
   fail_unless( XMLAttributes_readIntoDoubleByTriple(attrs, trp7, &value, NULL, 0) != 0 );
-  fail_unless( value == util_NegInf() );
+  fail_unless( isinf(value) && (value < 0.0) );//value == util_NegInf() );
   fail_unless( XMLAttributes_readIntoDoubleByTriple(attrs, trp8, &value, NULL, 0) != 0 );
   fail_unless( value != value );
   fail_unless( XMLAttributes_readIntoDoubleByTriple(attrs, trp9, &value, NULL, 0) == 0 );

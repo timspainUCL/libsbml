@@ -38,6 +38,8 @@
 #include <sbml/xml/XMLToken.h>
 #include <sbml/xml/XMLTriple.h>
 
+#include <sbml/xml/operationReturnValues.h>
+
 #include <check.h>
 
 #if defined(__cplusplus)

@@ -36,6 +36,7 @@
 
 #include <sbml/xml/common/common.h>
 #include <sbml/xml/XMLTriple.h>
+#include <sbml/xml/sbmlMemoryStubs.h>
 
 #include <check.h>
 

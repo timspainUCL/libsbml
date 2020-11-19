@@ -45,6 +45,7 @@
 
 #include <check.h>
 #include <XMLError.h>
+#include <operationReturnValues.h>
 
 /** @cond doxygenIgnored */
 

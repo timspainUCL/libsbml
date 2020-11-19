@@ -60,7 +60,7 @@ LIBSBXML_CPP_NAMESPACE_BEGIN
  */
 XMLErrorLog::XMLErrorLog ()
   : mParser(NULL)
-  , mOverriddenSeverity(LIBSBML_OVERRIDE_DISABLED)
+  , mOverriddenSeverity(LIBSBXML_OVERRIDE_DISABLED)
 {
 }
 /** @endcond */
@@ -123,7 +123,7 @@ XMLErrorLog::~XMLErrorLog ()
 void
 XMLErrorLog::add (const XMLError& error)
 {
-  if (mOverriddenSeverity == LIBSBML_OVERRIDE_DONT_LOG) return;
+  if (mOverriddenSeverity == LIBSBXML_OVERRIDE_DONT_LOG) return;
 
   XMLError* cerror;
 
@@ -138,16 +138,16 @@ XMLErrorLog::add (const XMLError& error)
     return;
   }
 
-  if (mOverriddenSeverity == LIBSBML_OVERRIDE_WARNING && 
-    cerror->getSeverity() > LIBSBML_SEV_WARNING)
+  if (mOverriddenSeverity == LIBSBXML_OVERRIDE_WARNING &&
+    cerror->getSeverity() > LIBSBXML_SEV_WARNING)
   {
-    cerror->mSeverity = LIBSBML_SEV_WARNING;
+    cerror->mSeverity = LIBSBXML_SEV_WARNING;
     cerror->mSeverityString = "Warning";
   }
-  else if (mOverriddenSeverity == LIBSBML_OVERRIDE_ERROR &&
-    cerror->getSeverity() == LIBSBML_SEV_WARNING)
+  else if (mOverriddenSeverity == LIBSBXML_OVERRIDE_ERROR &&
+    cerror->getSeverity() == LIBSBXML_SEV_WARNING)
   {
-    cerror->mSeverity = LIBSBML_SEV_ERROR;
+    cerror->mSeverity = LIBSBXML_SEV_ERROR;
     cerror->mSeverityString = "Error";
   }
 
@@ -219,7 +219,7 @@ XMLErrorLog::add (const std::vector<XMLError*>& errors)
 bool 
 XMLErrorLog::isSeverityOverridden() const
 {
-  return mOverriddenSeverity != LIBSBML_OVERRIDE_DISABLED;
+  return mOverriddenSeverity != LIBSBXML_OVERRIDE_DISABLED;
 }
 
 /*
@@ -228,7 +228,7 @@ XMLErrorLog::isSeverityOverridden() const
 void 
 XMLErrorLog::unsetSeverityOverride()
 {
-  setSeverityOverride(LIBSBML_OVERRIDE_DISABLED);
+  setSeverityOverride(LIBSBXML_OVERRIDE_DISABLED);
 }
 
 /*
@@ -478,7 +478,7 @@ LIBLAX_EXTERN
 XMLErrorSeverityOverride_t
 XMLErrorLog_getSeverityOverride (XMLErrorLog_t *log)
 {
-  if (log == NULL) return LIBSBML_OVERRIDE_DISABLED;
+  if (log == NULL) return LIBSBXML_OVERRIDE_DISABLED;
   return log->getSeverityOverride();
 }
 

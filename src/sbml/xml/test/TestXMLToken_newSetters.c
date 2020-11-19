@@ -44,6 +44,7 @@
 #include <sbml/xml/common/common.h>
 #include <sbml/xml/XMLToken.h>
 #include <sbml/xml/XMLTriple.h>
+#include <sbml/xml/operationReturnValues.h>
 
 
 #include <sbml/xml/common/extern.h>

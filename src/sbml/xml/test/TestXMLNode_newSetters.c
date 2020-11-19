@@ -40,6 +40,8 @@
 #include <sbml/xml/XMLNode.h>
 #include <sbml/xml/XMLNamespaces.h>
 
+#include <sbml/xml/operationReturnValues.h>
+
 #include <check.h>
 
 #if defined(__cplusplus)
