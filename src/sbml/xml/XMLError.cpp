@@ -42,7 +42,7 @@
 #include <sbml/xml/XMLError.h>
 #include <sbml/xml/XMLAttributes.h>
 #include <sbml/xml/XMLConstructorException.h>
-#include <sbml/SBMLError.h>
+#include <sbml/xml/SBXMLError.h>
 #include <sbml/xml/operationReturnValues.h>
 
 /** @cond doxygenIgnored */
