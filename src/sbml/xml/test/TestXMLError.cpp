@@ -49,7 +49,7 @@
 /** @cond doxygenIgnored */
 
 using namespace std;
-LIBSBML_CPP_NAMESPACE_USE
+LIBSBXML_CPP_NAMESPACE_USE
 
 /** @endcond */
 
@@ -66,9 +66,9 @@ START_TEST (test_XMLError_create)
 
   error = new XMLError(DuplicateXMLAttribute);
   fail_unless( error->getErrorId()  == DuplicateXMLAttribute );
-  fail_unless( error->getSeverity() == LIBSBML_SEV_ERROR );
+  fail_unless( error->getSeverity() == LIBSBXML_SEV_ERROR );
   fail_unless( error->getSeverityAsString() == "Error" );
-  fail_unless( error->getCategory() == LIBSBML_CAT_XML );
+  fail_unless( error->getCategory() == LIBSBXML_CAT_XML );
   fail_unless( error->getCategoryAsString() == "XML content");
   fail_unless( error->getMessage()  == "Duplicate XML attribute.\n" );
   fail_unless( error->getShortMessage()  == "Duplicate attribute" );
@@ -77,31 +77,31 @@ START_TEST (test_XMLError_create)
   error = new XMLError(12345, "My message");
   fail_unless( error->getErrorId()  == 12345 );
   fail_unless( error->getMessage()  == "My message" );
-  fail_unless( error->getSeverity() == LIBSBML_SEV_FATAL );
+  fail_unless( error->getSeverity() == LIBSBXML_SEV_FATAL );
   fail_unless( error->getSeverityAsString() == "Fatal" );
-  fail_unless( error->getCategory() == LIBSBML_CAT_INTERNAL );
+  fail_unless( error->getCategory() == LIBSBXML_CAT_INTERNAL );
   fail_unless( error->getCategoryAsString() == "Internal");
   delete error;
 
   error = new XMLError(12345, "My message", 0, 0,
-                       LIBSBML_SEV_INFO, LIBSBML_CAT_SYSTEM);
+                       LIBSBXML_SEV_INFO, LIBSBXML_CAT_SYSTEM);
   fail_unless( error->getErrorId()  == 12345 );
   fail_unless( error->getMessage()  == "My message" );
-  fail_unless( error->getSeverity() == LIBSBML_SEV_INFO );
+  fail_unless( error->getSeverity() == LIBSBXML_SEV_INFO );
   fail_unless( error->getSeverityAsString() == "Informational" );
-  fail_unless( error->getCategory() == LIBSBML_CAT_SYSTEM );
+  fail_unless( error->getCategory() == LIBSBXML_CAT_SYSTEM );
   fail_unless( error->getCategoryAsString() == "Operating system");
   fail_unless( error->isInfo() );
   fail_unless( error->isSystem() );
   delete error;
 
   error = new XMLError(10000, "Another message", 0, 0,
-                       LIBSBML_SEV_FATAL, LIBSBML_CAT_XML);
+                       LIBSBXML_SEV_FATAL, LIBSBXML_CAT_XML);
   fail_unless( error->getErrorId()  == 10000 );
   fail_unless( error->getMessage()  == "Another message" );
-  fail_unless( error->getSeverity() == LIBSBML_SEV_FATAL );
+  fail_unless( error->getSeverity() == LIBSBXML_SEV_FATAL );
   fail_unless( error->getSeverityAsString() == "Fatal" );
-  fail_unless( error->getCategory() == LIBSBML_CAT_XML );
+  fail_unless( error->getCategory() == LIBSBXML_CAT_XML );
   fail_unless( error->getCategoryAsString() == "XML content");
   fail_unless( error->isFatal() );
   fail_unless( error->isXML() );
@@ -117,12 +117,12 @@ START_TEST (test_XMLError_setters)
 
   int i = error->setLine(23);
 
-  fail_unless(i == LIBSBML_OPERATION_SUCCESS);
+  fail_unless(i == LIBSBXML_OPERATION_SUCCESS);
   fail_unless( error->getLine() == 23);
 
   i = error->setColumn(45);
 
-  fail_unless(i == LIBSBML_OPERATION_SUCCESS);
+  fail_unless(i == LIBSBXML_OPERATION_SUCCESS);
   fail_unless( error->getColumn() == 45);
 
   delete error;

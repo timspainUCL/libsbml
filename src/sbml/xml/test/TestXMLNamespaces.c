@@ -34,13 +34,13 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
+#include <sbml/xml/common/common.h>
 #include <sbml/xml/XMLNamespaces.h>
 
 #include <check.h>
 
 #if defined(__cplusplus)
-LIBSBML_CPP_NAMESPACE_USE
+LIBSBXML_CPP_NAMESPACE_USE
 CK_CPPSTART
 #endif
 
@@ -107,7 +107,7 @@ START_TEST (test_XMLNamespaces_add1)
 
   int i = XMLNamespaces_add(NS, "http://test1.org/", "test1");
 
-  fail_unless( i == LIBSBML_OPERATION_SUCCESS);
+  fail_unless( i == LIBSBXML_OPERATION_SUCCESS);
   fail_unless( XMLNamespaces_getLength(NS) == 1 );
   fail_unless( XMLNamespaces_isEmpty(NS) == 0 );
 
@@ -131,7 +131,7 @@ START_TEST (test_XMLNamespaces_add1)
   // add with existing prefix
   i = XMLNamespaces_add(NS, "http://test2.org/", "test1");
 
-  fail_unless( i == LIBSBML_OPERATION_SUCCESS);
+  fail_unless( i == LIBSBXML_OPERATION_SUCCESS);
   fail_unless( XMLNamespaces_getLength(NS) == 1 );
   fail_unless( XMLNamespaces_isEmpty(NS) == 0 );
   
@@ -155,7 +155,7 @@ START_TEST (test_XMLNamespaces_add1)
   // add 
   i = XMLNamespaces_add(NS, "http://test.org/", "");
 
-  fail_unless( i == LIBSBML_OPERATION_SUCCESS);
+  fail_unless( i == LIBSBXML_OPERATION_SUCCESS);
   fail_unless( XMLNamespaces_getLength(NS) == 2 );
   fail_unless( XMLNamespaces_isEmpty(NS) == 0 );
 
@@ -170,7 +170,7 @@ START_TEST (test_XMLNamespaces_add1)
   // add repeat with empty prefix
   i = XMLNamespaces_add(NS, "http://test3.org/", "");
 
-  fail_unless( i == LIBSBML_OPERATION_SUCCESS);
+  fail_unless( i == LIBSBXML_OPERATION_SUCCESS);
   fail_unless( XMLNamespaces_getLength(NS) == 2 );
   fail_unless( XMLNamespaces_isEmpty(NS) == 0 );
   fail_unless( XMLNamespaces_getPrefix(NS, 1) == NULL );
@@ -184,7 +184,7 @@ START_TEST (test_XMLNamespaces_add1)
   // add sbml ns
   i = XMLNamespaces_add(NS, "http://www.sbml.org/sbml/level1", "");
 
-  fail_unless( i == LIBSBML_OPERATION_SUCCESS);
+  fail_unless( i == LIBSBXML_OPERATION_SUCCESS);
   fail_unless( XMLNamespaces_getLength(NS) == 2 );
   fail_unless( XMLNamespaces_isEmpty(NS) == 0 );
   fail_unless( XMLNamespaces_getPrefix(NS, 1) == NULL );
@@ -199,7 +199,7 @@ START_TEST (test_XMLNamespaces_add1)
   // add a repeat of the sbml prefix ns
   i = XMLNamespaces_add(NS, "http://test_sbml_prefix/", "");
 
-  fail_unless( i == LIBSBML_OPERATION_FAILED);
+  fail_unless( i == LIBSBXML_OPERATION_FAILED);
   fail_unless( XMLNamespaces_getLength(NS) == 2 );
   fail_unless( XMLNamespaces_isEmpty(NS) == 0 );
   fail_unless( XMLNamespaces_getPrefix(NS, 1) == NULL );
@@ -214,7 +214,7 @@ START_TEST (test_XMLNamespaces_add1)
   // add repeat sbml ns uri
   i = XMLNamespaces_add(NS, "http://www.sbml.org/sbml/level1", "newprefix");
 
-  fail_unless( i == LIBSBML_OPERATION_SUCCESS);
+  fail_unless( i == LIBSBXML_OPERATION_SUCCESS);
   fail_unless( XMLNamespaces_getLength(NS) == 3 );
   fail_unless( XMLNamespaces_isEmpty(NS) == 0 );
   
@@ -234,7 +234,7 @@ START_TEST (test_XMLNamespaces_add1)
   // add repeat prefix
   i = XMLNamespaces_add(NS, "http://www.foo", "newprefix");
 
-  fail_unless( i == LIBSBML_OPERATION_FAILED);
+  fail_unless( i == LIBSBXML_OPERATION_FAILED);
   fail_unless( XMLNamespaces_getLength(NS) == 3 );
   fail_unless( XMLNamespaces_isEmpty(NS) == 0 );
 
@@ -249,7 +249,7 @@ START_TEST (test_XMLNamespaces_add1)
   // change sbml ns uri - it will not do this
   i = XMLNamespaces_add(NS, "http://www.sbml.org/sbml/level2", "newprefix");
 
-  fail_unless( i == LIBSBML_OPERATION_FAILED);
+  fail_unless( i == LIBSBXML_OPERATION_FAILED);
   fail_unless( XMLNamespaces_getLength(NS) == 3 );
   fail_unless( XMLNamespaces_isEmpty(NS) == 0 );
   test = XMLNamespaces_getPrefix(NS, 2);
@@ -473,22 +473,22 @@ START_TEST (test_XMLNamespaces_remove1)
   
   int i = XMLNamespaces_remove(NS, 4);
   
-  fail_unless (i == LIBSBML_INDEX_EXCEEDS_SIZE );
+  fail_unless (i == LIBSBXML_INDEX_EXCEEDS_SIZE );
   fail_unless( XMLNamespaces_getLength(NS) == 2 );
   
   i = XMLNamespaces_removeByPrefix(NS, "test4");
 
-  fail_unless (i == LIBSBML_INDEX_EXCEEDS_SIZE );
+  fail_unless (i == LIBSBXML_INDEX_EXCEEDS_SIZE );
   fail_unless( XMLNamespaces_getLength(NS) == 2 );
 
   i = XMLNamespaces_remove(NS, 1);
 
-  fail_unless (i == LIBSBML_OPERATION_SUCCESS );
+  fail_unless (i == LIBSBXML_OPERATION_SUCCESS );
   fail_unless( XMLNamespaces_getLength(NS) == 1 );
 
   i = XMLNamespaces_removeByPrefix(NS, "test1");
 
-  fail_unless (i == LIBSBML_OPERATION_SUCCESS );
+  fail_unless (i == LIBSBXML_OPERATION_SUCCESS );
   fail_unless( XMLNamespaces_getLength(NS) == 0 );
 }
 END_TEST
@@ -506,15 +506,15 @@ START_TEST (test_XMLNamespaces_clear)
 
   int i = XMLNamespaces_clear(NS);
 
-  fail_unless( i == LIBSBML_OPERATION_SUCCESS);
+  fail_unless( i == LIBSBXML_OPERATION_SUCCESS);
   fail_unless( XMLNamespaces_getLength(NS) == 0 );
 }
 END_TEST
 
 START_TEST (test_XMLNamespaces_accessWithNULL)
 {
-  fail_unless( XMLNamespaces_add(NULL, NULL, NULL) == LIBSBML_INVALID_OBJECT);
-  fail_unless( XMLNamespaces_clear(NULL) == LIBSBML_OPERATION_FAILED);
+  fail_unless( XMLNamespaces_add(NULL, NULL, NULL) == LIBSBXML_INVALID_OBJECT);
+  fail_unless( XMLNamespaces_clear(NULL) == LIBSBXML_OPERATION_FAILED);
   fail_unless( XMLNamespaces_clone(NULL) == NULL);
 
   XMLNamespaces_free(NULL);
@@ -530,8 +530,8 @@ START_TEST (test_XMLNamespaces_accessWithNULL)
   fail_unless( XMLNamespaces_hasPrefix(NULL, NULL) == 0);
   fail_unless( XMLNamespaces_hasURI(NULL, NULL) == 0);
   fail_unless( XMLNamespaces_isEmpty(NULL) == 1);
-  fail_unless( XMLNamespaces_remove(NULL, 0) == LIBSBML_INVALID_OBJECT);
-  fail_unless( XMLNamespaces_removeByPrefix(NULL, NULL) == LIBSBML_INVALID_OBJECT);
+  fail_unless( XMLNamespaces_remove(NULL, 0) == LIBSBXML_INVALID_OBJECT);
+  fail_unless( XMLNamespaces_removeByPrefix(NULL, NULL) == LIBSBXML_INVALID_OBJECT);
 }
 END_TEST
 

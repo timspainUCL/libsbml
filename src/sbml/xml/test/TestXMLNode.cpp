@@ -42,7 +42,7 @@
 
 #include <check.h>
 using namespace std;
-LIBSBML_CPP_NAMESPACE_USE
+LIBSBXML_CPP_NAMESPACE_USE
 
 CK_CPPSTART
 

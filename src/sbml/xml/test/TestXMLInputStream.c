@@ -34,7 +34,7 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
+#include <sbml/xml/common/common.h>
 #include <sbml/xml/XMLInputStream.h>
 #include <sbml/xml/XMLToken.h>
 #include <sbml/xml/XMLErrorLog.h>
@@ -42,7 +42,7 @@
 #include <check.h>
 
 #if defined(__cplusplus)
-LIBSBML_CPP_NAMESPACE_USE
+LIBSBXML_CPP_NAMESPACE_USE
 CK_CPPSTART
 #endif
 
@@ -183,11 +183,11 @@ START_TEST (test_XMLInputStream_setErrorLog)
 
   int i = XMLInputStream_setErrorLog(stream, log);
 
-  fail_unless(i == LIBSBML_OPERATION_SUCCESS);
+  fail_unless(i == LIBSBXML_OPERATION_SUCCESS);
   fail_unless(XMLInputStream_getErrorLog(stream) == log);
   
   i = XMLInputStream_setErrorLog(stream, NULL);
-  fail_unless(i == LIBSBML_OPERATION_FAILED);
+  fail_unless(i == LIBSBXML_OPERATION_FAILED);
 
 
   XMLErrorLog_free(log);
@@ -208,7 +208,7 @@ START_TEST (test_XMLInputStream_accessWithNULL)
   fail_unless (XMLInputStream_isGood(NULL) == 0);
   fail_unless (XMLInputStream_next(NULL) == NULL);
   fail_unless (XMLInputStream_peek(NULL) == NULL);
-  fail_unless (XMLInputStream_setErrorLog(NULL, NULL) == LIBSBML_OPERATION_FAILED);
+  fail_unless (XMLInputStream_setErrorLog(NULL, NULL) == LIBSBXML_OPERATION_FAILED);
 
   XMLInputStream_skipPastEnd(NULL, NULL);
   XMLInputStream_skipText(NULL);  

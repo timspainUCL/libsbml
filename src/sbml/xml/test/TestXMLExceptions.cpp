@@ -53,7 +53,7 @@
 /** @cond doxygenIgnored */
 
 using namespace std;
-LIBSBML_CPP_NAMESPACE_USE
+LIBSBXML_CPP_NAMESPACE_USE
 
 /** @endcond */
 static const string errMsg = "NULL reference in XML constructor";

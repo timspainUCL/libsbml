@@ -34,13 +34,13 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
+#include <sbml/xml/common/common.h>
 #include <sbml/xml/XMLError.h>
 
 #include <check.h>
 
 #if defined(__cplusplus)
-LIBSBML_CPP_NAMESPACE_USE
+LIBSBXML_CPP_NAMESPACE_USE
 
 CK_CPPSTART
 #endif
@@ -68,9 +68,9 @@ START_TEST (test_XMLError_variablesAsStrings)
   XMLError_t *error = XMLError_createWithIdAndMessage(1003, "");
   
   fail_unless( XMLError_getErrorId(error)  == 1003 );
-  fail_unless( XMLError_getSeverity(error) == LIBSBML_SEV_ERROR );
+  fail_unless( XMLError_getSeverity(error) == LIBSBXML_SEV_ERROR );
   fail_unless( !strcmp(XMLError_getSeverityAsString(error), "Error") );
-  fail_unless( XMLError_getCategory(error) == LIBSBML_CAT_XML );
+  fail_unless( XMLError_getCategory(error) == LIBSBXML_CAT_XML );
   fail_unless( !strcmp(XMLError_getCategoryAsString(error), "XML content"));
 
   XMLError_free(error);

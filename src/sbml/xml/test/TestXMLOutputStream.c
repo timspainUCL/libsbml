@@ -34,7 +34,7 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
+#include <sbml/xml/common/common.h>
 #include <sbml/xml/XMLToken.h>
 #include <sbml/xml/XMLTriple.h>
 #include <sbml/xml/XMLOutputStream.h>
@@ -43,7 +43,7 @@
 #include <check.h>
 
 #if defined(__cplusplus)
-LIBSBML_CPP_NAMESPACE_USE
+LIBSBXML_CPP_NAMESPACE_USE
 CK_CPPSTART
 #endif
 
