@@ -457,6 +457,10 @@
 #ifndef SBXMLERROR_H
 #define SBXMLERROR_H
 
+#include "sbml/xml/XMLError.h"
+
+#define SEVERITY_OFFSET 3
+
 /**
  * @enum SBXMLErrorSeverity_t
  * Severity codes for SBXMLError diagnostics.
@@ -471,7 +475,7 @@ typedef enum
 
   /* The following is used in initializing the XMLError class   */
 
-  LIBSBXML_SEV_UNKNOWN
+  LIBSBXML_SEV_UNKNOWN = (LIBSBXML_SEV_FATAL + SEVERITY_OFFSET)
   /*!< This error code is used as the default argument to the XMLError constructor, so the constructor can know if the caller deliberately set the severity or not. */
 
   /** @endcond **/
