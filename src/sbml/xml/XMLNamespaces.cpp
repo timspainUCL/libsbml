@@ -42,6 +42,7 @@
 #include <sbml/xml/XMLNamespaces.h>
 #include <sbml/xml/XMLAttributes.h>
 #include <sbml/xml/XMLConstructorException.h>
+#include <sbml/xml/SBMLNamespaces.h>
 
 #include <sbml/xml/sbmlStubs.h>
 #include <sbml/xml/operationReturnValues.h>
@@ -122,31 +123,29 @@ XMLNamespaces::add (const std::string& uri, const std::string prefix)
   {
     // there is already a uri with this prefix
     // is it the sbml ns
-    std::list<SBMLNamespaces> supportedNS = SBMLNamespaces::getSupportedNamespaces();
-    for (std::list<SBMLNamespaces>::iterator iter = supportedNS.begin(); iter != supportedNS.end(); iter++)
+    std::list<SBMLNamespaces*>* supportedNS = SBMLNamespaces::getSupportedNamespaces();
+    for (std::list<SBMLNamespaces*>::iterator iter = supportedNS->begin(); iter != supportedNS->end(); iter++)
     {
       //const SBMLNamespaces current = (const SBMLNamespaces *) supportedNS->get(i);
-      if (getURI(prefix) == iter->getURI())
+      if (getURI(prefix) == (*iter)->getURI())
       {
         sbmlCoreNS = true;
         break;
       }
     }    
     SBMLNamespaces::freeSBMLNamespaces(supportedNS);
+
+    if (sbmlCoreNS == true)
+    {
+      return LIBSBXML_OPERATION_FAILED;
+    }
   }
 
-  if (sbmlCoreNS == true)
-  {
-    return LIBSBXML_OPERATION_FAILED;
-  }
-  else
-  {
-    if ( prefix.empty()    ) removeDefault();
-    if ( hasPrefix(prefix) ) remove(prefix);
+  if ( prefix.empty()    ) removeDefault();
+  if ( hasPrefix(prefix) ) remove(prefix);
 
-    mNamespaces.push_back( make_pair(prefix, uri) );
-    return LIBSBXML_OPERATION_SUCCESS;
-  }
+  mNamespaces.push_back( make_pair(prefix, uri) );
+  return LIBSBXML_OPERATION_SUCCESS;
 }
 
 

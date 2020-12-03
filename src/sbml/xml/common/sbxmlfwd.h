@@ -119,6 +119,8 @@ typedef CLASS_OR_STRUCT XMLOutputStream           XMLOutputStream_t;
  */
 typedef CLASS_OR_STRUCT XMLTriple                 XMLTriple_t;
 
+/* FIXME Remove when no longer needed */
+typedef CLASS_OR_STRUCT SBMLNamespaces            SBMLNamespaces_t;
 
 LIBSBXML_CPP_NAMESPACE_END
 

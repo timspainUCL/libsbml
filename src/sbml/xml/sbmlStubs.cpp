@@ -45,7 +45,7 @@ void* safe_malloc (size_t size)
 
 }
 
-std::list<SBMLNamespaces> SBMLNamespaces::getSupportedNamespaces()
+/*std::list<SBMLNamespaces> SBMLNamespaces::getSupportedNamespaces()
 {
 	return std::list<SBMLNamespaces>();
 }
@@ -63,7 +63,7 @@ std::string SBMLNamespaces::getURI()
 SBMLNamespaces* SBMLNamespaces::clone() const {
 	return new SBMLNamespaces(*this);
 }
-
+*/
 /*
 const char*
 getLibSBMLDottedVersion ()
