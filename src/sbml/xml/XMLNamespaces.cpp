@@ -413,7 +413,7 @@ bool XMLNamespaces::isURIReserved(const std::string& uri) //const
 	}
     // Is the URI in the set of reserved URIs?
     {
-      if (reservedURIs.count(uri) == 0)// == (*iter)->getURI())
+      if (reservedURIs.count(uri) != 0)// == (*iter)->getURI())
       {
         return true;
       }
