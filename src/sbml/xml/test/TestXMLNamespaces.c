@@ -103,6 +103,10 @@ END_TEST
 
 START_TEST (test_XMLNamespaces_add1)
 {
+	// Add the SBML URIs to a list of reserved values
+	XMLNamespaces_addReservedURI("http://www.sbml.org/sbml/level1");
+	XMLNamespaces_addReservedURI("http://www.sbml.org/sbml/level2");
+
   char * test;
   fail_unless( XMLNamespaces_getLength(NS) == 0 );
   fail_unless( XMLNamespaces_isEmpty(NS) == 1 );

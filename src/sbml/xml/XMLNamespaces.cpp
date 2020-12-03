@@ -346,6 +346,13 @@ bool XMLNamespaces::hasNS(const std::string& uri, const std::string& prefix) con
   return false;
 }
 
+/*
+ * Add a namespace URI to the set of reserved values
+ */
+void XMLNamespaces::addReservedURI(const std::string& uri)
+{
+	reservedURIs.insert(uri);
+}
 
 /** @cond doxygenLibsbmlInternal */
 /*
@@ -398,27 +405,8 @@ XMLNamespaces::containIdenticalSetNS(XMLNamespaces* rhs)
 
 bool XMLNamespaces::isURIReserved(const std::string& uri) //const
 {
-
-	// FIXME: A less ad-hoc set of reserved names is needed
-	if (reservedURIs.empty())
-	{
-		// Add the SBML URIs as reserved
-	    std::list<SBMLNamespaces*>* supportedNS = SBMLNamespaces::getSupportedNamespaces();
-	    for (std::list<SBMLNamespaces*>::iterator iter = supportedNS->begin(); iter != supportedNS->end(); iter++)
-	    {
-	    	reservedURIs.insert((*iter)->getURI());
-	    }
-	    SBMLNamespaces::freeSBMLNamespaces(supportedNS);
-
-	}
     // Is the URI in the set of reserved URIs?
-    {
-      if (reservedURIs.count(uri) != 0)// == (*iter)->getURI())
-      {
-        return true;
-      }
-    }
-    return false;
+	return (reservedURIs.count(uri) != 0);
 }
 /** @endcond */
 
@@ -629,6 +617,13 @@ XMLNamespaces_hasNS(const XMLNamespaces_t *ns, const char* uri, const char* pref
 {
   if (ns == NULL) return (int)false;
   return ns->hasNS(uri, prefix);
+}
+
+LIBLAX_EXTERN
+void
+XMLNamespaces_addReservedURI(const char* uri)
+{
+	XMLNamespaces::addReservedURI(uri);
 }
 /** @endcond */
 

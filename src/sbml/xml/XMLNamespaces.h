@@ -371,6 +371,16 @@ public:
   bool hasNS(const std::string& uri, const std::string& prefix) const;
 
 
+  /**
+   *  Add a URI to the list of reserved URI.
+   *
+   *  Reserved URIs take precedence over others in the namespace list. Once
+   *  assigned to a prefix, a reserved namespace  URI cannot be replaced.
+   *
+   *  @param uri a string, the URI of the reserved namespace
+   */
+  static void addReservedURI(const std::string& uri);
+
 #ifndef SWIG
 
   /** @cond doxygenLibsbmlInternal */
@@ -753,6 +763,12 @@ LIBLAX_EXTERN
 int 
 XMLNamespaces_hasNS(const XMLNamespaces_t *ns, const char* uri, const char* prefix);
 
+/**
+ * Add a reserved URI string to the set of URIs to be treated as reserved.
+ */
+LIBLAX_EXTERN
+void
+XMLNamespaces_addReservedURI(const char* uri);
 
 END_C_DECLS
 LIBSBXML_CPP_NAMESPACE_END
