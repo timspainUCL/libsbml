@@ -121,21 +121,7 @@ XMLNamespaces::add (const std::string& uri, const std::string prefix)
   bool sbmlCoreNS = false;
   if (getURI(prefix).empty() == false)
   {
-    // there is already a uri with this prefix
-    // is it the sbml ns
-    std::list<SBMLNamespaces*>* supportedNS = SBMLNamespaces::getSupportedNamespaces();
-    for (std::list<SBMLNamespaces*>::iterator iter = supportedNS->begin(); iter != supportedNS->end(); iter++)
-    {
-      //const SBMLNamespaces current = (const SBMLNamespaces *) supportedNS->get(i);
-      if (getURI(prefix) == (*iter)->getURI())
-      {
-        sbmlCoreNS = true;
-        break;
-      }
-    }    
-    SBMLNamespaces::freeSBMLNamespaces(supportedNS);
-
-    if (sbmlCoreNS == true)
+    if (isURIReserved(getURI(prefix)))//sbmlCoreNS == true)
     {
       return LIBSBXML_OPERATION_FAILED;
     }
@@ -410,6 +396,25 @@ XMLNamespaces::containIdenticalSetNS(XMLNamespaces* rhs)
   }
 
   return equivalent;
+}
+
+bool XMLNamespaces::isURIReserved(const std::string& uri) const
+{
+	bool isReserved = false;
+    // there is already a uri with this prefix
+    // is it the sbml ns
+    std::list<SBMLNamespaces*>* supportedNS = SBMLNamespaces::getSupportedNamespaces();
+    for (std::list<SBMLNamespaces*>::iterator iter = supportedNS->begin(); iter != supportedNS->end(); iter++)
+    {
+      //const SBMLNamespaces current = (const SBMLNamespaces *) supportedNS->get(i);
+      if (uri == (*iter)->getURI())
+      {
+        isReserved = true;
+        break;
+      }
+    }
+    SBMLNamespaces::freeSBMLNamespaces(supportedNS);
+    return isReserved;
 }
 /** @endcond */
 

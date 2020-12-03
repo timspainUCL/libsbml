@@ -417,6 +417,8 @@ protected:
   typedef std::pair<std::string, std::string> PrefixURIPair;
   std::vector<PrefixURIPair> mNamespaces;
 
+  bool isURIReserved(const std::string& uri) const;
+
   /** @endcond */
 };
 
