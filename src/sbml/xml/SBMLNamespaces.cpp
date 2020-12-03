@@ -310,7 +310,7 @@ SBMLNamespaces::getURI() const
   return getSBMLNamespaceURI(mLevel,mVersion);
 }
 
-
+/*
 unsigned int 
 SBMLNamespaces::getLevel()
 {
@@ -351,8 +351,9 @@ SBMLNamespaces::getNamespaces() const
 {
   return mNamespaces;
 }
+*/
 
-
+/*
 int
 SBMLNamespaces::addNamespaces(const XMLNamespaces * xmlns)
 {
@@ -365,11 +366,11 @@ SBMLNamespaces::addNamespaces(const XMLNamespaces * xmlns)
   {
     initSBMLNamespace();
   }
-
+*/
   /* check whether the namespace already exists
    * add if it does not
    */
-  for (int i = 0; i < xmlns->getLength(); i++)
+/*  for (int i = 0; i < xmlns->getLength(); i++)
   {
     if (mNamespaces != NULL && !(mNamespaces->hasNS(xmlns->getURI(i), xmlns->getPrefix(i))))
     {
@@ -379,6 +380,7 @@ SBMLNamespaces::addNamespaces(const XMLNamespaces * xmlns)
 
   return success;
 }
+*/
 
 /*
  * (For Extension)
@@ -487,7 +489,7 @@ SBMLNamespaces::addPkgNamespaces (const XMLNamespaces *xmlns)
 }
 */
 /** @endcond */
-
+/*
 int
 SBMLNamespaces::addNamespace(const std::string &uri, const std::string &prefix)
 {
@@ -510,7 +512,7 @@ SBMLNamespaces::removeNamespace(const std::string &uri)
 
   return mNamespaces != NULL ? mNamespaces->remove(mNamespaces->getIndex(uri)) : LIBSBXML_INVALID_OBJECT;
 }
-
+*/
 
 /*
  * Removes an XML namespace of a package extension from the set of namespaces 
@@ -563,6 +565,7 @@ SBMLNamespaces::removePkgNamespace(unsigned int level, unsigned version, const s
  * Predicate returning @c true if the given
  * URL is one of SBML XML namespaces.
  */
+/*
 bool 
 SBMLNamespaces::isSBMLNamespace(const std::string& uri)
 {
@@ -577,7 +580,9 @@ SBMLNamespaces::isSBMLNamespace(const std::string& uri)
 
   return false;
 }
+*/
 
+/*
 bool 
 SBMLNamespaces::isValidCombination()
 {
@@ -789,9 +794,10 @@ SBMLNamespaces::isValidCombination()
 
   return valid;
 }
-
+*/
 
 /** @cond doxygenLibsbmlInternal */
+/*
 void 
 SBMLNamespaces::setLevel(unsigned int level)
 {
@@ -804,7 +810,7 @@ SBMLNamespaces::setVersion(unsigned int version)
 {
   mVersion = version;
 }
-
+*/
 const std::string& 
 SBMLNamespaces::getPackageName () const
 {
@@ -812,6 +818,7 @@ SBMLNamespaces::getPackageName () const
     return pkgName;
 }
 
+/*
 void 
 SBMLNamespaces::setNamespaces(XMLNamespaces * xmlns)
 {
@@ -821,18 +828,21 @@ SBMLNamespaces::setNamespaces(XMLNamespaces * xmlns)
   else
     mNamespaces = NULL;
 }
+*/
 /** @endcond */
 
 #endif /* __cplusplus */
 /** @cond doxygenIgnored */
+/*
 LIBSBXML_EXTERN
 SBMLNamespaces_t *
 SBMLNamespaces_create(unsigned int level, unsigned int version)
 {
   return new SBMLNamespaces(level, version);
 }
+*/
 
-
+/*
 LIBSBXML_EXTERN
 void
 SBMLNamespaces_free(SBMLNamespaces_t* ns)
@@ -840,8 +850,9 @@ SBMLNamespaces_free(SBMLNamespaces_t* ns)
   if (ns == NULL) return;
   delete static_cast<SBMLNamespaces*>(ns);
 }
+*/
 
-
+/*
 LIBSBXML_EXTERN
 unsigned int
 SBMLNamespaces_getLevel(SBMLNamespaces_t *sbmlns)
@@ -856,8 +867,9 @@ SBMLNamespaces_getVersion(SBMLNamespaces_t *sbmlns)
 {
   return (sbmlns != NULL) ? sbmlns->getVersion() : SBML_INT_MAX;
 }
+*/
 
-
+/*
 LIBSBXML_EXTERN
 XMLNamespaces_t *
 SBMLNamespaces_getNamespaces(SBMLNamespaces_t *sbmlns)
@@ -872,8 +884,9 @@ SBMLNamespaces_getSBMLNamespaceURI(unsigned int level, unsigned int version)
 {
   return safe_strdup(SBMLNamespaces::getSBMLNamespaceURI(level, version).c_str());
 }
+*/
 
-
+/*
 LIBSBXML_EXTERN
 int
 SBMLNamespaces_addNamespaces(SBMLNamespaces_t *sbmlns,
@@ -884,6 +897,7 @@ SBMLNamespaces_addNamespaces(SBMLNamespaces_t *sbmlns,
   else
     return LIBSBXML_INVALID_OBJECT;
 }
+*/
 
 LIBSBXML_EXTERN
 SBMLNamespaces_t **

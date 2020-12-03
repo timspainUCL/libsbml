@@ -262,7 +262,7 @@ public:
    *
    * @return the SBML Level of this SBMLNamespaces object.
    */
-  unsigned int getLevel();
+  //unsigned int getLevel();
 
 
   /**
@@ -270,7 +270,7 @@ public:
    *
    * @return the SBML Level of this SBMLNamespaces object.
    */
-  unsigned int getLevel() const;
+  //unsigned int getLevel() const;
 
 
   /**
@@ -278,7 +278,7 @@ public:
    *
    * @return the SBML Version of this SBMLNamespaces object.
    */
-  unsigned int getVersion();
+  //unsigned int getVersion();
 
 
   /**
@@ -286,7 +286,7 @@ public:
    *
    * @return the SBML Version of this SBMLNamespaces object.
    */
-  unsigned int getVersion() const;
+  //unsigned int getVersion() const;
 
 
   /**
@@ -296,7 +296,7 @@ public:
    *
    * @return the XML namespaces of this SBMLNamespaces object.
    */
-  XMLNamespaces * getNamespaces();
+  //XMLNamespaces * getNamespaces();
 
 
   /**
@@ -306,7 +306,7 @@ public:
    *
    * @return the XML namespaces of this SBMLNamespaces object.
    */
-  const XMLNamespaces * getNamespaces() const;
+  //const XMLNamespaces * getNamespaces() const;
 
 
   /**
@@ -423,7 +423,7 @@ else
    * @li @sbmlconstant{LIBSBML_OPERATION_FAILED, OperationReturnValues_t}
    * @li @sbmlconstant{LIBSBML_INVALID_OBJECT, OperationReturnValues_t}
    */
-  int addNamespaces(const XMLNamespaces * xmlns);
+  //int addNamespaces(const XMLNamespaces * xmlns);
 
 
   /**
@@ -438,7 +438,7 @@ else
    * @li @sbmlconstant{LIBSBML_OPERATION_FAILED, OperationReturnValues_t}
    * @li @sbmlconstant{LIBSBML_INVALID_OBJECT, OperationReturnValues_t}
    */
-  int addNamespace(const std::string& uri, const std::string &prefix);
+  //int addNamespace(const std::string& uri, const std::string &prefix);
 
 
   /**
@@ -451,7 +451,7 @@ else
    * @li @sbmlconstant{LIBSBML_OPERATION_SUCCESS, OperationReturnValues_t}
    * @li @sbmlconstant{LIBSBML_INDEX_EXCEEDS_SIZE, OperationReturnValues_t}
    */
-  int removeNamespace(const std::string& uri);
+  //int removeNamespace(const std::string& uri);
 
 
   /**
@@ -475,9 +475,9 @@ else
    *
    * @see addNamespace(@if java String, String@endif)
    */
-  int addPackageNamespace(const std::string &pkgName, unsigned int pkgVersion, 
+  /*int addPackageNamespace(const std::string &pkgName, unsigned int pkgVersion,
                       const std::string &prefix = "");
-
+*/
 
   /**
    * Add the XML namespaces of package extensions in the given XMLNamespace
@@ -494,7 +494,7 @@ else
    * added (just ignored) by this function. @sbmlconstant{LIBSBML_INVALID_ATTRIBUTE_VALUE, OperationReturnValues_t} will be returned if the given
    * xmlns is @c NULL.
    */
-  int addPackageNamespaces(const XMLNamespaces* xmlns);
+  //int addPackageNamespaces(const XMLNamespaces* xmlns);
 
 
   /**
@@ -511,9 +511,9 @@ else
    * @li @sbmlconstant{LIBSBML_INVALID_ATTRIBUTE_VALUE, OperationReturnValues_t}
    * @li @sbmlconstant{LIBSBML_INDEX_EXCEEDS_SIZE, OperationReturnValues_t}
    */
-  int removePackageNamespace(unsigned int level, unsigned version, const std::string &pkgName,
+  /*int removePackageNamespace(unsigned int level, unsigned version, const std::string &pkgName,
                          unsigned int pkgVersion);
-
+*/
 
   /** @cond doxygenLibsbmlInternal */
   /**
@@ -537,9 +537,9 @@ else
    *
    * @see addNamespace(@if java String, String@endif)
    */
-  int addPkgNamespace(const std::string &pkgName, unsigned int pkgVersion, 
+  /*int addPkgNamespace(const std::string &pkgName, unsigned int pkgVersion,
                       const std::string &prefix = "");
-
+*/
 
   /**
    * Add the XML namespaces of package extensions in the given XMLNamespace
@@ -557,7 +557,7 @@ else
    * added (just ignored) by this function. @sbmlconstant{LIBSBML_INVALID_ATTRIBUTE_VALUE, OperationReturnValues_t} will be returned if the given
    * xmlns is @c NULL.
    */
-  int addPkgNamespaces(const XMLNamespaces* xmlns);
+  //int addPkgNamespaces(const XMLNamespaces* xmlns);
 
 
   /**
@@ -574,8 +574,9 @@ else
    * @li @sbmlconstant{LIBSBML_INVALID_ATTRIBUTE_VALUE, OperationReturnValues_t}
    * @li @sbmlconstant{LIBSBML_INDEX_EXCEEDS_SIZE, OperationReturnValues_t}
    */
-  int removePkgNamespace(unsigned int level, unsigned version, const std::string &pkgName,
+  /*int removePkgNamespace(unsigned int level, unsigned version, const std::string &pkgName,
                          unsigned int pkgVersion);
+*/
 
   /** @endcond */
 
@@ -589,7 +590,7 @@ else
    *
    * @copydetails doc_note_static_methods
    */
-  static bool isSBMLNamespace(const std::string& uri);
+  //static bool isSBMLNamespace(const std::string& uri);
 
 
   /**
@@ -598,17 +599,17 @@ else
    *
    * @return @c true if the set of namespaces is valid, @c false otherwise.
    */
-  bool isValidCombination();
+  //bool isValidCombination();
 
 
   /** @cond doxygenLibsbmlInternal */
-  void setLevel(unsigned int level);
+  //void setLevel(unsigned int level);
 
 
-  void setVersion(unsigned int version);
+  //void setVersion(unsigned int version);
 
 
-  void setNamespaces(XMLNamespaces * xmlns);
+  //void setNamespaces(XMLNamespaces * xmlns);
   /** @endcond */
 
   /**
@@ -618,7 +619,7 @@ else
    * "core" will be returned if this namespace is defined in the SBML 
    * core. 
    */
-   virtual const std::string& getPackageName () const;	
+   virtual const std::string& getPackageName () const;
 	
 protected:  
   /** @cond doxygenLibsbmlInternal */
@@ -695,10 +696,10 @@ SBMLNamespaces_free (SBMLNamespaces_t *ns);
  *
  * @memberof SBMLNamespaces_t
  */
-LIBSBXML_EXTERN
+/*LIBSBXML_EXTERN
 unsigned int
 SBMLNamespaces_getLevel(SBMLNamespaces_t *sbmlns);
-
+*/
 
 /**
  * Get the SBML Version of this SBMLNamespaces_t structure.
@@ -709,10 +710,10 @@ SBMLNamespaces_getLevel(SBMLNamespaces_t *sbmlns);
  *
  * @memberof SBMLNamespaces_t
  */
-LIBSBXML_EXTERN
+/*LIBSBXML_EXTERN
 unsigned int
 SBMLNamespaces_getVersion(SBMLNamespaces_t *sbmlns);
-
+*/
 
 /**
  * Get the XML Namespaces list of this SBMLNamespaces_t structure.
@@ -723,10 +724,10 @@ SBMLNamespaces_getVersion(SBMLNamespaces_t *sbmlns);
  *
  * @memberof SBMLNamespaces_t
  */
-LIBSBXML_EXTERN
+/*LIBSBXML_EXTERN
 XMLNamespaces_t *
 SBMLNamespaces_getNamespaces(SBMLNamespaces_t *sbmlns);
-
+*/
 
 /**
  * Returns a string representing the SBML XML namespace for the 
@@ -754,11 +755,11 @@ SBMLNamespaces_getSBMLNamespaceURI(unsigned int level, unsigned int version);
  *
  * @memberof SBMLNamespaces_t
  */
-LIBSBXML_EXTERN
+/*LIBSBXML_EXTERN
 int
 SBMLNamespaces_addNamespaces(SBMLNamespaces_t *sbmlns,
                              const XMLNamespaces_t * xmlns);
-
+*/
 
 /**
  * Returns an array of SBML Namespaces supported by this version of 
