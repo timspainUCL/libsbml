@@ -192,7 +192,7 @@ SBMLNamespaces::SBMLNamespaces(const SBMLNamespaces& orig)
           new XMLNamespaces(*const_cast<SBMLNamespaces&>(orig).mNamespaces);
 }
 
-
+/*
 std::list<SBMLNamespaces*>*
 SBMLNamespaces::getSupportedNamespaces()
 {
@@ -208,7 +208,7 @@ SBMLNamespaces::getSupportedNamespaces()
   result->push_back(new SBMLNamespaces(3,2));
   return result;
 }
-
+*/
 
 void 
 SBMLNamespaces::freeSBMLNamespaces(std::list<SBMLNamespaces*> * supportedNS)
@@ -898,7 +898,7 @@ SBMLNamespaces_addNamespaces(SBMLNamespaces_t *sbmlns,
     return LIBSBXML_INVALID_OBJECT;
 }
 */
-
+/*
 LIBSBXML_EXTERN
 SBMLNamespaces_t **
 SBMLNamespaces_getSupportedNamespaces(int *length)
@@ -912,15 +912,10 @@ SBMLNamespaces_getSupportedNamespaces(int *length)
   for (std::list<SBMLNamespaces*>::iterator iter = supported->begin(); iter != supported->end(); iter++) {
 	  result[i++] = (*iter)->clone();
   }
-/*
-  for (int i = 0; i < *length; i++)
-  {
-    result[i] = ((SBMLNamespaces*)supported->get((unsigned int)i))->clone();
-  }
-  */
   SBMLNamespaces::freeSBMLNamespaces(supported);
   return result;
 }
+*/
 /** @endcond */
 
 LIBSBXML_CPP_NAMESPACE_END

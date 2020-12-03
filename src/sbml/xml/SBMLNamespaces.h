@@ -233,7 +233,7 @@ public:
    *
    * @copydetails doc_note_static_methods
    */
-  static std::list<SBMLNamespaces*>* getSupportedNamespaces();
+  //static std::list<SBMLNamespaces*>* getSupportedNamespaces();
 
 
   /**
