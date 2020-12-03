@@ -116,15 +116,11 @@ XMLNamespaces::add (const std::string& uri, const std::string prefix)
 {
   //
   // avoids duplicate prefix
-  // BUT do not replace the sbml core ns
+  // BUT do not replace reserved namespace URIs
   //
-  bool sbmlCoreNS = false;
-  if (getURI(prefix).empty() == false)
+  if (getURI(prefix).empty() == false && isURIReserved(getURI(prefix)))
   {
-    if (isURIReserved(getURI(prefix)))//sbmlCoreNS == true)
-    {
       return LIBSBXML_OPERATION_FAILED;
-    }
   }
 
   if ( prefix.empty()    ) removeDefault();
@@ -401,12 +397,10 @@ XMLNamespaces::containIdenticalSetNS(XMLNamespaces* rhs)
 bool XMLNamespaces::isURIReserved(const std::string& uri) const
 {
 	bool isReserved = false;
-    // there is already a uri with this prefix
     // is it the sbml ns
     std::list<SBMLNamespaces*>* supportedNS = SBMLNamespaces::getSupportedNamespaces();
     for (std::list<SBMLNamespaces*>::iterator iter = supportedNS->begin(); iter != supportedNS->end(); iter++)
     {
-      //const SBMLNamespaces current = (const SBMLNamespaces *) supportedNS->get(i);
       if (uri == (*iter)->getURI())
       {
         isReserved = true;
