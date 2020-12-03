@@ -55,6 +55,8 @@ using namespace std;
 LIBSBXML_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 
+std::set<std::string> XMLNamespaces::reservedURIs;
+
 /*
  * Creates a new empty list of XML namespace declarations.
  */
@@ -394,21 +396,29 @@ XMLNamespaces::containIdenticalSetNS(XMLNamespaces* rhs)
   return equivalent;
 }
 
-bool XMLNamespaces::isURIReserved(const std::string& uri) const
+bool XMLNamespaces::isURIReserved(const std::string& uri) //const
 {
-	bool isReserved = false;
-    // is it the sbml ns
-    std::list<SBMLNamespaces*>* supportedNS = SBMLNamespaces::getSupportedNamespaces();
-    for (std::list<SBMLNamespaces*>::iterator iter = supportedNS->begin(); iter != supportedNS->end(); iter++)
+
+	// FIXME: A less ad-hoc set of reserved names is needed
+	if (reservedURIs.empty())
+	{
+		// Add the SBML URIs as reserved
+	    std::list<SBMLNamespaces*>* supportedNS = SBMLNamespaces::getSupportedNamespaces();
+	    for (std::list<SBMLNamespaces*>::iterator iter = supportedNS->begin(); iter != supportedNS->end(); iter++)
+	    {
+	    	reservedURIs.insert((*iter)->getURI());
+	    }
+	    SBMLNamespaces::freeSBMLNamespaces(supportedNS);
+
+	}
+    // Is the URI in the set of reserved URIs?
     {
-      if (uri == (*iter)->getURI())
+      if (reservedURIs.count(uri) == 0)// == (*iter)->getURI())
       {
-        isReserved = true;
-        break;
+        return true;
       }
     }
-    SBMLNamespaces::freeSBMLNamespaces(supportedNS);
-    return isReserved;
+    return false;
 }
 /** @endcond */
 

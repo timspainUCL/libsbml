@@ -72,6 +72,7 @@
 
 #include <string>
 #include <vector>
+#include <set>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 
@@ -417,7 +418,8 @@ protected:
   typedef std::pair<std::string, std::string> PrefixURIPair;
   std::vector<PrefixURIPair> mNamespaces;
 
-  bool isURIReserved(const std::string& uri) const;
+  bool isURIReserved(const std::string& uri); //const;
+  static std::set<std::string> reservedURIs;
 
   /** @endcond */
 };
