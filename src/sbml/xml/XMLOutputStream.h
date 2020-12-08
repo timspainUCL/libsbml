@@ -708,7 +708,7 @@ on yyyy-MM-dd HH:mm with libSBML version <libsbml version>. -->
    *
    * @return the SBMLNamespaces object, or @c NULL if none has been set.
    */
-  SBMLNamespaces * getSBMLNamespaces();
+  //SBMLNamespaces * getSBMLNamespaces();
 
 
   /**
@@ -716,7 +716,7 @@ on yyyy-MM-dd HH:mm with libSBML version <libsbml version>. -->
    *
    * @param sbmlns the namespace object.
    */
-  void setSBMLNamespaces(SBMLNamespaces * sbmlns);
+  //void setSBMLNamespaces(SBMLNamespaces * sbmlns);
 
 
   /**
@@ -883,7 +883,7 @@ protected:
   // for a character reference or predefined entity.
   bool mNextAmpersandIsRef;
 
-  SBMLNamespaces* mSBMLns;
+  //SBMLNamespaces* mSBMLns;
 
   // boolean indicating whether the comment on the top of the file is
   // written (enabled by default)

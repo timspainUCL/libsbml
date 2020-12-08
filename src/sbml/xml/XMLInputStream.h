@@ -287,7 +287,7 @@ public:
    *
    * @return the SBMLNamespaces object or @c NULL if none has been set.
    */
-  SBMLNamespaces * getSBMLNamespaces();
+  //SBMLNamespaces * getSBMLNamespaces();
 
 
   /**
@@ -298,7 +298,7 @@ public:
    *
    * @param sbmlns the list of namespaces to use.
    */
-   void setSBMLNamespaces(SBMLNamespaces * sbmlns);
+   //void setSBMLNamespaces(SBMLNamespaces * sbmlns);
 
 
   /**
@@ -419,7 +419,7 @@ protected:
   XMLTokenizer mTokenizer;
   XMLParser*   mParser;
 
-  SBMLNamespaces* mSBMLns;
+  //SBMLNamespaces* mSBMLns;
 
   /** @endcond */
 };

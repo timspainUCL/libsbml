@@ -238,7 +238,7 @@ XMLOutputStream::XMLOutputStream (  std::ostream&       stream
  , mInText  ( false    )
  , mSkipNextIndent ( false    )
  , mNextAmpersandIsRef( false )
- , mSBMLns (NULL)
+// , mSBMLns (NULL)
 {
 
   unsetStringStream();
@@ -1096,13 +1096,14 @@ XMLOutputStream::operator<< (const char& c)
   return *this;
 }
 
-
+/*
 SBMLNamespaces *
 XMLOutputStream::getSBMLNamespaces()
 {
   return mSBMLns;
 }
-
+*/
+/*
 void
 XMLOutputStream::setSBMLNamespaces(SBMLNamespaces * sbmlns)
 {
@@ -1114,6 +1115,7 @@ XMLOutputStream::setSBMLNamespaces(SBMLNamespaces * sbmlns)
   else
     mSBMLns = NULL;
 }
+*/
 
 bool XMLOutputStream::getWriteComment()
 {
@@ -1167,8 +1169,8 @@ void XMLOutputStream::setIndent(unsigned int indent)
 
 XMLOutputStream::~XMLOutputStream()
 {
-  if (mSBMLns != NULL) 
-    delete mSBMLns;
+/*  if (mSBMLns != NULL)
+    delete mSBMLns;*/
 }
 
 

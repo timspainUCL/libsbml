@@ -43,7 +43,7 @@
 
 #include <sbml/xml/sbmlStubs.h>
 #include <sbml/xml/operationReturnValues.h>
-
+#include <sbml/xml/SBMLNamespaces.h>
 
 using namespace std;
 
@@ -63,7 +63,7 @@ XMLInputStream::XMLInputStream (  const char*   content
 
    mIsError ( false )
  , mParser  ( XMLParser::create( mTokenizer, library) )
- , mSBMLns  ( NULL )
+// , mSBMLns  ( NULL )
 {
   // if the content points to nothing throw an exception ??
   //if (content == NULL)
@@ -82,7 +82,7 @@ XMLInputStream::XMLInputStream (  const char*   content
  XMLInputStream::XMLInputStream (const XMLInputStream& /*other*/)
    : mIsError(true)   
    , mParser(NULL)
-   , mSBMLns(NULL)
+ //  , mSBMLns(NULL)
  {
  }
 
@@ -115,7 +115,7 @@ XMLInputStream::~XMLInputStream ()
     if ( errorLog != NULL ) errorLog->setParser(NULL);
   }
   delete mParser;
-  delete mSBMLns;
+//  delete mSBMLns;
 }
 
 
@@ -294,12 +294,14 @@ XMLInputStream::toString ()
   return mTokenizer.toString();
 }
 
+/*
 SBMLNamespaces *
 XMLInputStream::getSBMLNamespaces()
 {
   return mSBMLns;
 }
-
+*/
+/*
 void
 XMLInputStream::setSBMLNamespaces(SBMLNamespaces * sbmlns)
 {
@@ -314,6 +316,7 @@ XMLInputStream::setSBMLNamespaces(SBMLNamespaces * sbmlns)
     mSBMLns = NULL;
   }
 }
+*/
 
 unsigned int
 XMLInputStream::determineNumberChildren(const std::string elementName)
