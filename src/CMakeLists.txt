@@ -468,9 +468,9 @@ if(WITH_XERCES)
 endif(WITH_XERCES)
 
 # Add SBMLNamespaces until the reserved namespace mechanism is replaced
-set(XML_SOURCES ${XML_SOURCES}
-	sbml/xml/SBMLNamespaces.cpp
-	)
+#set(XML_SOURCES ${XML_SOURCES}
+#	sbml/xml/SBMLNamespaces.cpp
+#	)
 
 source_group(xml FILES ${XML_SOURCES})
 set(LIBSBML_SOURCES ${LIBSBML_SOURCES} ${XML_SOURCES})

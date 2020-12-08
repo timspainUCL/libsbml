@@ -39,16 +39,6 @@
  */
 // #define LIBSBML_VERSION_STRING	"51803"
 
-#include <sbml/xml/SBMLNamespaces.h>
-/*
-class SBMLNamespaces {
-public:
-	static std::list<SBMLNamespaces> getSupportedNamespaces();
-	static void freeSBMLNamespaces(std::list<SBMLNamespaces> nmsp);
-	std::string getURI();
-	SBMLNamespaces* clone() const;
-};
-*/
 /*
 extern "C"
 const char*

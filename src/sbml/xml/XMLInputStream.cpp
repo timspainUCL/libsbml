@@ -43,7 +43,7 @@
 
 #include <sbml/xml/sbmlStubs.h>
 #include <sbml/xml/operationReturnValues.h>
-#include <sbml/xml/SBMLNamespaces.h>
+//#include <sbml/xml/SBMLNamespaces.h>
 
 using namespace std;
 

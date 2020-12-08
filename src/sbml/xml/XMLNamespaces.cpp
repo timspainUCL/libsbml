@@ -42,7 +42,7 @@
 #include <sbml/xml/XMLNamespaces.h>
 #include <sbml/xml/XMLAttributes.h>
 #include <sbml/xml/XMLConstructorException.h>
-#include <sbml/xml/SBMLNamespaces.h>
+//#include <sbml/xml/SBMLNamespaces.h>
 
 #include <sbml/xml/sbmlStubs.h>
 #include <sbml/xml/operationReturnValues.h>
