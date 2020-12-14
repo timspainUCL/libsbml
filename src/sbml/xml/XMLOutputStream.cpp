@@ -45,6 +45,7 @@
 #include <sbml/xml/XMLOutputStream.h>
 #include <sbml/xml/XMLAttributes.h>
 #include <sbml/xml/XMLConstructorException.h>
+#include <sbml/xml/XMLNamespaces.h>
 #include <sbml/xml/sbmlMemoryStubs.h>
 #include <sbml/xml/sbmlStubs.h>
 #include <sbml/xml/common/common.h>
@@ -1096,26 +1097,25 @@ XMLOutputStream::operator<< (const char& c)
   return *this;
 }
 
-/*
-SBMLNamespaces *
-XMLOutputStream::getSBMLNamespaces()
+
+XMLNamespaces *
+XMLOutputStream::getXMLNamespaces()
 {
-  return mSBMLns;
+  return mXMLns;
 }
-*/
-/*
+
+
 void
-XMLOutputStream::setSBMLNamespaces(SBMLNamespaces * sbmlns)
+XMLOutputStream::setXMLNamespaces(XMLNamespaces * xmlns)
 {
-  if (mSBMLns  != NULL)
-    delete mSBMLns;
+  if (mXMLns  != NULL)
+    delete mXMLns;
   
-  if (sbmlns != NULL)
-    mSBMLns = sbmlns->clone();
+  if (xmlns != NULL)
+    mXMLns = xmlns->clone();
   else
-    mSBMLns = NULL;
+    mXMLns = NULL;
 }
-*/
 
 bool XMLOutputStream::getWriteComment()
 {
@@ -1169,8 +1169,8 @@ void XMLOutputStream::setIndent(unsigned int indent)
 
 XMLOutputStream::~XMLOutputStream()
 {
-/*  if (mSBMLns != NULL)
-    delete mSBMLns;*/
+  if (mXMLns != NULL)
+    delete mXMLns;
 }
 
 

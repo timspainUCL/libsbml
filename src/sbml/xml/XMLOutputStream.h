@@ -232,7 +232,6 @@ on yyyy-MM-dd HH:mm with libSBML version <libsbml version>. -->
 #include <time.h>
 #include <sbml/xml/common/libsbxml-version.h>
 
-
 #include <sbml/xml/XMLExtern.h>
 
 #include <sbml/xml/sbmlStubs.h>
@@ -240,7 +239,7 @@ on yyyy-MM-dd HH:mm with libSBML version <libsbml version>. -->
 LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class XMLTriple;
-
+class XMLNamespaces;
 
 class LIBLAX_EXTERN XMLOutputStream
 {
@@ -704,19 +703,19 @@ on yyyy-MM-dd HH:mm with libSBML version <libsbml version>. -->
 
 
   /**
-   * Returns the SBMLNamespaces object attached to this output stream.
+   * Returns the XMLNamespaces object attached to this output stream.
    *
-   * @return the SBMLNamespaces object, or @c NULL if none has been set.
+   * @return the XMLNamespaces object, or @c NULL if none has been set.
    */
-  //SBMLNamespaces * getSBMLNamespaces();
+  XMLNamespaces * getXMLNamespaces();
 
 
   /**
-   * Sets the SBMLNamespaces object associated with this output stream.
+   * Sets the XMLNamespaces object associated with this output stream.
    *
-   * @param sbmlns the namespace object.
+   * @param xmlns the namespace object.
    */
-  //void setSBMLNamespaces(SBMLNamespaces * sbmlns);
+  void setXMLNamespaces(XMLNamespaces * xmlns);
 
 
   /**
@@ -883,7 +882,7 @@ protected:
   // for a character reference or predefined entity.
   bool mNextAmpersandIsRef;
 
-  //SBMLNamespaces* mSBMLns;
+  XMLNamespaces* mXMLns;
 
   // boolean indicating whether the comment on the top of the file is
   // written (enabled by default)

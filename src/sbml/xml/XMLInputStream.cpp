@@ -43,7 +43,7 @@
 
 #include <sbml/xml/sbmlStubs.h>
 #include <sbml/xml/operationReturnValues.h>
-//#include <sbml/xml/SBMLNamespaces.h>
+#include <sbml/xml/XMLNamespaces.h>
 
 using namespace std;
 
@@ -82,7 +82,7 @@ XMLInputStream::XMLInputStream (  const char*   content
  XMLInputStream::XMLInputStream (const XMLInputStream& /*other*/)
    : mIsError(true)   
    , mParser(NULL)
- //  , mSBMLns(NULL)
+   , mXMLns(NULL)
  {
  }
 
@@ -115,7 +115,7 @@ XMLInputStream::~XMLInputStream ()
     if ( errorLog != NULL ) errorLog->setParser(NULL);
   }
   delete mParser;
-//  delete mSBMLns;
+  delete mXMLns;
 }
 
 
@@ -294,29 +294,26 @@ XMLInputStream::toString ()
   return mTokenizer.toString();
 }
 
-/*
-SBMLNamespaces *
-XMLInputStream::getSBMLNamespaces()
+XMLNamespaces *
+XMLInputStream::getXMLNamespaces()
 {
-  return mSBMLns;
+  return mXMLns;
 }
-*/
-/*
+
 void
-XMLInputStream::setSBMLNamespaces(SBMLNamespaces * sbmlns)
+XMLInputStream::setXMLNamespaces(XMLNamespaces * xmlns)
 {
-  if (mSBMLns == sbmlns) return;
-  delete mSBMLns;
-  if (sbmlns != NULL)
+  if (mXMLns == xmlns) return;
+  delete mXMLns;
+  if (xmlns != NULL)
   {
-    mSBMLns = sbmlns->clone();
+    mXMLns = xmlns->clone();
   }
   else
   {
-    mSBMLns = NULL;
+    mXMLns = NULL;
   }
 }
-*/
 
 unsigned int
 XMLInputStream::determineNumberChildren(const std::string elementName)

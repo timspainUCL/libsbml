@@ -124,6 +124,7 @@ LIBSBXML_CPP_NAMESPACE_BEGIN
 
 class XMLErrorLog;
 class XMLParser;
+class XMLNamespaces;
 
 
 class LIBLAX_EXTERN XMLInputStream
@@ -283,22 +284,22 @@ public:
 
 
   /**
-   * Returns the SBMLNamespaces object attached to this XMLInputStream.
+   * Returns the XMLNamespaces object attached to this XMLInputStream.
    *
-   * @return the SBMLNamespaces object or @c NULL if none has been set.
+   * @return the XMLNamespaces object or @c NULL if none has been set.
    */
-  //SBMLNamespaces * getSBMLNamespaces();
+  XMLNamespaces * getXMLNamespaces();
 
 
   /**
-   * Sets the SBML namespaces associated with this XML input stream.
+   * Sets the XML namespaces associated with this XML input stream.
    *
-   * This allows this stream to reference the available SBML namespaces being
+   * This allows this stream to reference the available XML namespaces being
    * read.
    *
-   * @param sbmlns the list of namespaces to use.
+   * @param xmlns the list of namespaces to use.
    */
-   //void setSBMLNamespaces(SBMLNamespaces * sbmlns);
+   void setXMLNamespaces(XMLNamespaces * sbmlns);
 
 
   /**
@@ -419,7 +420,7 @@ protected:
   XMLTokenizer mTokenizer;
   XMLParser*   mParser;
 
-  //SBMLNamespaces* mSBMLns;
+  XMLNamespaces* mXMLns;
 
   /** @endcond */
 };
