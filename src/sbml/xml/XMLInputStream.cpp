@@ -63,7 +63,7 @@ XMLInputStream::XMLInputStream (  const char*   content
 
    mIsError ( false )
  , mParser  ( XMLParser::create( mTokenizer, library) )
-// , mSBMLns  ( NULL )
+ , mXMLns  ( NULL )
 {
   // if the content points to nothing throw an exception ??
   //if (content == NULL)

@@ -239,7 +239,7 @@ XMLOutputStream::XMLOutputStream (  std::ostream&       stream
  , mInText  ( false    )
  , mSkipNextIndent ( false    )
  , mNextAmpersandIsRef( false )
-// , mSBMLns (NULL)
+ , mXMLns (NULL)
 {
 
   unsetStringStream();
