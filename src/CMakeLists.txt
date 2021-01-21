@@ -409,25 +409,3 @@ endif (NOT LIBSBML_SKIP_STATIC_LIBRARY)
 # add native tests
 #
 add_subdirectory(sbml)
-
-##############################################################################
-#
-# construct list of all header files to create dependency list for 
-# language bindings
-#
-
-file(GLOB LIBSBML_HEADER_FILES "${CMAKE_CURRENT_BINARY_DIR}/sbml/common/*.h")    
-foreach(file ${LIBSBML_SOURCES})
-   
-   if ("${file}" MATCHES "h$" )
-     get_filename_component(full_path ${file} ABSOLUTE)
-     list(APPEND LIBSBML_HEADER_FILES ${full_path})     
-   endif()
-
-endforeach()
-
-##############################################################################
-#
-# create language bindings
-#
-add_subdirectory(bindings)
