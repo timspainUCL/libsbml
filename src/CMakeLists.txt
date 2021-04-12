@@ -93,8 +93,8 @@ check_library_exists(m sqrt "" HAVE_LIBM)
 
 # generate configuration for this system
 configure_file(
-    ${CMAKE_CURRENT_SOURCE_DIR}/sbml/xml/common/libsbxml-config-common.h.cmake
-    ${CMAKE_CURRENT_BINARY_DIR}/sbml/xml/common/libsbxml-config-common.h
+    ${CMAKE_CURRENT_SOURCE_DIR}/liblx/xml/common/libsbxml-config-common.h.cmake
+    ${CMAKE_CURRENT_BINARY_DIR}/liblx/xml/common/libsbxml-config-common.h
 )
 
 ###############################################################################
@@ -102,19 +102,19 @@ configure_file(
 # mark header files for installation
 #
 
-file(GLOB header_files "${CMAKE_CURRENT_SOURCE_DIR}/sbml/xml/*.h")
-install(FILES ${header_files} DESTINATION include/sbml/xml)
+file(GLOB header_files "${CMAKE_CURRENT_SOURCE_DIR}/liblx/xml/*.h")
+install(FILES ${header_files} DESTINATION include/liblx/xml)
 
 ###############################################################################
 #
 # specify include directories
 #
 
-include_directories(BEFORE ${LIBSBML_ROOT_SOURCE_DIR}/src/sbml)
+include_directories(BEFORE ${LIBSBML_ROOT_SOURCE_DIR}/src/liblx)
 include_directories(BEFORE ${LIBSBML_ROOT_SOURCE_DIR}/src)
 include_directories(BEFORE ${CMAKE_CURRENT_BINARY_DIR})
 include_directories(BEFORE ${CMAKE_CURRENT_BINARY_DIR}/src)
-include_directories(BEFORE ${CMAKE_CURRENT_BINARY_DIR}/src/sbml)
+include_directories(BEFORE ${CMAKE_CURRENT_BINARY_DIR}/src/liblx)
 
 ###############################################################################
 #
@@ -122,19 +122,19 @@ include_directories(BEFORE ${CMAKE_CURRENT_BINARY_DIR}/src/sbml)
 #
 set (COMPRESS_SOURCES)
 set(COMPRESS_SOURCES ${COMPRESS_SOURCES}
-    sbml/xml/compress/CompressCommon.h
-    sbml/xml/compress/CompressCommon.cpp
-    sbml/xml/compress/InputDecompressor.cpp
-    sbml/xml/compress/InputDecompressor.h
-    sbml/xml/compress/OutputCompressor.cpp
-    sbml/xml/compress/OutputCompressor.h
+    liblx/xml/compress/CompressCommon.h
+    liblx/xml/compress/CompressCommon.cpp
+    liblx/xml/compress/InputDecompressor.cpp
+    liblx/xml/compress/InputDecompressor.h
+    liblx/xml/compress/OutputCompressor.cpp
+    liblx/xml/compress/OutputCompressor.h
     )
 
 if(WITH_BZIP2)
 
   set(COMPRESS_SOURCES ${COMPRESS_SOURCES}
-        sbml/xml/compress/bzfstream.h
-        sbml/xml/compress/bzfstream.cpp
+        liblx/xml/compress/bzfstream.h
+        liblx/xml/compress/bzfstream.cpp
         )
   include_directories(${LIBBZ_INCLUDE_DIR})
   set(LIBSBML_LIBS ${LIBSBML_LIBS} ${LIBBZ_LIBRARY})
@@ -144,18 +144,18 @@ endif()
 if(WITH_ZLIB)
 
 set(COMPRESS_SOURCES ${COMPRESS_SOURCES}
-        sbml/xml/compress/zip.c
-        sbml/xml/compress/zip.h
-        sbml/xml/compress/unzip.h
-        sbml/xml/compress/unzip.c
-        sbml/xml/compress/ioapi.h
-        sbml/xml/compress/ioapi.c
-        sbml/xml/compress/ioapi_mem.h
-        sbml/xml/compress/ioapi_mem.c
-        sbml/xml/compress/zfstream.h
-        sbml/xml/compress/zfstream.cpp
-        sbml/xml/compress/zipfstream.cpp
-        sbml/xml/compress/zipfstream.h
+        liblx/xml/compress/zip.c
+        liblx/xml/compress/zip.h
+        liblx/xml/compress/unzip.h
+        liblx/xml/compress/unzip.c
+        liblx/xml/compress/ioapi.h
+        liblx/xml/compress/ioapi.c
+        liblx/xml/compress/ioapi_mem.h
+        liblx/xml/compress/ioapi_mem.c
+        liblx/xml/compress/zfstream.h
+        liblx/xml/compress/zfstream.cpp
+        liblx/xml/compress/zipfstream.cpp
+        liblx/xml/compress/zipfstream.h
     )
 
     if (WIN32)
@@ -165,8 +165,8 @@ set(COMPRESS_SOURCES ${COMPRESS_SOURCES}
         # no symbols. So it will only be included on windows.
         #
         set(COMPRESS_SOURCES ${COMPRESS_SOURCES}
-            sbml/xml/compress/iowin32.c
-            sbml/xml/compress/iowin32.h
+            liblx/xml/compress/iowin32.c
+            liblx/xml/compress/iowin32.h
         )
     endif()
 
@@ -185,61 +185,61 @@ set(LIBSBML_SOURCES ${LIBSBML_SOURCES} ${COMPRESS_SOURCES})
 
 set(XML_SOURCES)
 set(XML_SOURCES ${XML_SOURCES}
-	sbml/xml/sbmlStubs.cpp
-	sbml/xml/sbmlStubs.h
+	liblx/xml/sbmlStubs.cpp
+	liblx/xml/sbmlStubs.h
 	)
 
 set(XML_SOURCES ${XML_SOURCES}
-	sbml/xml/common/libsbxml-version.cpp
+	liblx/xml/common/libsbxml-version.cpp
 	)
 	
 set(XML_SOURCES ${XML_SOURCES}
 
-  sbml/xml/XMLAttributes.cpp
-  sbml/xml/XMLBuffer.cpp
-  sbml/xml/XMLConstructorException.cpp
-  sbml/xml/XMLError.cpp
-  sbml/xml/XMLErrorLog.cpp
-  sbml/xml/XMLLogOverride.cpp
-  sbml/xml/XMLFileBuffer.cpp
-  sbml/xml/XMLHandler.cpp
-  sbml/xml/XMLInputStream.cpp
-  sbml/xml/XMLMemoryBuffer.cpp
-  sbml/xml/XMLNamespaces.cpp
-  sbml/xml/XMLNode.cpp
-  sbml/xml/XMLOutputStream.cpp
-  sbml/xml/XMLParser.cpp
-  sbml/xml/XMLToken.cpp
-  sbml/xml/XMLTokenizer.cpp
-  sbml/xml/XMLTriple.cpp
-  sbml/xml/XMLAttributes.h
-  sbml/xml/XMLBuffer.h
-  sbml/xml/XMLConstructorException.h
-  sbml/xml/XMLError.h
-  sbml/xml/XMLErrorLog.h
-  sbml/xml/XMLLogOverride.h
-  sbml/xml/XMLFileBuffer.h
-  sbml/xml/XMLHandler.h
-  sbml/xml/XMLInputStream.h
-  sbml/xml/XMLMemoryBuffer.h
-  sbml/xml/XMLNamespaces.h
-  sbml/xml/XMLNode.h
-  sbml/xml/XMLOutputStream.h
-  sbml/xml/XMLParser.h
-  sbml/xml/XMLToken.h
-  sbml/xml/XMLTokenizer.h
-  sbml/xml/XMLTriple.h
+  liblx/xml/XMLAttributes.cpp
+  liblx/xml/XMLBuffer.cpp
+  liblx/xml/XMLConstructorException.cpp
+  liblx/xml/XMLError.cpp
+  liblx/xml/XMLErrorLog.cpp
+  liblx/xml/XMLLogOverride.cpp
+  liblx/xml/XMLFileBuffer.cpp
+  liblx/xml/XMLHandler.cpp
+  liblx/xml/XMLInputStream.cpp
+  liblx/xml/XMLMemoryBuffer.cpp
+  liblx/xml/XMLNamespaces.cpp
+  liblx/xml/XMLNode.cpp
+  liblx/xml/XMLOutputStream.cpp
+  liblx/xml/XMLParser.cpp
+  liblx/xml/XMLToken.cpp
+  liblx/xml/XMLTokenizer.cpp
+  liblx/xml/XMLTriple.cpp
+  liblx/xml/XMLAttributes.h
+  liblx/xml/XMLBuffer.h
+  liblx/xml/XMLConstructorException.h
+  liblx/xml/XMLError.h
+  liblx/xml/XMLErrorLog.h
+  liblx/xml/XMLLogOverride.h
+  liblx/xml/XMLFileBuffer.h
+  liblx/xml/XMLHandler.h
+  liblx/xml/XMLInputStream.h
+  liblx/xml/XMLMemoryBuffer.h
+  liblx/xml/XMLNamespaces.h
+  liblx/xml/XMLNode.h
+  liblx/xml/XMLOutputStream.h
+  liblx/xml/XMLParser.h
+  liblx/xml/XMLToken.h
+  liblx/xml/XMLTokenizer.h
+  liblx/xml/XMLTriple.h
 )
 
 if(WITH_EXPAT)
 
     set(XML_SOURCES ${XML_SOURCES}
-        sbml/xml/ExpatAttributes.cpp
-        sbml/xml/ExpatHandler.cpp
-        sbml/xml/ExpatParser.cpp
-        sbml/xml/ExpatAttributes.h
-        sbml/xml/ExpatHandler.h
-        sbml/xml/ExpatParser.h
+        liblx/xml/ExpatAttributes.cpp
+        liblx/xml/ExpatHandler.cpp
+        liblx/xml/ExpatParser.cpp
+        liblx/xml/ExpatAttributes.h
+        liblx/xml/ExpatHandler.h
+        liblx/xml/ExpatParser.h
     )
     set(LIBSBML_LIBS ${LIBSBML_LIBS} ${LIBEXPAT_LIBRARY})
     include_directories(${LIBEXPAT_INCLUDE_DIR})
@@ -249,16 +249,16 @@ endif(WITH_EXPAT)
 if(WITH_LIBXML)
 
     set(XML_SOURCES ${XML_SOURCES}
-        sbml/xml/LibXMLAttributes.cpp
-        sbml/xml/LibXMLHandler.cpp
-        sbml/xml/LibXMLNamespaces.cpp
-        sbml/xml/LibXMLParser.cpp
-        sbml/xml/LibXMLTranscode.cpp
-        sbml/xml/LibXMLAttributes.h
-        sbml/xml/LibXMLHandler.h
-        sbml/xml/LibXMLNamespaces.h
-        sbml/xml/LibXMLParser.h
-        sbml/xml/LibXMLTranscode.h
+        liblx/xml/LibXMLAttributes.cpp
+        liblx/xml/LibXMLHandler.cpp
+        liblx/xml/LibXMLNamespaces.cpp
+        liblx/xml/LibXMLParser.cpp
+        liblx/xml/LibXMLTranscode.cpp
+        liblx/xml/LibXMLAttributes.h
+        liblx/xml/LibXMLHandler.h
+        liblx/xml/LibXMLNamespaces.h
+        liblx/xml/LibXMLParser.h
+        liblx/xml/LibXMLTranscode.h
     )
     set(LIBSBML_LIBS ${LIBSBML_LIBS} ${LIBXML_LIBRARY})
     include_directories(${LIBXML_INCLUDE_DIR})
@@ -268,16 +268,16 @@ endif(WITH_LIBXML)
 if(WITH_XERCES)
 
     set(XML_SOURCES ${XML_SOURCES}
-        sbml/xml/XercesAttributes.cpp
-        sbml/xml/XercesHandler.cpp
-        sbml/xml/XercesNamespaces.cpp
-        sbml/xml/XercesParser.cpp
-        sbml/xml/XercesTranscode.cpp
-        sbml/xml/XercesAttributes.h
-        sbml/xml/XercesHandler.h
-        sbml/xml/XercesNamespaces.h
-        sbml/xml/XercesParser.h
-        sbml/xml/XercesTranscode.h
+        liblx/xml/XercesAttributes.cpp
+        liblx/xml/XercesHandler.cpp
+        liblx/xml/XercesNamespaces.cpp
+        liblx/xml/XercesParser.cpp
+        liblx/xml/XercesTranscode.cpp
+        liblx/xml/XercesAttributes.h
+        liblx/xml/XercesHandler.h
+        liblx/xml/XercesNamespaces.h
+        liblx/xml/XercesParser.h
+        liblx/xml/XercesTranscode.h
     )
 
     set(LIBSBML_LIBS ${LIBSBML_LIBS} ${XERCES_LIBRARY})
@@ -288,7 +288,7 @@ endif(WITH_XERCES)
 
 # Add SBMLNamespaces until the reserved namespace mechanism is replaced
 #set(XML_SOURCES ${XML_SOURCES}
-#	sbml/xml/SBMLNamespaces.cpp
+#	liblx/xml/SBMLNamespaces.cpp
 #	)
 
 source_group(xml FILES ${XML_SOURCES})

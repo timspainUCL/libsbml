@@ -273,7 +273,7 @@ mark_as_advanced(EXIT_ON_ERROR)
 # Use the version number in the shared library.
 #
 option (LIBSBML_SHARED_VERSION
-"Include version information into the compiled libSBML shared library." ON)
+"Include version information into the compiled libLX shared library." ON)
 mark_as_advanced(LIBSBML_SHARED_VERSION)
 
 # Enable the generation of unit tests. If enabled, all test runners
@@ -317,11 +317,11 @@ endif()
 
 # Set the default dependency directory.
 set(LIBSBML_DEPENDENCY_DIR ${LIBSBML_ROOT_SOURCE_DIR}/dependencies/ CACHE PATH
-  "Directory containing libraries that libSBML depends upon.
+  "Directory containing libraries that libLX depends upon.
 (Particularly important on Windows.)")
 if("${LIBSBML_DEPENDENCY_DIR}" STREQUAL "")
   set(LIBSBML_DEPENDENCY_DIR ${LIBSBML_ROOT_SOURCE_DIR}/dependencies/ CACHE PATH
-    "Directory containing libraries that libSBML depends upon.
+    "Directory containing libraries that libLX depends upon.
 (Particularly important on Windows.)" FORCE)
 endif()
 
@@ -944,16 +944,16 @@ set( MISC_PREFIX )
 if(UNIX OR CYGWIN)
     set(PATH_SEP "/")
     set(FILE_SEP ":")
-    set( MISC_PREFIX "${CMAKE_INSTALL_DATADIR}/libsbml/" )
-    set(LIBSBML_LIBRARY sbml)
+    set( MISC_PREFIX "${CMAKE_INSTALL_DATADIR}/liblx/" )
+    set(LIBSBML_LIBRARY lx)
 else()
     set( MISC_PREFIX ".\\" )
     set(PATH_SEP "\\")
     set(FILE_SEP ";")
     if(MINGW)
-        set(LIBSBML_LIBRARY sbml)
+        set(LIBSBML_LIBRARY lx)
     else()
-        set(LIBSBML_LIBRARY libsbml)
+        set(LIBSBML_LIBRARY liblx)
     endif()
 endif()
 
@@ -1194,7 +1194,7 @@ endif(UNIX)
 #
 
 if("${LIBSBML_ROOT_SOURCE_DIR}" STREQUAL "${LIBSBML_ROOT_BINARY_DIR}" )
-    message(FATAL_ERROR "In-source builds of libSBML are disabled.
+    message(FATAL_ERROR "In-source builds of libLX are disabled.
 Please create a separate build directory.")
 endif()
 
@@ -1293,7 +1293,7 @@ install(FILES ${DOCUMENTATION_FILES} DESTINATION ${MISC_PREFIX})
 
 ###############################################################################
 #
-# Write libsbml.pc
+# Write liblx.pc
 #
 
 set (PRIVATE_LIBS "-lstdc++ -lm")
@@ -1313,28 +1313,28 @@ if (WITH_XERCES)
 set (PRIVATE_LIBS "${XERCES_LIBRARY} ${PRIVATE_LIBS}")
 endif()
 
-file(WRITE  "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "Name: ${PACKAGE_NAME}\n")
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "Description: A library for reading/writing/manipulating SBML\n")
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "URL: http://sbml.org/Software/libSBML\n")
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "Version: ${PACKAGE_VERSION}\n")
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "\n")
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "prefix=${CMAKE_INSTALL_PREFIX}\n")
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "libdir=${CMAKE_INSTALL_FULL_LIBDIR}\n")
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "includedir=${CMAKE_INSTALL_FULL_INCLUDEDIR}\n")
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "\n")
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "Libs: -L\${libdir} -lsbml\n")
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "Libs.private:        ${PRIVATE_LIBS}\n")
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "Cflags: -I\${includedir}\n")
+file(WRITE  "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "Name: ${PACKAGE_NAME}\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "Description: A library for parsing XML\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "URL: http://sbml.org/Software/libLX\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "Version: ${PACKAGE_VERSION}\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "prefix=${CMAKE_INSTALL_PREFIX}\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "libdir=${CMAKE_INSTALL_FULL_LIBDIR}\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "includedir=${CMAKE_INSTALL_FULL_INCLUDEDIR}\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "Libs: -L\${libdir} -llx\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "Libs.private:        ${PRIVATE_LIBS}\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "Cflags: -I\${includedir}\n")
 if (WITH_XERCES)
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "Conflicts: xerces-c = 2.6.0\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "Conflicts: xerces-c = 2.6.0\n")
 endif()
 
 if (WITH_LIBXML)
-file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc" "Requires.private: libxml-2.0 >= 2.6.22\n")
+file(APPEND "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc" "Requires.private: libxml-2.0 >= 2.6.22\n")
 endif()
 
 if (UNIX)
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/libsbml.pc"
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/liblx.pc"
         DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
 endif()
 
@@ -1352,10 +1352,10 @@ libSBML version ${PACKAGE_VERSION}
 ----------------------------------------------------------------------
 
    More information and the latest version are available online at
-   http://sbml.org/Software/libSBML
+   http://sbml.org/Software/libLX
 
    Please report problems using the issue tracker at
-   http://sbml.org/Software/libsbml/issue-tracker
+   http://sbml.org/Software/liblx/issue-tracker
 
    To contact the developers directly, email libsbml-team@googlegroups.com
 
@@ -1442,7 +1442,7 @@ if(WITH_CHECK)
     message(STATUS "     Using libcheck                  = ${LIBCHECK_LIBRARY}")
 endif()
 
-if(WITH_CPP_NAMESPACE)
+if(WITH_CPP_NAMESPACE) # FIXME: change this when the C++ namespace is changed
     message(STATUS "     Using C++ namespace ('libsbml') = yes")
 else()
     message(STATUS "     Using C++ namespace ('libsbml') = no")
