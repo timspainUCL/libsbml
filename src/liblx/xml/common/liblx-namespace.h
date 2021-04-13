@@ -1,7 +1,7 @@
 /**
- * @file    libsbml-namespace.h
- * @brief   Defines C++ namespace of libSBML
- * @author  Akiya Jouraku
+ * @file    liblx-namespace.h
+ * @brief   Defines C++ namespace of libLX
+ * @author  Akiya Jouraku, Timothy Spain
  * 
  * <!--------------------------------------------------------------------------
  * This file is part of libSBML.  Please visit http://sbml.org for more
