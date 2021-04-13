@@ -38,7 +38,7 @@
 #define LIBSBML_COMMON_H 1
 
 
-#include <liblx/xml/common/libsbxml-config.h>
+#include <liblx/xml/common/liblx-config.h>
 
 
 #include <stdio.h>
