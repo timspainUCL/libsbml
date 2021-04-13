@@ -222,7 +222,7 @@ on yyyy-MM-dd HH:mm with libSBML version <libsbml version>. -->
 #ifndef XMLOutputStream_h
 #define XMLOutputStream_h
 
-#include <liblx/xml/common/sbxmlfwd.h>
+#include <liblx/xml/common/liblxfwd.h>
 #ifdef __cplusplus
 
 #include <iostream>

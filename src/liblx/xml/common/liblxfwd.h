@@ -1,5 +1,5 @@
 /**
- * @file    sbmlfwd.h
+ * @file    liblxfwd.h
  * @brief   Forward declarations for all opaque C types.
  * @author  Ben Bornstein
  * 
@@ -41,8 +41,8 @@
  * declarations in C++ code.
  */
 
-#ifndef sbxmlfwd_h
-#define sbxmlfwd_h
+#ifndef LIBLXFWD_H
+#define LIBLXFWD_H
 
 
 #include <liblx/xml/common/liblx-namespace.h>
@@ -126,4 +126,4 @@ LIBLX_CPP_NAMESPACE_END
 
 #undef CLASS_OR_STRUCT
 
-#endif  /* sbxmlfwd_h  */
+#endif  /* ndef LIBLXFWD_H  */

@@ -340,7 +340,7 @@
 
 
 #include <liblx/xml/XMLExtern.h>
-#include <liblx/xml/common/sbxmlfwd.h>
+#include <liblx/xml/common/liblxfwd.h>
 
 LIBLX_CPP_NAMESPACE_BEGIN
 

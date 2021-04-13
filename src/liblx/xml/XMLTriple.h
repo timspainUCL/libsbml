@@ -76,7 +76,7 @@
 #define XMLTriple_h
 
 #include <liblx/xml/XMLExtern.h>
-#include <liblx/xml/common/sbxmlfwd.h>
+#include <liblx/xml/common/liblxfwd.h>
 
 
 #ifdef __cplusplus

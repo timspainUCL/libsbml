@@ -124,7 +124,7 @@
 #include <liblx/xml/XMLOutputStream.h>
 /** @endcond */
 #include <liblx/xml/XMLToken.h>
-#include <liblx/xml/common/sbxmlfwd.h>
+#include <liblx/xml/common/liblxfwd.h>
 
 
 #ifdef __cplusplus

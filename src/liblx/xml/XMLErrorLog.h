@@ -84,7 +84,7 @@
 
 #include <liblx/xml/XMLExtern.h>
 #include <liblx/xml/XMLError.h>
-#include <liblx/xml/common/sbxmlfwd.h>
+#include <liblx/xml/common/liblxfwd.h>
 
 
 #ifdef __cplusplus

@@ -153,7 +153,7 @@ else:
 
 #include <liblx/xml/XMLExtern.h>
 #include <liblx/xml/XMLToken.h>
-#include <liblx/xml/common/sbxmlfwd.h>
+#include <liblx/xml/common/liblxfwd.h>
 
 
 #ifdef __cplusplus
