@@ -408,4 +408,4 @@ endif (NOT LIBSBML_SKIP_STATIC_LIBRARY)
 #
 # add native tests
 #
-add_subdirectory(sbml)
+add_subdirectory(liblx)
