@@ -41,7 +41,7 @@
 
 using namespace std;
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 
 /**
@@ -82,6 +82,6 @@ LibXMLAttributes::~LibXMLAttributes ()
 }
 
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 /** @endcond */

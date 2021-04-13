@@ -51,7 +51,7 @@
 using namespace std;
 /** @endcond */
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 
 /** @cond doxygenLibsbmlInternal */
@@ -490,6 +490,6 @@ XMLErrorLog_setSeverityOverride (XMLErrorLog_t *log, XMLErrorSeverityOverride_t 
   log->setSeverityOverride(overridden);
 }
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 /** @endcond */
 

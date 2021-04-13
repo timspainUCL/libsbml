@@ -45,7 +45,7 @@
 #define sbxmlfwd_h
 
 
-#include <liblx/xml/common/libsbxml-namespace.h>
+#include <liblx/xml/common/liblx-namespace.h>
 #include <liblx/xml/common/libsbxml-version.h>
 
 
@@ -63,7 +63,7 @@
 #  define CLASS_OR_STRUCT struct
 #endif  /* __cplusplus */
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 typedef CLASS_OR_STRUCT XMLError                  XMLError_t;
 
@@ -122,7 +122,7 @@ typedef CLASS_OR_STRUCT XMLTriple                 XMLTriple_t;
 /* FIXME Remove when no longer needed */
 typedef CLASS_OR_STRUCT SBMLNamespaces            SBMLNamespaces_t;
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #undef CLASS_OR_STRUCT
 

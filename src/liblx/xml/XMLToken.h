@@ -131,7 +131,7 @@
 
 #include <string>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 /** @cond doxygenLibsbmlInternal */
 class XMLOutputStream;
@@ -1187,13 +1187,13 @@ protected:
   /** @endcond */
 };
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
 #ifndef SWIG
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 /**
@@ -2412,7 +2412,7 @@ XMLToken_unsetEnd (XMLToken_t *token);
 
 
 END_C_DECLS
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLToken_h */

@@ -342,7 +342,7 @@
 #include <liblx/xml/XMLExtern.h>
 #include <liblx/xml/common/sbxmlfwd.h>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 BEGIN_C_DECLS
 
@@ -557,7 +557,7 @@ typedef enum
 END_C_DECLS
 
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 
 #ifdef __cplusplus
@@ -567,7 +567,7 @@ LIBSBXML_CPP_NAMESPACE_END
 #include <string>
 #include <liblx/xml/operationReturnValues.h>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 class LIBSBXML_EXTERN XMLError
 {
@@ -1194,7 +1194,7 @@ typedef struct {
 
 #endif  /* !SWIG */
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
@@ -1202,7 +1202,7 @@ LIBSBXML_CPP_NAMESPACE_END
 
 #ifndef SWIG
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 /**
@@ -1469,7 +1469,7 @@ XMLError_print (const XMLError_t *error, FILE *stream);
 
 
 END_C_DECLS
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLError_h */

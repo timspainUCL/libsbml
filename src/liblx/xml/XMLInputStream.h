@@ -120,7 +120,7 @@
 
 #include <liblx/xml/XMLTokenizer.h>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 class XMLErrorLog;
 class XMLParser;
@@ -425,14 +425,14 @@ protected:
   /** @endcond */
 };
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
 
 #ifndef SWIG
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 BEGIN_C_DECLS
 
@@ -636,7 +636,7 @@ XMLInputStream_setErrorLog (XMLInputStream_t *stream, XMLErrorLog_t *log);
 
 END_C_DECLS
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLInputStream_h */

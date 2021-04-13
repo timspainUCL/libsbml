@@ -45,7 +45,7 @@
 #include <libxml/parser.h>
 #include <liblx/xml/XMLExtern.h>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 /**
  * Transcodes a LibXML xmlChar* string to UTF-8.  This class offers
@@ -77,7 +77,7 @@ private:
 
 };
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 #endif  /* LibXMLTranscode_h */

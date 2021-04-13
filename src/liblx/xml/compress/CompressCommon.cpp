@@ -42,7 +42,7 @@
 
 using namespace std;
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 /**
  * Predicate returning @c true or @c false depending on whether
@@ -76,5 +76,5 @@ bool hasBzip2()
 #endif // USE_BZ2
 }
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 /** @endcond */

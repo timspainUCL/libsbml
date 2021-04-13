@@ -45,7 +45,7 @@
 #include <liblx/xml/common/extern.h>
 #include <liblx/xml/compress/CompressCommon.h>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 class LIBSBXML_EXTERN OutputCompressor
 {
@@ -96,7 +96,7 @@ public:
 
 };
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif // OutputCompressor_h
 /** @endcond */

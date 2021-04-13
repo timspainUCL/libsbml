@@ -46,7 +46,7 @@
 #include <liblx/xml/compress/CompressCommon.h>
 
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 class LIBSBXML_EXTERN InputDecompressor
 {
@@ -137,7 +137,7 @@ public:
 
 };
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif // InputDecompressor_h
 /** @endcond */

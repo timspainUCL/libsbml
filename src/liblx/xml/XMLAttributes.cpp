@@ -53,7 +53,7 @@
 using namespace std;
 /** @endcond */
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 /*
  * @return s with whitespace removed from the beginning and end.
@@ -1719,6 +1719,6 @@ XMLAttributes_readIntoStringByTriple (XMLAttributes_t *xa,
 }
 
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 /** @endcond */
 

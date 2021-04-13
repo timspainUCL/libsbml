@@ -59,7 +59,7 @@
 
 using namespace std;
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 /**
  * Opens the given gzip file as a gzifstream (subclass of std::ifstream class) object
@@ -198,5 +198,5 @@ InputDecompressor::getStringFromZip (const std::string& filename)
 #endif
 }
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 /** @endcond */

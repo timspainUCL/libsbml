@@ -58,7 +58,7 @@
 
 using namespace std;
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 /*
  * Creates a new XMLParser.  The parser will notify the given XMLHandler
@@ -137,5 +137,5 @@ XMLParser::setErrorLog (XMLErrorLog* log)
 }
 
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 /** @endcond */

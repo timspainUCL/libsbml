@@ -52,7 +52,7 @@
 using namespace std;
 /** @endcond */
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 
 /*
@@ -1458,4 +1458,4 @@ XMLNode_unsetEnd (XMLNode_t *node)
 }
 /** @endcond */
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END

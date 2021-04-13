@@ -40,7 +40,7 @@
  
  using namespace std;
  
- LIBSBXML_CPP_NAMESPACE_BEGIN
+ LIBLX_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 
  XMLLogOverride::XMLLogOverride(XMLErrorLog* log, XMLErrorSeverityOverride_t new_override) 
@@ -61,4 +61,4 @@
 /** @cond doxygenIgnored */
 /** @endcond */
 
- LIBSBXML_CPP_NAMESPACE_END
+ LIBLX_CPP_NAMESPACE_END

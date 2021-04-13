@@ -52,7 +52,7 @@
 using namespace std;
 /** @endcond */
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 
 std::set<std::string> XMLNamespaces::reservedURIs;
@@ -627,4 +627,4 @@ XMLNamespaces_addReservedURI(const char* uri)
 }
 /** @endcond */
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END

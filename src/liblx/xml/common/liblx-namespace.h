@@ -36,37 +36,37 @@
  *
  */
 
-#ifndef LIBSBXML_NAMESPACE_H
-#define LIBSBXML_NAMESPACE_H
+#ifndef LIBLX_NAMESPACE_H
+#define LIBLX_NAMESPACE_H
 
 /*
  *
- * The idea of the following marcors are borrowed from 
+ * The idea of the following macros are borrowed from
  * Xerces-C++ XML Parser (http://xerces.apache.org/xerces-c/).
  *
  */
 
-/* Define to enable libSBML C++ namespace */
-#undef LIBSBXML_USE_CPP_NAMESPACE
+/* Define to enable libLX C++ namespace */
+#undef LIBLX_USE_CPP_NAMESPACE
 
 
-#if defined(__cplusplus) && defined(LIBSBXML_USE_CPP_NAMESPACE) && !defined(SWIG)
-  /* C++ namespace of libSBML */
-  #define LIBSBXML_CPP_NAMESPACE            libsbxml
-  #define LIBSBXML_CPP_NAMESPACE_BEGIN      namespace LIBSBXML_CPP_NAMESPACE {
-  #define LIBSBXML_CPP_NAMESPACE_END        }
-  #define LIBSBXML_CPP_NAMESPACE_USE        using namespace LIBSBXML_CPP_NAMESPACE;
-  #define LIBSBXML_CPP_NAMESPACE_QUALIFIER  LIBSBXML_CPP_NAMESPACE::
+#if defined(__cplusplus) && defined(LIBLX_USE_CPP_NAMESPACE) && !defined(SWIG)
+  /* C++ namespace of libLX */
+  #define LIBLX_CPP_NAMESPACE            liblx
+  #define LIBLX_CPP_NAMESPACE_BEGIN      namespace LIBLX_CPP_NAMESPACE {
+  #define LIBLX_CPP_NAMESPACE_END        }
+  #define LIBLX_CPP_NAMESPACE_USE        using namespace LIBLX_CPP_NAMESPACE;
+  #define LIBLX_CPP_NAMESPACE_QUALIFIER  LIBLX_CPP_NAMESPACE::
 
-  namespace LIBSBXML_CPP_NAMESPACE {}
+  namespace LIBLX_CPP_NAMESPACE {}
 #else
-  #define LIBSBXML_CPP_NAMESPACE
-  #define LIBSBXML_CPP_NAMESPACE_BEGIN
-  #define LIBSBXML_CPP_NAMESPACE_END
-  #define LIBSBXML_CPP_NAMESPACE_USE
-  #define LIBSBXML_CPP_NAMESPACE_QUALIFIER
+  #define LIBLX_CPP_NAMESPACE
+  #define LIBLX_CPP_NAMESPACE_BEGIN
+  #define LIBLX_CPP_NAMESPACE_END
+  #define LIBLX_CPP_NAMESPACE_USE
+  #define LIBLX_CPP_NAMESPACE_QUALIFIER
 #endif
 
 
-#endif  /*ndef LIBSBXML_NAMESPACE_H */
+#endif  /*ndef LIBLX_NAMESPACE_H */
 

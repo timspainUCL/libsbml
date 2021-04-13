@@ -56,7 +56,7 @@
 
 using namespace std;
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 /**
  * Opens the given gzip file as a gzofstream (subclass of std::ofstream class) object
@@ -115,6 +115,6 @@ OutputCompressor::openZipOStream(const std::string& filename, const std::string&
 #endif
 }
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 /** @endcond */
 

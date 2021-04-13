@@ -40,7 +40,7 @@
 
 using namespace std;
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 static const string NCRAmp = "&#38;"; 
 
@@ -87,13 +87,13 @@ LibXMLTranscode::operator string ()
       // replaces &#38; (numeric character reference of '&') with '&'
       // 
       if ( str.length() >= NCRAmp.length() ) 
-        LIBSBXML_CPP_NAMESPACE ::replaceAll(str, NCRAmp,"&");
+        LIBLX_CPP_NAMESPACE ::replaceAll(str, NCRAmp,"&");
     }
 
     return str;
   }
 }
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 /** @endcond */

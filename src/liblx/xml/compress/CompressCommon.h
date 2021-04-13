@@ -45,7 +45,7 @@
 #include <liblx/xml/common/extern.h>
 
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 /**
  *
@@ -110,7 +110,7 @@ bool hasZlib();
 LIBSBXML_EXTERN
 bool hasBzip2();
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif //CompressCommon_h
 /** @endcond */

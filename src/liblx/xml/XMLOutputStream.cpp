@@ -56,7 +56,7 @@
 
 using namespace std;
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 
 /**
@@ -799,8 +799,8 @@ XMLOutputStream::writeChars (const std::string& chars)
   {
     const char& c = chars.at(i);
     if ( c == '&' && 
-        (LIBSBXML_CPP_NAMESPACE ::hasCharacterReference(chars, i) ||
-         LIBSBXML_CPP_NAMESPACE ::hasPredefinedEntity(chars,i)) )
+        (LIBLX_CPP_NAMESPACE ::hasCharacterReference(chars, i) ||
+         LIBLX_CPP_NAMESPACE ::hasPredefinedEntity(chars,i)) )
       mNextAmpersandIsRef = true;
 
     *this << c;
@@ -1587,5 +1587,5 @@ XMLOutputStream_getString(XMLOutputStream_t* stream)
 }
 
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 /** @endcond */

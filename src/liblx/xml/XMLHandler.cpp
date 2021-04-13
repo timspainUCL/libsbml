@@ -41,7 +41,7 @@
 
 using namespace std;
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 /*
  * Creates a new XMLHandler.
@@ -139,5 +139,5 @@ XMLHandler::characters (const XMLToken& )
 {
 }
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 /** @endcond */

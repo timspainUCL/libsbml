@@ -43,7 +43,7 @@
 using namespace std;
 /** @endcond */
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 /** @cond doxygenLibsbmlInternal */
 XMLConstructorException::XMLConstructorException(std::string message):
       std::invalid_argument(message)
@@ -51,4 +51,4 @@ XMLConstructorException::XMLConstructorException(std::string message):
 }
 /** @endcond */
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END

@@ -38,7 +38,7 @@
 
 #include <liblx/xml/XMLBuffer.h>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 /*
  * Creates a new XMLBuffer.
@@ -55,5 +55,5 @@ XMLBuffer::~XMLBuffer ()
 {
 }
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 /** @endcond */

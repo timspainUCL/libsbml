@@ -240,7 +240,7 @@ foo:myattribute="7"
 
 #include <liblx/xml/XMLTriple.h>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 class XMLErrorLog;
 /** @cond doxygenLibsbmlInternal */
@@ -1812,7 +1812,7 @@ protected:
   /** @endcond */
 };
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
@@ -1820,7 +1820,7 @@ LIBSBXML_CPP_NAMESPACE_END
 
 #ifndef SWIG
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 /**
@@ -2797,7 +2797,7 @@ XMLAttributes_readIntoStringByTriple (XMLAttributes_t *xa,
                                int required);
 
 END_C_DECLS
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 

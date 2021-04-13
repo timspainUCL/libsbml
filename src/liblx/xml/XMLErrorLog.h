@@ -94,7 +94,7 @@
 #include <vector>
 #include <list>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 class XMLParser;
 
@@ -406,14 +406,14 @@ protected:
   /** @endcond */
 };
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
 
 #ifndef SWIG
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 /**
@@ -574,7 +574,7 @@ XMLErrorLog_setSeverityOverride (XMLErrorLog_t *log, XMLErrorSeverityOverride_t 
 
 
 END_C_DECLS
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLErrorLog_h */

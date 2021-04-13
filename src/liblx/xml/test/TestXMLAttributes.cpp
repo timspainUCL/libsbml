@@ -45,7 +45,7 @@
 /** @cond doxygenIgnored */
 
 using namespace std;
-LIBSBXML_CPP_NAMESPACE_USE
+LIBLX_CPP_NAMESPACE_USE
 
 /** @endcond */
 

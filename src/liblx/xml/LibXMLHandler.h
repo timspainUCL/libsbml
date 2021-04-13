@@ -43,7 +43,7 @@
 
 #include <liblx/xml/XMLHandler.h>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 class LibXMLAttributes;
 class LibXMLNamespaces;
@@ -180,7 +180,7 @@ protected:
   const xmlSAXLocator* mLocator;
 };
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* LibXMLHandler_h */
 

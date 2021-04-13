@@ -83,7 +83,7 @@
 
 #include <string>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 class LIBSBXML_EXTERN XMLTriple
 {
@@ -233,13 +233,13 @@ bool operator==(const XMLTriple& lhs, const XMLTriple& rhs);
 bool operator!=(const XMLTriple& lhs, const XMLTriple& rhs);
 
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 
 #ifndef SWIG
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 /**
@@ -403,7 +403,7 @@ XMLTriple_notEqualTo(const XMLTriple_t *lhs, const XMLTriple_t* rhs);
 
 
 END_C_DECLS
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* !SWIG */
 #endif  /* XMLTriple_h */

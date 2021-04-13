@@ -45,7 +45,7 @@
 #include <xercesc/util/XMLString.hpp>
 #include <liblx/xml/common/libsbml-namespace.h>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 #if XERCES_VERSION_MAJOR <= 2
 typedef unsigned int XercesSize_t;
@@ -88,7 +88,7 @@ private:
 };
 
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* __cplusplus */
 #endif  /* XercesTranscode_h */

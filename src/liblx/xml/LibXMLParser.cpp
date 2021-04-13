@@ -52,7 +52,7 @@
 
 using namespace std;
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 static const int BUFFER_SIZE = 8192;
 
@@ -455,6 +455,6 @@ LibXMLParser::parseReset ()
 }
 
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 /** @endcond */

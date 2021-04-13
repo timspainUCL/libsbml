@@ -37,7 +37,7 @@
 #ifndef XMLExtern_h
 #define XMLExtern_h
 
-#include <liblx/xml/common/libsbxml-namespace.h>
+#include <liblx/xml/common/liblx-namespace.h>
 
 /*
  * The following ifdef block is the standard way of creating macros which

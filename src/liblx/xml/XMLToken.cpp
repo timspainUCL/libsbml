@@ -50,7 +50,7 @@
 using namespace std;
 /** @endcond */
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 #ifdef __cplusplus
 
 /*
@@ -1933,5 +1933,5 @@ XMLToken_unsetEnd (XMLToken_t *token)
 }
 /** @endcond */
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 

@@ -41,7 +41,7 @@
 
 #include <liblx/xml/XMLBuffer.h>
 
-LIBSBXML_CPP_NAMESPACE_BEGIN
+LIBLX_CPP_NAMESPACE_BEGIN
 
 class XMLMemoryBuffer : public XMLBuffer
 {
@@ -93,7 +93,7 @@ private:
   unsigned int  mOffset;
 };
 
-LIBSBXML_CPP_NAMESPACE_END
+LIBLX_CPP_NAMESPACE_END
 
 #endif  /* XMLMemoryBuffer_h */
 /** @endcond */

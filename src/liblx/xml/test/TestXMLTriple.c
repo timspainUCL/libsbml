@@ -41,7 +41,7 @@
 #include <check.h>
 
 #if defined(__cplusplus)
-LIBSBXML_CPP_NAMESPACE_USE
+LIBLX_CPP_NAMESPACE_USE
 CK_CPPSTART
 #endif
 
