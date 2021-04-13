@@ -38,7 +38,7 @@
 #define LIBSBML_COMMON_H 1
 
 
-#include <sbml/xml/common/libsbxml-config.h>
+#include <liblx/xml/common/libsbxml-config.h>
 
 
 #include <stdio.h>
@@ -112,6 +112,6 @@ static const int SBML_INT_MIN = -2147483647 - 1;
 #define LIBSBML_USE_LEGACY_MATH 1
 
 
-#include <sbml/xml/common/extern.h>
+#include <liblx/xml/common/extern.h>
 
 #endif  /* LIBSBML_COMMON_H */

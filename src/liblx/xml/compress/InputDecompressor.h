@@ -42,8 +42,8 @@
 #define InputDecompressor_h
 
 #include <iostream>
-#include <sbml/xml/common/extern.h>
-#include <sbml/xml/compress/CompressCommon.h>
+#include <liblx/xml/common/extern.h>
+#include <liblx/xml/compress/CompressCommon.h>
 
 
 LIBSBXML_CPP_NAMESPACE_BEGIN

@@ -40,14 +40,14 @@
 #include <limits>
 #include <sstream>
 
-#include <sbml/xml/XMLErrorLog.h>
-#include <sbml/xml/XMLConstructorException.h>
-#include <sbml/xml/XMLAttributes.h>
+#include <liblx/xml/XMLErrorLog.h>
+#include <liblx/xml/XMLConstructorException.h>
+#include <liblx/xml/XMLAttributes.h>
 /** @cond doxygenLibsbmlInternal */
-#include <sbml/xml/XMLOutputStream.h>
+#include <liblx/xml/XMLOutputStream.h>
 /** @endcond */
-#include <sbml/xml/sbmlStubs.h>
-#include <sbml/xml/operationReturnValues.h>
+#include <liblx/xml/sbmlStubs.h>
+#include <liblx/xml/operationReturnValues.h>
 
 /** @cond doxygenIgnored */
 using namespace std;

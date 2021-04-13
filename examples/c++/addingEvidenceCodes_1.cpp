@@ -39,9 +39,9 @@
  */
 
 #include <iostream>
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 
-#include <sbml/annotation/CVTerm.h>
+#include <liblx/annotation/CVTerm.h>
 using namespace std;
 LIBSBML_CPP_NAMESPACE_USE
 

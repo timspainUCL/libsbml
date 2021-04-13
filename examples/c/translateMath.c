@@ -43,9 +43,9 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <sbml/math/FormulaFormatter.h>
-#include <sbml/math/FormulaParser.h>
-#include <sbml/math/MathML.h>
+#include <liblx/math/FormulaFormatter.h>
+#include <liblx/math/FormulaParser.h>
+#include <liblx/math/MathML.h>
 
 #include "util.h"
 

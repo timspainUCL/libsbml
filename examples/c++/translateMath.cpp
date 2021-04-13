@@ -46,7 +46,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 
 
 #define BUFFER_SIZE 1024

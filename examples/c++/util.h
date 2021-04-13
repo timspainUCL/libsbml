@@ -38,7 +38,7 @@
  * ------------------------------------------------------------------------ -->
  */
 
-#include <sbml/common/extern.h>
+#include <liblx/common/extern.h>
 
 
 BEGIN_C_DECLS

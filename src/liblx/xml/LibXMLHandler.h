@@ -41,7 +41,7 @@
 
 #include <libxml/parser.h>
 
-#include <sbml/xml/XMLHandler.h>
+#include <liblx/xml/XMLHandler.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

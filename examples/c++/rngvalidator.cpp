@@ -39,10 +39,10 @@
 */
 
 #include <iostream>
-#include <sbml/SBMLTypes.h>
-#include <sbml/SBMLError.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/SBMLError.h>
 
-#include <sbml/validator/SBMLValidator.h>
+#include <liblx/validator/SBMLValidator.h>
 
 #include <libxml/xmlmemory.h>
 #include <libxml/parser.h>

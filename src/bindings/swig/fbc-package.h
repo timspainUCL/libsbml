@@ -36,32 +36,32 @@
 
 #ifdef USE_FBC
 
-#include <sbml/packages/fbc/extension/FbcExtension.h>
-#include <sbml/packages/fbc/extension/FbcModelPlugin.h>
-#include <sbml/packages/fbc/extension/FbcSpeciesPlugin.h>
-#include <sbml/packages/fbc/extension/FbcSBMLDocumentPlugin.h>
+#include <liblx/packages/fbc/extension/FbcExtension.h>
+#include <liblx/packages/fbc/extension/FbcModelPlugin.h>
+#include <liblx/packages/fbc/extension/FbcSpeciesPlugin.h>
+#include <liblx/packages/fbc/extension/FbcSBMLDocumentPlugin.h>
 
-#include <sbml/packages/fbc/util/CobraToFbcConverter.h>
-#include <sbml/packages/fbc/util/FbcToCobraConverter.h>
-#include <sbml/packages/fbc/util/FbcV1ToV2Converter.h>
-#include <sbml/packages/fbc/util/FbcV2ToV1Converter.h>
+#include <liblx/packages/fbc/util/CobraToFbcConverter.h>
+#include <liblx/packages/fbc/util/FbcToCobraConverter.h>
+#include <liblx/packages/fbc/util/FbcV1ToV2Converter.h>
+#include <liblx/packages/fbc/util/FbcV2ToV1Converter.h>
 
-#include <sbml/packages/fbc/sbml/Association.h>
-#include <sbml/packages/fbc/sbml/FluxBound.h>
-#include <sbml/packages/fbc/sbml/FluxObjective.h>
-#include <sbml/packages/fbc/sbml/GeneAssociation.h>
-#include <sbml/packages/fbc/sbml/Objective.h>
+#include <liblx/packages/fbc/sbml/Association.h>
+#include <liblx/packages/fbc/sbml/FluxBound.h>
+#include <liblx/packages/fbc/sbml/FluxObjective.h>
+#include <liblx/packages/fbc/sbml/GeneAssociation.h>
+#include <liblx/packages/fbc/sbml/Objective.h>
 
-#include <sbml/packages/fbc/validator/FbcSBMLError.h>
+#include <liblx/packages/fbc/validator/FbcSBMLError.h>
 
-#include <sbml/packages/fbc/extension/FbcReactionPlugin.h>
-#include <sbml/packages/fbc/common/FbcExtensionTypes.h>
-#include <sbml/packages/fbc/sbml/FbcAssociation.h>
-#include <sbml/packages/fbc/sbml/GeneProductAssociation.h>
-#include <sbml/packages/fbc/sbml/GeneProduct.h>
-#include <sbml/packages/fbc/sbml/GeneProductRef.h>
-#include <sbml/packages/fbc/sbml/FbcAnd.h>
-#include <sbml/packages/fbc/sbml/FbcOr.h>
+#include <liblx/packages/fbc/extension/FbcReactionPlugin.h>
+#include <liblx/packages/fbc/common/FbcExtensionTypes.h>
+#include <liblx/packages/fbc/sbml/FbcAssociation.h>
+#include <liblx/packages/fbc/sbml/GeneProductAssociation.h>
+#include <liblx/packages/fbc/sbml/GeneProduct.h>
+#include <liblx/packages/fbc/sbml/GeneProductRef.h>
+#include <liblx/packages/fbc/sbml/FbcAnd.h>
+#include <liblx/packages/fbc/sbml/FbcOr.h>
 
 #endif // USE_FBC 
 

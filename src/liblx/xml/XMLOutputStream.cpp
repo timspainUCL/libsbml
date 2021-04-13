@@ -41,15 +41,15 @@
 #include <fstream>
 
 #include <cstdio>
-#include <sbml/xml/XMLTriple.h>
-#include <sbml/xml/XMLOutputStream.h>
-#include <sbml/xml/XMLAttributes.h>
-#include <sbml/xml/XMLConstructorException.h>
-#include <sbml/xml/XMLNamespaces.h>
-#include <sbml/xml/sbmlMemoryStubs.h>
-#include <sbml/xml/sbmlStubs.h>
-#include <sbml/xml/common/common.h>
-#include <sbml/xml/common/libsbxml-version.h>
+#include <liblx/xml/XMLTriple.h>
+#include <liblx/xml/XMLOutputStream.h>
+#include <liblx/xml/XMLAttributes.h>
+#include <liblx/xml/XMLConstructorException.h>
+#include <liblx/xml/XMLNamespaces.h>
+#include <liblx/xml/sbmlMemoryStubs.h>
+#include <liblx/xml/sbmlStubs.h>
+#include <liblx/xml/common/common.h>
+#include <liblx/xml/common/libsbxml-version.h>
 #if defined CYGWIN
 #include <string.h>
 #endif

@@ -109,16 +109,16 @@
 #ifndef XMLInputStream_h
 #define XMLInputStream_h
 
-#include <sbml/xml/XMLExtern.h>
-#include <sbml/xml/XMLToken.h>
-#include <sbml/xml/common/sbxmlfwd.h>
+#include <liblx/xml/XMLExtern.h>
+#include <liblx/xml/XMLToken.h>
+#include <liblx/xml/common/sbxmlfwd.h>
 
 
 #ifdef __cplusplus
 
 #include <string>
 
-#include <sbml/xml/XMLTokenizer.h>
+#include <liblx/xml/XMLTokenizer.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

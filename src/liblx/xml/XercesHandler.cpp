@@ -39,13 +39,13 @@
 #include <xercesc/sax/Locator.hpp>
 #include <xercesc/internal/ReaderMgr.hpp>
 
-#include <sbml/xml/XMLHandler.h>
-#include <sbml/xml/XMLToken.h>
+#include <liblx/xml/XMLHandler.h>
+#include <liblx/xml/XMLToken.h>
 
-#include <sbml/xml/XercesAttributes.h>
-#include <sbml/xml/XercesNamespaces.h>
-#include <sbml/xml/XercesTranscode.h>
-#include <sbml/xml/XercesHandler.h>
+#include <liblx/xml/XercesAttributes.h>
+#include <liblx/xml/XercesNamespaces.h>
+#include <liblx/xml/XercesTranscode.h>
+#include <liblx/xml/XercesHandler.h>
 
 using namespace std;
 using namespace xercesc;

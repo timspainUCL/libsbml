@@ -45,13 +45,13 @@
 #include <iostream>
 #include <sstream>
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/extension/SBMLExtensionRegister.h>
-#include <sbml/conversion/SBMLConverterRegistry.h>
-#include <sbml/util/PrefixTransformer.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/extension/SBMLExtensionRegister.h>
+#include <liblx/conversion/SBMLConverterRegistry.h>
+#include <liblx/util/PrefixTransformer.h>
 
 #ifdef  LIBSBML_HAS_PACKAGE_COMP
-#include <sbml/packages/comp/common/CompExtensionTypes.h>
+#include <liblx/packages/comp/common/CompExtensionTypes.h>
 #else
 #error This example requires libSBML to be compiled with support for COMP.
 #endif

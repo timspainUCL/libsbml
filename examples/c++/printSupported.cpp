@@ -42,7 +42,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 
 
 using namespace std;

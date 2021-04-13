@@ -38,16 +38,16 @@
 
 #ifdef USE_ARRAYS
 
-#include <sbml/packages/arrays/extension/ArraysExtension.h>
-#include <sbml/packages/arrays/extension/ArraysSBasePlugin.h>
-#include <sbml/packages/arrays/extension/ArraysSBMLDocumentPlugin.h>
-#include <sbml/packages/arrays/extension/ArraysASTPlugin.h>
+#include <liblx/packages/arrays/extension/ArraysExtension.h>
+#include <liblx/packages/arrays/extension/ArraysSBasePlugin.h>
+#include <liblx/packages/arrays/extension/ArraysSBMLDocumentPlugin.h>
+#include <liblx/packages/arrays/extension/ArraysASTPlugin.h>
 
-#include <sbml/packages/arrays/common/ArraysExtensionTypes.h>
-#include <sbml/packages/arrays/sbml/Index.h>
-#include <sbml/packages/arrays/sbml/Dimension.h>
-#include <sbml/packages/arrays/sbml/ListOfIndices.h>
-#include <sbml/packages/arrays/sbml/ListOfDimensions.h>
+#include <liblx/packages/arrays/common/ArraysExtensionTypes.h>
+#include <liblx/packages/arrays/sbml/Index.h>
+#include <liblx/packages/arrays/sbml/Dimension.h>
+#include <liblx/packages/arrays/sbml/ListOfIndices.h>
+#include <liblx/packages/arrays/sbml/ListOfDimensions.h>
 
 #endif // USE_ARRAYS
 

@@ -41,13 +41,13 @@
 
 #include <check.h>
 
-#include <sbml/xml/common/common.h>
-#include <sbml/xml/XMLToken.h>
-#include <sbml/xml/XMLTriple.h>
-#include <sbml/xml/operationReturnValues.h>
+#include <liblx/xml/common/common.h>
+#include <liblx/xml/XMLToken.h>
+#include <liblx/xml/XMLTriple.h>
+#include <liblx/xml/operationReturnValues.h>
 
 
-#include <sbml/xml/common/extern.h>
+#include <liblx/xml/common/extern.h>
 
 #if defined(__cplusplus)
 LIBSBXML_CPP_NAMESPACE_USE

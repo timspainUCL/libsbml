@@ -37,7 +37,7 @@
 #include <cstdlib>
 #include <string>
 
-#include <sbml/xml/XMLConstructorException.h>
+#include <liblx/xml/XMLConstructorException.h>
 
 /** @cond doxygenIgnored */
 using namespace std;

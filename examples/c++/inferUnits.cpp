@@ -40,9 +40,9 @@
 
 
 #include <iostream>
-#include <sbml/SBMLTypes.h>
-#include <sbml/conversion/ConversionProperties.h>
-#include <sbml/conversion/SBMLConverterRegistry.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/conversion/ConversionProperties.h>
+#include <liblx/conversion/SBMLConverterRegistry.h>
 
 using namespace std;
 LIBSBML_CPP_NAMESPACE_USE

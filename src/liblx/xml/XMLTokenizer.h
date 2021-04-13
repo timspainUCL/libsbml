@@ -49,8 +49,8 @@
 
 #include <deque>
 
-#include <sbml/xml/XMLExtern.h>
-#include <sbml/xml/XMLHandler.h>
+#include <liblx/xml/XMLExtern.h>
+#include <liblx/xml/XMLHandler.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

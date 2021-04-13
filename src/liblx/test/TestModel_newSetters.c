@@ -34,35 +34,35 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
-#include <sbml/math/FormulaParser.h>
+#include <liblx/common/common.h>
+#include <liblx/math/FormulaParser.h>
 
-#include <sbml/SBase.h>
-#include <sbml/Model.h>
-#include <sbml/Reaction.h>
-#include <sbml/Event.h>
-#include <sbml/UnitDefinition.h>
-#include <sbml/FunctionDefinition.h>
-#include <sbml/CompartmentType.h>
-#include <sbml/SpeciesType.h>
-#include <sbml/InitialAssignment.h>
-#include <sbml/Constraint.h>
-#include <sbml/Compartment.h>
-#include <sbml/Species.h>
-#include <sbml/Parameter.h>
-#include <sbml/Rule.h>
-#include <sbml/KineticLaw.h>
-#include <sbml/Trigger.h>
-#include <sbml/annotation/ModelHistory.h>
-#include <sbml/xml/XMLNamespaces.h>
-#include <sbml/SBMLDocument.h>
+#include <liblx/SBase.h>
+#include <liblx/Model.h>
+#include <liblx/Reaction.h>
+#include <liblx/Event.h>
+#include <liblx/UnitDefinition.h>
+#include <liblx/FunctionDefinition.h>
+#include <liblx/CompartmentType.h>
+#include <liblx/SpeciesType.h>
+#include <liblx/InitialAssignment.h>
+#include <liblx/Constraint.h>
+#include <liblx/Compartment.h>
+#include <liblx/Species.h>
+#include <liblx/Parameter.h>
+#include <liblx/Rule.h>
+#include <liblx/KineticLaw.h>
+#include <liblx/Trigger.h>
+#include <liblx/annotation/ModelHistory.h>
+#include <liblx/xml/XMLNamespaces.h>
+#include <liblx/SBMLDocument.h>
 
 #include <check.h>
 
 
 
 
-#include <sbml/common/extern.h>
+#include <liblx/common/extern.h>
 
 LIBSBML_CPP_NAMESPACE_USE
 

@@ -44,9 +44,9 @@
 #include <string>
 #include <xercesc/sax2/SAX2XMLReader.hpp>
 
-#include <sbml/xml/XMLParser.h>
-#include <sbml/xml/XercesHandler.h>
-#include <sbml/xml/XMLError.h>
+#include <liblx/xml/XMLParser.h>
+#include <liblx/xml/XercesHandler.h>
+#include <liblx/xml/XMLError.h>
 
 LIBSBML_CPP_NAMESPACE_BEGIN
 

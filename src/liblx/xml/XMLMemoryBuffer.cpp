@@ -37,7 +37,7 @@
  * ---------------------------------------------------------------------- -->*/
 
 #include <cstring>
-#include <sbml/xml/XMLMemoryBuffer.h>
+#include <liblx/xml/XMLMemoryBuffer.h>
 
 using namespace std;
 

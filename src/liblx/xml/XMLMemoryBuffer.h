@@ -39,7 +39,7 @@
 #ifndef XMLMemoryBuffer_h
 #define XMLMemoryBuffer_h
 
-#include <sbml/xml/XMLBuffer.h>
+#include <liblx/xml/XMLBuffer.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

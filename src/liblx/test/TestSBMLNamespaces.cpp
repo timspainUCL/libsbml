@@ -34,11 +34,11 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
-#include <sbml/common/extern.h>
+#include <liblx/common/common.h>
+#include <liblx/common/extern.h>
 
-#include <sbml/SBMLNamespaces.h>
-#include <sbml/xml/XMLNamespaces.h>
+#include <liblx/SBMLNamespaces.h>
+#include <liblx/xml/XMLNamespaces.h>
 
 #include <check.h>
 

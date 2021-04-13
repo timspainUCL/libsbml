@@ -38,13 +38,13 @@
 #include <functional>
 #include <sstream>
 
-#include <sbml/xml/XMLError.h>
-#include <sbml/xml/XMLParser.h>
+#include <liblx/xml/XMLError.h>
+#include <liblx/xml/XMLParser.h>
 
-#include <sbml/xml/XMLErrorLog.h>
+#include <liblx/xml/XMLErrorLog.h>
 
-#include <sbml/xml/sbmlStubs.h>
-#include <sbml/xml/operationReturnValues.h>
+#include <liblx/xml/sbmlStubs.h>
+#include <liblx/xml/operationReturnValues.h>
 
 
 /** @cond doxygenIgnored */

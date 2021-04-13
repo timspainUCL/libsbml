@@ -17,13 +17,13 @@
 #define CONVERT_RENDER
 
 
-#include "sbml/SBMLTypes.h"
-#include "sbml/extension/SBMLDocumentPlugin.h"
-#include "sbml/conversion/ConversionProperties.h"
-#include "sbml/packages/layout/common/LayoutExtensionTypes.h"
+#include "liblx/SBMLTypes.h"
+#include "liblx/extension/SBMLDocumentPlugin.h"
+#include "liblx/conversion/ConversionProperties.h"
+#include "liblx/packages/layout/common/LayoutExtensionTypes.h"
 
 #ifdef CONVERT_RENDER
-#include "sbml/packages/render/common/RenderExtensionTypes.h"
+#include "liblx/packages/render/common/RenderExtensionTypes.h"
 #endif
 
 using namespace std;

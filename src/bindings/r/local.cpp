@@ -35,7 +35,7 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include "sbml/SBMLTypes.h"
+#include "liblx/SBMLTypes.h"
 #include <sstream>
 #include <R.h>
 using namespace std;

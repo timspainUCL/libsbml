@@ -37,8 +37,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include <sbml/common/extern.h>
-#include <sbml/util/memory.h>
+#include <liblx/common/extern.h>
+#include <liblx/util/memory.h>
 
 #include <check.h>
 

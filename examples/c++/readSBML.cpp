@@ -42,8 +42,8 @@
 
 #include <iostream>
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/common/extern.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/common/extern.h>
 #include "util.h"
 
 

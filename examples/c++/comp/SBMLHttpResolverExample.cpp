@@ -48,11 +48,11 @@
 
 #include <curl/curl.h>
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/packages/comp/common/CompExtensionTypes.h>
-#include <sbml/packages/comp/util/SBMLResolver.h>
-#include <sbml/packages/comp/util/SBMLResolverRegistry.h>
-#include <sbml/packages/comp/util/SBMLUri.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/packages/comp/common/CompExtensionTypes.h>
+#include <liblx/packages/comp/util/SBMLResolver.h>
+#include <liblx/packages/comp/util/SBMLResolverRegistry.h>
+#include <liblx/packages/comp/util/SBMLUri.h>
 
 LIBSBML_CPP_NAMESPACE_USE
 using namespace std;

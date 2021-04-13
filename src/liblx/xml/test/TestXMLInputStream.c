@@ -34,10 +34,10 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/xml/common/common.h>
-#include <sbml/xml/XMLInputStream.h>
-#include <sbml/xml/XMLToken.h>
-#include <sbml/xml/XMLErrorLog.h>
+#include <liblx/xml/common/common.h>
+#include <liblx/xml/XMLInputStream.h>
+#include <liblx/xml/XMLToken.h>
+#include <liblx/xml/XMLErrorLog.h>
 
 #include <check.h>
 

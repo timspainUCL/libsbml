@@ -35,17 +35,17 @@
  * ---------------------------------------------------------------------- -->*/
 
 /** @cond doxygenLibsbmlInternal */
-#include <sbml/xml/XMLOutputStream.h>
+#include <liblx/xml/XMLOutputStream.h>
 /** @endcond */
 
-#include <sbml/xml/XMLTriple.h>
-#include <sbml/xml/XMLNamespaces.h>
-#include <sbml/xml/XMLAttributes.h>
-#include <sbml/xml/XMLConstructorException.h>
-//#include <sbml/xml/SBMLNamespaces.h>
+#include <liblx/xml/XMLTriple.h>
+#include <liblx/xml/XMLNamespaces.h>
+#include <liblx/xml/XMLAttributes.h>
+#include <liblx/xml/XMLConstructorException.h>
+//#include <liblx/xml/SBMLNamespaces.h>
 
-#include <sbml/xml/sbmlStubs.h>
-#include <sbml/xml/operationReturnValues.h>
+#include <liblx/xml/sbmlStubs.h>
+#include <liblx/xml/operationReturnValues.h>
 
 
 /** @cond doxygenIgnored */

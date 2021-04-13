@@ -42,7 +42,7 @@
 #include <string>
 
 #include <libxml/parser.h>
-#include <sbml/xml/XMLNamespaces.h>
+#include <liblx/xml/XMLNamespaces.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

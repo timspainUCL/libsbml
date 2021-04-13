@@ -10,17 +10,17 @@
 #include <iostream>
 #include <sstream>
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/extension/SBMLExtensionRegister.h>
-#include <sbml/extension/SBMLExtensionRegistry.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/extension/SBMLExtensionRegister.h>
+#include <liblx/extension/SBMLExtensionRegistry.h>
 
-#include <sbml/packages/comp/extension/CompExtension.h>
-#include <sbml/packages/comp/extension/CompSBasePlugin.h>
-#include <sbml/packages/comp/extension/CompSBMLDocumentPlugin.h>
-#include <sbml/packages/comp/extension/CompModelPlugin.h>
-#include <sbml/conversion/SBMLConverterRegister.h>
-#include <sbml/conversion/SBMLConverterRegistry.h>
-#include <sbml/conversion/SBMLConverter.h>
+#include <liblx/packages/comp/extension/CompExtension.h>
+#include <liblx/packages/comp/extension/CompSBasePlugin.h>
+#include <liblx/packages/comp/extension/CompSBMLDocumentPlugin.h>
+#include <liblx/packages/comp/extension/CompModelPlugin.h>
+#include <liblx/conversion/SBMLConverterRegister.h>
+#include <liblx/conversion/SBMLConverterRegistry.h>
+#include <liblx/conversion/SBMLConverter.h>
 
 #ifdef WIN32
 #include <conio.h>

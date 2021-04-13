@@ -38,8 +38,8 @@
 
 #include <sstream>
 
-#include <sbml/xml/XMLToken.h>
-#include <sbml/xml/XMLTokenizer.h>
+#include <liblx/xml/XMLToken.h>
+#include <liblx/xml/XMLTokenizer.h>
 
 using namespace std;
 

@@ -43,7 +43,7 @@
 
 #include <string>
 #include <xercesc/util/XMLString.hpp>
-#include <sbml/xml/common/libsbml-namespace.h>
+#include <liblx/xml/common/libsbml-namespace.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

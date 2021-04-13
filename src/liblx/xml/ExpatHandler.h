@@ -44,9 +44,9 @@
 #include <string>
 
 #include <expat.h>
-#include <sbml/xml/XMLHandler.h>
-#include <sbml/xml/XMLNamespaces.h>
-#include <sbml/xml/XMLError.h>
+#include <liblx/xml/XMLHandler.h>
+#include <liblx/xml/XMLNamespaces.h>
+#include <liblx/xml/XMLError.h>
 
 
 LIBSBML_CPP_NAMESPACE_BEGIN

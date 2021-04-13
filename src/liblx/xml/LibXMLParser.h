@@ -44,9 +44,9 @@
 #include <string>
 #include <cstring>
 
-#include <sbml/xml/XMLParser.h>
-#include <sbml/xml/LibXMLHandler.h>
-#include <sbml/xml/XMLErrorLog.h>
+#include <liblx/xml/XMLParser.h>
+#include <liblx/xml/LibXMLHandler.h>
+#include <liblx/xml/XMLErrorLog.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

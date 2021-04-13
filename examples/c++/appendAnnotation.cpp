@@ -39,11 +39,11 @@
  */
 
 #include <iostream>
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 
-#include <sbml/xml/XMLNode.h>
-#include <sbml/annotation/CVTerm.h>
-#include <sbml/annotation/ModelHistory.h>
+#include <liblx/xml/XMLNode.h>
+#include <liblx/annotation/CVTerm.h>
+#include <liblx/annotation/ModelHistory.h>
 using namespace std;
 LIBSBML_CPP_NAMESPACE_USE
 

@@ -36,14 +36,14 @@
 
 #ifdef USE_GROUPS
 
-#include <sbml/packages/groups/extension/GroupsExtension.h>
-#include <sbml/packages/groups/extension/GroupsModelPlugin.h>
-#include <sbml/packages/groups/common/GroupsExtensionTypes.h>
-#include <sbml/packages/groups/sbml/Group.h>
-#include <sbml/packages/groups/sbml/Member.h>
-#include <sbml/packages/groups/sbml/ListOfGroups.h>
-#include <sbml/packages/groups/sbml/ListOfMembers.h>
-#include <sbml/packages/groups/validator/GroupsSBMLError.h>
+#include <liblx/packages/groups/extension/GroupsExtension.h>
+#include <liblx/packages/groups/extension/GroupsModelPlugin.h>
+#include <liblx/packages/groups/common/GroupsExtensionTypes.h>
+#include <liblx/packages/groups/sbml/Group.h>
+#include <liblx/packages/groups/sbml/Member.h>
+#include <liblx/packages/groups/sbml/ListOfGroups.h>
+#include <liblx/packages/groups/sbml/ListOfMembers.h>
+#include <liblx/packages/groups/validator/GroupsSBMLError.h>
 
 #endif // USE_GROUPS 
 

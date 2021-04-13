@@ -39,9 +39,9 @@
  */
  
 #include <iostream>
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 
-#include <sbml/validator/SBMLValidator.h>
+#include <liblx/validator/SBMLValidator.h>
 
 
 

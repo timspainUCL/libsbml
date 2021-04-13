@@ -34,14 +34,14 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
-#include <sbml/math/FormulaParser.h>
-#include <sbml/math/FormulaFormatter.h>
+#include <liblx/common/common.h>
+#include <liblx/math/FormulaParser.h>
+#include <liblx/math/FormulaFormatter.h>
 
-#include <sbml/SBase.h>
-#include <sbml/Priority.h>
-#include <sbml/xml/XMLNamespaces.h>
-#include <sbml/SBMLDocument.h>
+#include <liblx/SBase.h>
+#include <liblx/Priority.h>
+#include <liblx/xml/XMLNamespaces.h>
+#include <liblx/SBMLDocument.h>
 
 #include <check.h>
 

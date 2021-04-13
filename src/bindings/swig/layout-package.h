@@ -44,30 +44,30 @@
 
 #ifdef USE_LAYOUT
 
-#include <sbml/packages/layout/sbml/SpeciesReferenceRole.h>
-#include <sbml/packages/layout/sbml/BoundingBox.h>
-#include <sbml/packages/layout/sbml/CompartmentGlyph.h>
-#include <sbml/packages/layout/sbml/CubicBezier.h>
-#include <sbml/packages/layout/sbml/Curve.h>
-#include <sbml/packages/layout/sbml/Dimensions.h>
-#include <sbml/packages/layout/sbml/GraphicalObject.h>
-#include <sbml/packages/layout/sbml/Layout.h>
-#include <sbml/packages/layout/sbml/LineSegment.h>
-#include <sbml/packages/layout/sbml/Point.h>
-#include <sbml/packages/layout/sbml/ReferenceGlyph.h>
-#include <sbml/packages/layout/sbml/GeneralGlyph.h>
-#include <sbml/packages/layout/sbml/ReactionGlyph.h>
-#include <sbml/packages/layout/sbml/SpeciesGlyph.h>
-#include <sbml/packages/layout/sbml/SpeciesReferenceGlyph.h>
-#include <sbml/packages/layout/sbml/TextGlyph.h>
+#include <liblx/packages/layout/sbml/SpeciesReferenceRole.h>
+#include <liblx/packages/layout/sbml/BoundingBox.h>
+#include <liblx/packages/layout/sbml/CompartmentGlyph.h>
+#include <liblx/packages/layout/sbml/CubicBezier.h>
+#include <liblx/packages/layout/sbml/Curve.h>
+#include <liblx/packages/layout/sbml/Dimensions.h>
+#include <liblx/packages/layout/sbml/GraphicalObject.h>
+#include <liblx/packages/layout/sbml/Layout.h>
+#include <liblx/packages/layout/sbml/LineSegment.h>
+#include <liblx/packages/layout/sbml/Point.h>
+#include <liblx/packages/layout/sbml/ReferenceGlyph.h>
+#include <liblx/packages/layout/sbml/GeneralGlyph.h>
+#include <liblx/packages/layout/sbml/ReactionGlyph.h>
+#include <liblx/packages/layout/sbml/SpeciesGlyph.h>
+#include <liblx/packages/layout/sbml/SpeciesReferenceGlyph.h>
+#include <liblx/packages/layout/sbml/TextGlyph.h>
 
-#include <sbml/packages/layout/extension/LayoutExtension.h>
-#include <sbml/packages/layout/extension/LayoutModelPlugin.h>
-#include <sbml/packages/layout/extension/LayoutSpeciesReferencePlugin.h>
+#include <liblx/packages/layout/extension/LayoutExtension.h>
+#include <liblx/packages/layout/extension/LayoutModelPlugin.h>
+#include <liblx/packages/layout/extension/LayoutSpeciesReferencePlugin.h>
 
-#include <sbml/packages/layout/util/LayoutAnnotation.h>
+#include <liblx/packages/layout/util/LayoutAnnotation.h>
 
-#include <sbml/packages/layout/validator/LayoutSBMLError.h>
+#include <liblx/packages/layout/validator/LayoutSBMLError.h>
 
 #endif
 

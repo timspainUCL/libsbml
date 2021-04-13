@@ -339,8 +339,8 @@
 #include <stdio.h>
 
 
-#include <sbml/xml/XMLExtern.h>
-#include <sbml/xml/common/sbxmlfwd.h>
+#include <liblx/xml/XMLExtern.h>
+#include <liblx/xml/common/sbxmlfwd.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 
@@ -565,7 +565,7 @@ LIBSBXML_CPP_NAMESPACE_END
 
 #include <iosfwd>
 #include <string>
-#include <sbml/xml/operationReturnValues.h>
+#include <liblx/xml/operationReturnValues.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

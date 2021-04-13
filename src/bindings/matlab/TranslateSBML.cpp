@@ -44,17 +44,17 @@
 #endif
 #include <algorithm>
 
-#include <sbml/SBMLReader.h>
-#include <sbml/SBMLTypes.h>
-#include <sbml/xml/XMLNode.h>
-#include <sbml/math/ASTNode.h>
-#include <sbml/extension/SBasePlugin.h>
-#include <sbml/extension/SBMLExtensionRegistry.h>
+#include <liblx/SBMLReader.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/xml/XMLNode.h>
+#include <liblx/math/ASTNode.h>
+#include <liblx/extension/SBasePlugin.h>
+#include <liblx/extension/SBMLExtensionRegistry.h>
 
 LIBSBML_CPP_NAMESPACE_USE
 
 #ifdef USE_FBC
-#include <sbml/packages/fbc/common/FbcExtensionTypes.h>
+#include <liblx/packages/fbc/common/FbcExtensionTypes.h>
 #endif
 
 ////////////////////////////////

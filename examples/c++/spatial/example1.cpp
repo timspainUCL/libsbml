@@ -1,15 +1,15 @@
 
 #include <iostream>
 
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 
-#include <sbml/math/MathML.h>
-#include <sbml/math/ASTNode.h>
+#include <liblx/math/MathML.h>
+#include <liblx/math/ASTNode.h>
 
-#include <sbml/extension/SBMLDocumentPlugin.h>
+#include <liblx/extension/SBMLDocumentPlugin.h>
 
-#include <sbml/packages/spatial/extension/SpatialExtension.h>
-#include <sbml/packages/spatial/common/SpatialExtensionTypes.h>
+#include <liblx/packages/spatial/extension/SpatialExtension.h>
+#include <liblx/packages/spatial/common/SpatialExtensionTypes.h>
 
 using namespace std;
 LIBSBML_CPP_NAMESPACE_USE

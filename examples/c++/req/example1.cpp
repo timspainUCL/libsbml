@@ -10,11 +10,11 @@
  * information about SBML, and the latest version of libSBML.
  */
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/packages/req/common/ReqExtensionTypes.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/packages/req/common/ReqExtensionTypes.h>
 
-#include <sbml/extension/SBMLExtensionRegister.h>
-#include <sbml/extension/SBMLExtensionRegistry.h>
+#include <liblx/extension/SBMLExtensionRegister.h>
+#include <liblx/extension/SBMLExtensionRegistry.h>
 
 LIBSBML_CPP_NAMESPACE_USE
 

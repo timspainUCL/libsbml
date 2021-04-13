@@ -47,7 +47,7 @@
 #include <cstdio>
 #include <istream>
 
-#include <sbml/xml/XMLBuffer.h>
+#include <liblx/xml/XMLBuffer.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

@@ -38,16 +38,16 @@
 * ------------------------------------------------------------------------ -->
 */
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/extension/SBMLDocumentPlugin.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/extension/SBMLDocumentPlugin.h>
 
 
-#include <sbml/extension/SBMLExtensionRegister.h>
+#include <liblx/extension/SBMLExtensionRegister.h>
 
-#include <sbml/packages/groups/common/groupsfwd.h>
-#include <sbml/packages/groups/common/GroupsExtensionTypes.h>
+#include <liblx/packages/groups/common/groupsfwd.h>
+#include <liblx/packages/groups/common/GroupsExtensionTypes.h>
 
-#include <sbml/packages/groups/extension/GroupsExtension.h>
+#include <liblx/packages/groups/extension/GroupsExtension.h>
 
 
 

@@ -41,18 +41,18 @@
 /*#include <iostream>
 #include <sstream>
 */
-#include <sbml/SBMLTypes.h>
-#include <sbml/extension/SBMLDocumentPlugin.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/extension/SBMLDocumentPlugin.h>
 
 
-#include <sbml/extension/SBMLExtensionRegister.h>
+#include <liblx/extension/SBMLExtensionRegister.h>
 
-#include <sbml/packages/fbc/common/fbcfwd.h>
-#include <sbml/packages/fbc/extension/FbcSBMLDocumentPlugin.h>
-#include <sbml/packages/fbc/extension/FbcModelPlugin.h>
-#include <sbml/packages/fbc/extension/FbcReactionPlugin.h>
-#include <sbml/packages/fbc/sbml/Objective.h>
-#include <sbml/packages/fbc/sbml/FluxObjective.h>
+#include <liblx/packages/fbc/common/fbcfwd.h>
+#include <liblx/packages/fbc/extension/FbcSBMLDocumentPlugin.h>
+#include <liblx/packages/fbc/extension/FbcModelPlugin.h>
+#include <liblx/packages/fbc/extension/FbcReactionPlugin.h>
+#include <liblx/packages/fbc/sbml/Objective.h>
+#include <liblx/packages/fbc/sbml/FluxObjective.h>
 
 LIBSBML_CPP_NAMESPACE_USE
 

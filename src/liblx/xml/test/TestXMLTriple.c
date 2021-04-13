@@ -34,9 +34,9 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/xml/common/common.h>
-#include <sbml/xml/XMLTriple.h>
-#include <sbml/xml/sbmlMemoryStubs.h>
+#include <liblx/xml/common/common.h>
+#include <liblx/xml/XMLTriple.h>
+#include <liblx/xml/sbmlMemoryStubs.h>
 
 #include <check.h>
 

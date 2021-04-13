@@ -36,14 +36,14 @@
  * also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/xml/XMLHandler.h>
-#include <sbml/xml/XMLTriple.h>
-#include <sbml/xml/XMLToken.h>
+#include <liblx/xml/XMLHandler.h>
+#include <liblx/xml/XMLTriple.h>
+#include <liblx/xml/XMLToken.h>
 
-#include <sbml/xml/LibXMLAttributes.h>
-#include <sbml/xml/LibXMLNamespaces.h>
-#include <sbml/xml/LibXMLTranscode.h>
-#include <sbml/xml/LibXMLHandler.h>
+#include <liblx/xml/LibXMLAttributes.h>
+#include <liblx/xml/LibXMLNamespaces.h>
+#include <liblx/xml/LibXMLTranscode.h>
+#include <liblx/xml/LibXMLHandler.h>
 
 using namespace std;
 

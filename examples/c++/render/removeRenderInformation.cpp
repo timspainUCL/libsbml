@@ -8,11 +8,11 @@
  */
 
 #include <stdlib.h>
-#include <sbml/SBMLTypes.h>
-#include <sbml/extension/SBMLDocumentPlugin.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/extension/SBMLDocumentPlugin.h>
 
-#include <sbml/packages/layout/common/LayoutExtensionTypes.h>
-#include <sbml/packages/render/common/RenderExtensionTypes.h>
+#include <liblx/packages/layout/common/LayoutExtensionTypes.h>
+#include <liblx/packages/render/common/RenderExtensionTypes.h>
 
 #include <iostream>
 

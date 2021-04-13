@@ -45,7 +45,7 @@
 #include <iostream>
 #include <sstream>
 
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 #include "util.h"
 
 

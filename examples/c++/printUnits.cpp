@@ -41,11 +41,11 @@
 
 
 #include <iostream>
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 
-#include <sbml/UnitDefinition.h>
-#include <sbml/units/UnitFormulaFormatter.h>
-#include <sbml/units/FormulaUnitsData.h>
+#include <liblx/UnitDefinition.h>
+#include <liblx/units/UnitFormulaFormatter.h>
+#include <liblx/units/FormulaUnitsData.h>
 
 
 using namespace std;

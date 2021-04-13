@@ -38,9 +38,9 @@
  * ------------------------------------------------------------------------ -->
  */
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/packages/dyn/common/DynExtensionTypes.h>
-#include <sbml/packages/comp/common/CompExtensionTypes.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/packages/dyn/common/DynExtensionTypes.h>
+#include <liblx/packages/comp/common/CompExtensionTypes.h>
 
 LIBSBML_CPP_NAMESPACE_USE
 

@@ -56,13 +56,13 @@
 
 #include <stdlib.h>
 
-#include "sbml/SBMLTypes.h"
-#include "sbml/extension/SBMLDocumentPlugin.h"
-#include "sbml/conversion/ConversionProperties.h"
-#include "sbml/packages/layout/common/LayoutExtensionTypes.h"
+#include "liblx/SBMLTypes.h"
+#include "liblx/extension/SBMLDocumentPlugin.h"
+#include "liblx/conversion/ConversionProperties.h"
+#include "liblx/packages/layout/common/LayoutExtensionTypes.h"
 
 #ifdef LIBSBML_HAS_PACKAGE_RENDER
-#include "sbml/packages/render/common/RenderExtensionTypes.h"
+#include "liblx/packages/render/common/RenderExtensionTypes.h"
 #endif
 
 #if (!defined LIBSBML_HAS_PACKAGE_LAYOUT)

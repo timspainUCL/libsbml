@@ -39,8 +39,8 @@
  */
 
 #include <iostream>
-#include <sbml/SBMLTypes.h>
-#include <sbml/conversion/ConversionProperties.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/conversion/ConversionProperties.h>
 
 #include <cstring>
 

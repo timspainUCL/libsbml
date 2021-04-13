@@ -41,13 +41,13 @@
 
 #include <libxml/xmlerror.h>
 
-#include <sbml/xml/XMLFileBuffer.h>
-#include <sbml/xml/XMLMemoryBuffer.h>
+#include <liblx/xml/XMLFileBuffer.h>
+#include <liblx/xml/XMLMemoryBuffer.h>
 
-#include <sbml/xml/LibXMLHandler.h>
-#include <sbml/xml/LibXMLParser.h>
+#include <liblx/xml/LibXMLHandler.h>
+#include <liblx/xml/LibXMLParser.h>
 
-#include <sbml/xml/compress/CompressCommon.h>
+#include <liblx/xml/compress/CompressCommon.h>
 
 
 using namespace std;

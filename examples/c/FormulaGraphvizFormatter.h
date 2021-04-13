@@ -41,9 +41,9 @@
 #ifndef FormulaGraphvizFormatter_h
 #define FormulaGraphvizFormatter_h
 
-#include "sbml/common/extern.h"
-#include "sbml/util/StringBuffer.h"
-#include "sbml/math/ASTNode.h"
+#include "liblx/common/extern.h"
+#include "liblx/util/StringBuffer.h"
+#include "liblx/math/ASTNode.h"
 
 
 

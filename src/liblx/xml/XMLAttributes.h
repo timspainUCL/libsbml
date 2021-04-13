@@ -227,8 +227,8 @@ foo:myattribute="7"
 #ifndef XMLAttributes_h
 #define XMLAttributes_h
 
-#include <sbml/xml/XMLExtern.h>
-#include <sbml/xml/common/sbxmlfwd.h>
+#include <liblx/xml/XMLExtern.h>
+#include <liblx/xml/common/sbxmlfwd.h>
 
 
 #ifdef __cplusplus
@@ -238,7 +238,7 @@ foo:myattribute="7"
 #include <vector>
 #include <stdexcept>
 
-#include <sbml/xml/XMLTriple.h>
+#include <liblx/xml/XMLTriple.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

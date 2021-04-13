@@ -36,7 +36,7 @@
  * ---------------------------------------------------------------------- -->*/
 
 #include <cstddef>
-#include "sbml/SBase.h"
+#include "liblx/SBase.h"
 
 /**
  * @return the most specific Swig type for the given SBMLExtension object.

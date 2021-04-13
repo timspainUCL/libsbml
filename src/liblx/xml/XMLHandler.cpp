@@ -36,8 +36,8 @@
  * also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/xml/XMLHandler.h>
-#include <sbml/xml/XMLToken.h>
+#include <liblx/xml/XMLHandler.h>
+#include <liblx/xml/XMLToken.h>
 
 using namespace std;
 

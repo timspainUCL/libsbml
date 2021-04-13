@@ -34,10 +34,10 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
-#include <sbml/SBMLReader.h>
-#include <sbml/SBMLWriter.h>
-#include <sbml/SBMLTypes.h>
+#include <liblx/common/common.h>
+#include <liblx/SBMLReader.h>
+#include <liblx/SBMLWriter.h>
+#include <liblx/SBMLTypes.h>
 
 #include <string>
 #include <limits>

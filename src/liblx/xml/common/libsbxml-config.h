@@ -65,11 +65,11 @@
 #ifndef LIBSBXML_CONFIG_H
 #define LIBSBXML_CONFIG_H 1
 
-#include <sbml/xml/common/libsbxml-namespace.h>
+#include <liblx/xml/common/libsbxml-namespace.h>
 
-#include <sbml/xml/common/libsbxml-config-common.h>
+#include <liblx/xml/common/libsbxml-config-common.h>
 
-#include <sbml/xml/common/libsbxml-version.h>
+#include <liblx/xml/common/libsbxml-version.h>
 
 
 #endif  /* LIBSBXML_CONFIG_H */

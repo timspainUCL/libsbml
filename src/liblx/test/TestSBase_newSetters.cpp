@@ -34,15 +34,15 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
-#include <sbml/common/extern.h>
+#include <liblx/common/common.h>
+#include <liblx/common/extern.h>
 
-#include <sbml/SBase.h>
-#include <sbml/Model.h>
-#include <sbml/annotation/CVTerm.h>
-#include <sbml/annotation/ModelHistory.h>
-#include <sbml/annotation/ModelCreator.h>
-#include <sbml/annotation/Date.h>
+#include <liblx/SBase.h>
+#include <liblx/Model.h>
+#include <liblx/annotation/CVTerm.h>
+#include <liblx/annotation/ModelHistory.h>
+#include <liblx/annotation/ModelCreator.h>
+#include <liblx/annotation/Date.h>
 
 #include <check.h>
 #include <limits.h>

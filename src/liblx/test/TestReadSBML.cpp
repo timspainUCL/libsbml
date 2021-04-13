@@ -36,14 +36,14 @@
 
 #include <iostream>
 
-#include <sbml/common/common.h>
+#include <liblx/common/common.h>
 
-#include <sbml/math/ASTNode.h>
-#include <sbml/math/FormulaFormatter.h>
+#include <liblx/math/ASTNode.h>
+#include <liblx/math/FormulaFormatter.h>
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/SBMLReader.h>
-#include <sbml/SBMLError.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/SBMLReader.h>
+#include <liblx/SBMLError.h>
 
 #include <check.h>
 

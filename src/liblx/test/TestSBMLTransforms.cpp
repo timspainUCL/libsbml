@@ -34,13 +34,13 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
-#include <sbml/common/extern.h>
-#include <sbml/SBMLReader.h>
-#include <sbml/SBMLTypes.h>
+#include <liblx/common/common.h>
+#include <liblx/common/extern.h>
+#include <liblx/SBMLReader.h>
+#include <liblx/SBMLTypes.h>
 
-#include <sbml/SBMLTransforms.h>
-#include <sbml/conversion/ConversionProperties.h>
+#include <liblx/SBMLTransforms.h>
+#include <liblx/conversion/ConversionProperties.h>
 
 #include <check.h>
 

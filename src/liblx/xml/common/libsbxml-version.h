@@ -38,7 +38,7 @@
 #ifndef LIBSBXML_VERSION_H
 #define LIBSBXML_VERSION_H
 
-#include <sbml/xml/common/extern.h>
+#include <liblx/xml/common/extern.h>
 
 
 /**

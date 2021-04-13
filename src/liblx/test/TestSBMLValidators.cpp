@@ -35,15 +35,15 @@
  * ---------------------------------------------------------------------- -->*/
 
 
-#include <sbml/common/common.h>
-#include <sbml/common/extern.h>
-#include <sbml/SBMLReader.h>
-#include <sbml/SBMLTypes.h>
+#include <liblx/common/common.h>
+#include <liblx/common/extern.h>
+#include <liblx/SBMLReader.h>
+#include <liblx/SBMLTypes.h>
 
-#include <sbml/SBMLError.h>
-#include <sbml/validator/SBMLValidator.h>
-#include <sbml/validator/SBMLInternalValidator.h>
-#include <sbml/validator/SBMLExternalValidator.h>
+#include <liblx/SBMLError.h>
+#include <liblx/validator/SBMLValidator.h>
+#include <liblx/validator/SBMLInternalValidator.h>
+#include <liblx/validator/SBMLExternalValidator.h>
 
 #include <check.h>
 

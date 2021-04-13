@@ -36,14 +36,14 @@
  * also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/xml/XMLErrorLog.h>
-#include <sbml/xml/XMLParser.h>
+#include <liblx/xml/XMLErrorLog.h>
+#include <liblx/xml/XMLParser.h>
 
-#include <sbml/xml/XMLInputStream.h>
+#include <liblx/xml/XMLInputStream.h>
 
-#include <sbml/xml/sbmlStubs.h>
-#include <sbml/xml/operationReturnValues.h>
-#include <sbml/xml/XMLNamespaces.h>
+#include <liblx/xml/sbmlStubs.h>
+#include <liblx/xml/operationReturnValues.h>
+#include <liblx/xml/XMLNamespaces.h>
 
 using namespace std;
 

@@ -40,8 +40,8 @@
 
 #include <iostream>
 
-#include "sbml/SBMLTypes.h"
-#include "sbml/packages/qual/common/QualExtensionTypes.h"
+#include "liblx/SBMLTypes.h"
+#include "liblx/packages/qual/common/QualExtensionTypes.h"
 
 LIBSBML_CPP_NAMESPACE_USE
 

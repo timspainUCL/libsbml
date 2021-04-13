@@ -38,11 +38,11 @@
 
 #ifdef USE_L3V2EXTENDEDMATH
 
-#include <sbml/packages/l3v2extendedmath/extension/L3v2extendedmathExtension.h>
-#include <sbml/packages/l3v2extendedmath/extension/L3v2extendedmathSBMLDocumentPlugin.h>
-#include <sbml/packages/l3v2extendedmath/extension/L3v2extendedmathASTPlugin.h>
+#include <liblx/packages/l3v2extendedmath/extension/L3v2extendedmathExtension.h>
+#include <liblx/packages/l3v2extendedmath/extension/L3v2extendedmathSBMLDocumentPlugin.h>
+#include <liblx/packages/l3v2extendedmath/extension/L3v2extendedmathASTPlugin.h>
 
-#include <sbml/packages/l3v2extendedmath/common/L3v2extendedmathExtensionTypes.h>
+#include <liblx/packages/l3v2extendedmath/common/L3v2extendedmathExtensionTypes.h>
 
 #endif // USE_ARRAYS
 

@@ -39,7 +39,7 @@
  */
 
 #include <stdio.h>
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 
 
 int

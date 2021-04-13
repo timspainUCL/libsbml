@@ -40,20 +40,20 @@
 
 
 #ifdef USE_EXPAT
-#include <sbml/xml/ExpatParser.h>
+#include <liblx/xml/ExpatParser.h>
 #endif
 
 #ifdef USE_LIBXML
-#include <sbml/xml/LibXMLParser.h>
+#include <liblx/xml/LibXMLParser.h>
 #endif
 
 #ifdef USE_XERCES
-#include <sbml/xml/XercesParser.h>
+#include <liblx/xml/XercesParser.h>
 #endif
 
-#include <sbml/xml/XMLErrorLog.h>
-#include <sbml/xml/XMLParser.h>
-#include <sbml/xml/operationReturnValues.h>
+#include <liblx/xml/XMLErrorLog.h>
+#include <liblx/xml/XMLParser.h>
+#include <liblx/xml/operationReturnValues.h>
 
 
 using namespace std;

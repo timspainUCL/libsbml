@@ -35,7 +35,7 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include "sbml/SBase.h"
+#include "liblx/SBase.h"
 
 /**
  * @return the most specific Swig type for the given SBMLExtension object.

@@ -42,14 +42,14 @@
 #include <sstream>
 #include <cstring>
 
-#include <sbml/xml/XMLFileBuffer.h>
-#include <sbml/xml/XMLMemoryBuffer.h>
-#include <sbml/xml/XMLErrorLog.h>
+#include <liblx/xml/XMLFileBuffer.h>
+#include <liblx/xml/XMLMemoryBuffer.h>
+#include <liblx/xml/XMLErrorLog.h>
 
-#include <sbml/xml/ExpatHandler.h>
-#include <sbml/xml/ExpatParser.h>
+#include <liblx/xml/ExpatHandler.h>
+#include <liblx/xml/ExpatParser.h>
 
-#include <sbml/xml/compress/CompressCommon.h>
+#include <liblx/xml/compress/CompressCommon.h>
 
 using namespace std;
 

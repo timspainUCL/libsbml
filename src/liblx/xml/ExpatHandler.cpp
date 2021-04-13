@@ -38,14 +38,14 @@
 
 #include <expat.h>
 
-#include <sbml/xml/XMLHandler.h>
-#include <sbml/xml/XMLTriple.h>
-#include <sbml/xml/XMLToken.h>
-#include <sbml/xml/XMLError.h>
-#include <sbml/xml/XMLErrorLog.h>
+#include <liblx/xml/XMLHandler.h>
+#include <liblx/xml/XMLTriple.h>
+#include <liblx/xml/XMLToken.h>
+#include <liblx/xml/XMLError.h>
+#include <liblx/xml/XMLErrorLog.h>
 
-#include <sbml/xml/ExpatAttributes.h>
-#include <sbml/xml/ExpatHandler.h>
+#include <liblx/xml/ExpatAttributes.h>
+#include <liblx/xml/ExpatHandler.h>
 
 using namespace std;
 

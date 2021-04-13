@@ -41,9 +41,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 
-#include <sbml/validator/SBMLExternalValidator.h>
+#include <liblx/validator/SBMLExternalValidator.h>
 
 using namespace std;
 LIBSBML_CPP_NAMESPACE_USE

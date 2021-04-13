@@ -36,7 +36,7 @@
  * also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/xml/XMLBuffer.h>
+#include <liblx/xml/XMLBuffer.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

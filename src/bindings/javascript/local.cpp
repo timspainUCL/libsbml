@@ -35,7 +35,7 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 #include <string>
-#include "sbml/SBase.h"
+#include "liblx/SBase.h"
 using namespace std;
 
 /**

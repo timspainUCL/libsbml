@@ -44,7 +44,7 @@
 #include <string>
 #include <expat.h>
 
-#include <sbml/xml/XMLAttributes.h>
+#include <liblx/xml/XMLAttributes.h>
 
 LIBSBML_CPP_NAMESPACE_BEGIN
 

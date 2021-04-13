@@ -11,7 +11,7 @@
 #define SBMLSTUBS_H
 
 #include <list>
-#include <sbml/xml/sbmlMemoryStubs.h>
+#include <liblx/xml/sbmlMemoryStubs.h>
 
 /**
  * LIBSBML_DOTTED_VERSION:

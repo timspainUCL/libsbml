@@ -46,15 +46,15 @@
 #include <algorithm>
 #include <cstring>
 
-#include <sbml/xml/compress/InputDecompressor.h>
+#include <liblx/xml/compress/InputDecompressor.h>
 
 #ifdef USE_ZLIB
-#include <sbml/xml/compress/zfstream.h>
-#include <sbml/xml/compress/zipfstream.h>
+#include <liblx/xml/compress/zfstream.h>
+#include <liblx/xml/compress/zipfstream.h>
 #endif //USE_ZLIB
 
 #ifdef USE_BZ2
-#include <sbml/xml/compress/bzfstream.h>
+#include <liblx/xml/compress/bzfstream.h>
 #endif //USE_BZ2
 
 using namespace std;

@@ -82,9 +82,9 @@
 #ifndef XMLErrorLog_h
 #define XMLErrorLog_h
 
-#include <sbml/xml/XMLExtern.h>
-#include <sbml/xml/XMLError.h>
-#include <sbml/xml/common/sbxmlfwd.h>
+#include <liblx/xml/XMLExtern.h>
+#include <liblx/xml/XMLError.h>
+#include <liblx/xml/common/sbxmlfwd.h>
 
 
 #ifdef __cplusplus

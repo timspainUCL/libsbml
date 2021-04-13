@@ -36,7 +36,7 @@
  * also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/xml/XercesTranscode.h>
+#include <liblx/xml/XercesTranscode.h>
 #include <xercesc/util/PlatformUtils.hpp>
 #include <xercesc/util/TransService.hpp>
 #include <xercesc/util/XMLString.hpp>

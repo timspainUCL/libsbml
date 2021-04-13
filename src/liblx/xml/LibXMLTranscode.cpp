@@ -36,7 +36,7 @@
  * also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/xml/LibXMLTranscode.h>
+#include <liblx/xml/LibXMLTranscode.h>
 
 using namespace std;
 

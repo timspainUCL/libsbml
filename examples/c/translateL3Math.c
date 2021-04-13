@@ -44,7 +44,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 #include "util.h"
 
 

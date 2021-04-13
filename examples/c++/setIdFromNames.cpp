@@ -46,9 +46,9 @@
 #include <vector>
 #include <string>
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/common/extern.h>
-#include <sbml/common/operationReturnValues.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/common/extern.h>
+#include <liblx/common/operationReturnValues.h>
 #include "util.h"
 
 

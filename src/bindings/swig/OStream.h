@@ -90,7 +90,7 @@
 #include <fstream>
 #include <sstream>
 
-#include <sbml/xml/XMLExtern.h>
+#include <liblx/xml/XMLExtern.h>
 
 class LIBSBXML_EXTERN OStream 
 {

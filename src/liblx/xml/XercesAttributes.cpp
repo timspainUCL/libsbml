@@ -36,8 +36,8 @@
  * also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/xml/XercesTranscode.h>
-#include <sbml/xml/XercesAttributes.h>
+#include <liblx/xml/XercesTranscode.h>
+#include <liblx/xml/XercesAttributes.h>
 
 using namespace std;
 using namespace xercesc;

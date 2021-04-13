@@ -42,7 +42,7 @@
 #define CompressCommon_h
 
 #include <exception>
-#include <sbml/xml/common/extern.h>
+#include <liblx/xml/common/extern.h>
 
 
 LIBSBXML_CPP_NAMESPACE_BEGIN

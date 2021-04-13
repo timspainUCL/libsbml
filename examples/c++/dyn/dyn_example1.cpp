@@ -38,8 +38,8 @@
  * ------------------------------------------------------------------------ -->
  */
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/packages/dyn/common/DynExtensionTypes.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/packages/dyn/common/DynExtensionTypes.h>
 
 LIBSBML_CPP_NAMESPACE_USE
 

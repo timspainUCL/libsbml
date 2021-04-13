@@ -38,12 +38,12 @@
 #include <iomanip>
 #include <sstream>
 
-#include <sbml/xml/common/common.h>
-#include <sbml/xml/XMLError.h>
-#include <sbml/xml/XMLAttributes.h>
-#include <sbml/xml/XMLConstructorException.h>
-#include <sbml/xml/SBXMLError.h>
-#include <sbml/xml/operationReturnValues.h>
+#include <liblx/xml/common/common.h>
+#include <liblx/xml/XMLError.h>
+#include <liblx/xml/XMLAttributes.h>
+#include <liblx/xml/XMLConstructorException.h>
+#include <liblx/xml/SBXMLError.h>
+#include <liblx/xml/operationReturnValues.h>
 
 /** @cond doxygenIgnored */
 using namespace std;

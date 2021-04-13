@@ -35,8 +35,8 @@
  * ---------------------------------------------------------------------- -->
  */
  
- #include <sbml/xml/XMLLogOverride.h>
- #include <sbml/xml/XMLErrorLog.h>
+ #include <liblx/xml/XMLLogOverride.h>
+ #include <liblx/xml/XMLErrorLog.h>
  
  using namespace std;
  

@@ -44,7 +44,7 @@
 #include <string>
 
 #include <xercesc/sax2/Attributes.hpp>
-#include <sbml/xml/XMLNamespaces.h>
+#include <liblx/xml/XMLNamespaces.h>
 
 LIBSBML_CPP_NAMESPACE_BEGIN
 

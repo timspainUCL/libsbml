@@ -40,10 +40,10 @@
 
 #include <stdio.h>
 
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 
-#include <sbml/xml/XMLNode.h>
-#include <sbml/annotation/ModelHistory.h>
+#include <liblx/xml/XMLNode.h>
+#include <liblx/annotation/ModelHistory.h>
 
 
 void printStatus(const char* message, int status)

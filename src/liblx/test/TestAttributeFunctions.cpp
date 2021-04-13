@@ -34,12 +34,12 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
-#include <sbml/common/extern.h>
+#include <liblx/common/common.h>
+#include <liblx/common/extern.h>
 
-#include <sbml/SBase.h>
-#include <sbml/Model.h>
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBase.h>
+#include <liblx/Model.h>
+#include <liblx/SBMLTypes.h>
 
 #include <check.h>
 

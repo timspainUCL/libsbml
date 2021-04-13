@@ -26,8 +26,8 @@
  * ------------------------------------------------------------------------ -->
  */
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/packages/multi/common/MultiExtensionTypes.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/packages/multi/common/MultiExtensionTypes.h>
 
 
 using namespace std;

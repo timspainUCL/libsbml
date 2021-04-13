@@ -10,8 +10,8 @@
  * information about SBML, and the latest version of libSBML.
  */
 
-#include "sbml/SBMLTypes.h"
-#include "sbml/packages/groups/common/GroupsExtensionTypes.h"
+#include "liblx/SBMLTypes.h"
+#include "liblx/packages/groups/common/GroupsExtensionTypes.h"
 
 LIBSBML_CPP_NAMESPACE_USE
 

@@ -34,16 +34,16 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
-#include <sbml/SBMLTypes.h>
-#include <sbml/xml/XMLNamespaces.h>
-#include <sbml/SBMLDocument.h>
+#include <liblx/common/common.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/xml/XMLNamespaces.h>
+#include <liblx/SBMLDocument.h>
 
 #include <check.h>
 
 
 
-#include <sbml/common/extern.h>
+#include <liblx/common/extern.h>
 
 LIBSBML_CPP_NAMESPACE_USE
 

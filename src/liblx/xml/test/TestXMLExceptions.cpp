@@ -45,7 +45,7 @@
 #include <XMLNode.h>
 #include <XMLToken.h>
 #include <XMLInputStream.h>
-#include <sbml/xml/XMLConstructorException.h>
+#include <liblx/xml/XMLConstructorException.h>
 
 #include <string>
 

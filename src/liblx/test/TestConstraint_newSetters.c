@@ -34,22 +34,22 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
-#include <sbml/math/FormulaParser.h>
+#include <liblx/common/common.h>
+#include <liblx/math/FormulaParser.h>
 
-#include <sbml/SBase.h>
-#include <sbml/Constraint.h>
-#include <sbml/xml/XMLNamespaces.h>
-#include <sbml/xml/XMLAttributes.h>
-#include <sbml/xml/XMLTriple.h>
-#include <sbml/xml/XMLNode.h>
-#include <sbml/SBMLDocument.h>
+#include <liblx/SBase.h>
+#include <liblx/Constraint.h>
+#include <liblx/xml/XMLNamespaces.h>
+#include <liblx/xml/XMLAttributes.h>
+#include <liblx/xml/XMLTriple.h>
+#include <liblx/xml/XMLNode.h>
+#include <liblx/SBMLDocument.h>
 
 #include <check.h>
 
 
 
-#include <sbml/common/extern.h>
+#include <liblx/common/extern.h>
 
 LIBSBML_CPP_NAMESPACE_USE
 

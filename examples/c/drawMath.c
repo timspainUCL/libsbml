@@ -42,8 +42,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <sbml/util/util.h>
-#include <sbml/SBMLTypes.h>
+#include <liblx/util/util.h>
+#include <liblx/SBMLTypes.h>
 
 #include "FormulaGraphvizFormatter.h"
 

@@ -29,8 +29,8 @@
 
 #include <string>
 #include <limits>
-#include <sbml/SBMLTypes.h>
-#include <sbml/packages/distrib/common/DistribExtensionTypes.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/packages/distrib/common/DistribExtensionTypes.h>
 
 using namespace std;
 

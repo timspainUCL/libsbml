@@ -43,8 +43,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <sbml/SBMLTypes.h>
-#include <sbml/extension/SBMLExtensionRegistry.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/extension/SBMLExtensionRegistry.h>
 
 using namespace std;
 LIBSBML_CPP_NAMESPACE_USE

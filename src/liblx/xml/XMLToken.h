@@ -117,14 +117,14 @@
 #ifndef XMLToken_h
 #define XMLToken_h
 
-#include <sbml/xml/XMLExtern.h>
-#include <sbml/xml/XMLAttributes.h>
+#include <liblx/xml/XMLExtern.h>
+#include <liblx/xml/XMLAttributes.h>
 /** @cond doxygenLibsbmlInternal */
-#include <sbml/xml/XMLNamespaces.h>
-#include <sbml/xml/XMLOutputStream.h>
+#include <liblx/xml/XMLNamespaces.h>
+#include <liblx/xml/XMLOutputStream.h>
 /** @endcond */
-#include <sbml/xml/XMLToken.h>
-#include <sbml/xml/common/sbxmlfwd.h>
+#include <liblx/xml/XMLToken.h>
+#include <liblx/xml/common/sbxmlfwd.h>
 
 
 #ifdef __cplusplus

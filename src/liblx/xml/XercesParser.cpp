@@ -48,16 +48,16 @@
 #include <xercesc/sax2/XMLReaderFactory.hpp>
 #include <xercesc/util/PlatformUtils.hpp>
 
-#include <sbml/xml/XMLHandler.h>
-#include <sbml/xml/XMLErrorLog.h>
+#include <liblx/xml/XMLHandler.h>
+#include <liblx/xml/XMLErrorLog.h>
 
-#include <sbml/xml/XercesTranscode.h>
-#include <sbml/xml/XercesParser.h>
+#include <liblx/xml/XercesTranscode.h>
+#include <liblx/xml/XercesParser.h>
 
-#include <sbml/xml/compress/CompressCommon.h>
-#include <sbml/xml/compress/InputDecompressor.h>
+#include <liblx/xml/compress/CompressCommon.h>
+#include <liblx/xml/compress/InputDecompressor.h>
 
-#include <sbml/xml/common/common.h>
+#include <liblx/xml/common/common.h>
 
 using namespace std;
 using namespace xercesc;

@@ -39,7 +39,7 @@
 #ifndef XMLBuffer_h
 #define XMLBuffer_h
 
-#include <sbml/xml/XMLExtern.h>
+#include <liblx/xml/XMLExtern.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

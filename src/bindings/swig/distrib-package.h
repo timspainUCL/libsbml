@@ -38,18 +38,18 @@
 
 #ifdef USE_DISTRIB
 
-#include <sbml/packages/distrib/sbml/DistribBase.h>
+#include <liblx/packages/distrib/sbml/DistribBase.h>
 
-#include <sbml/packages/distrib/extension/DistribExtension.h>
-#include <sbml/packages/distrib/extension/DistribSBMLDocumentPlugin.h>
-#include <sbml/packages/distrib/extension/DistribSBasePlugin.h>
-#include <sbml/packages/distrib/extension/DistribASTPlugin.h>
-#include <sbml/packages/distrib/common/DistribExtensionTypes.h>
-#include <sbml/packages/distrib/sbml/UncertParameter.h>
-#include <sbml/packages/distrib/sbml/Uncertainty.h>
-#include <sbml/packages/distrib/sbml/UncertSpan.h>
-#include <sbml/packages/distrib/sbml/ListOfUncertParameters.h>
-#include <sbml/packages/distrib/sbml/ListOfUncertainties.h>
+#include <liblx/packages/distrib/extension/DistribExtension.h>
+#include <liblx/packages/distrib/extension/DistribSBMLDocumentPlugin.h>
+#include <liblx/packages/distrib/extension/DistribSBasePlugin.h>
+#include <liblx/packages/distrib/extension/DistribASTPlugin.h>
+#include <liblx/packages/distrib/common/DistribExtensionTypes.h>
+#include <liblx/packages/distrib/sbml/UncertParameter.h>
+#include <liblx/packages/distrib/sbml/Uncertainty.h>
+#include <liblx/packages/distrib/sbml/UncertSpan.h>
+#include <liblx/packages/distrib/sbml/ListOfUncertParameters.h>
+#include <liblx/packages/distrib/sbml/ListOfUncertainties.h>
 
 #endif // USE_DISTRIB
 

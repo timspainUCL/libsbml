@@ -34,37 +34,37 @@
  * and also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/common/common.h>
+#include <liblx/common/common.h>
 
-#include <sbml/SBase.h>
-#include <sbml/Compartment.h>
-#include <sbml/CompartmentType.h>
-#include <sbml/Constraint.h>
-#include <sbml/Delay.h>
-#include <sbml/Event.h>
-#include <sbml/EventAssignment.h>
-#include <sbml/FunctionDefinition.h>
-#include <sbml/InitialAssignment.h>
-#include <sbml/KineticLaw.h>
-#include <sbml/ListOf.h>
-#include <sbml/Model.h>
-#include <sbml/Parameter.h>
-#include <sbml/Reaction.h>
-#include <sbml/SBMLDocument.h>
-#include <sbml/Species.h>
-#include <sbml/ModifierSpeciesReference.h>
-#include <sbml/SpeciesType.h>
-#include <sbml/Unit.h>
-#include <sbml/UnitDefinition.h>
-#include <sbml/units/FormulaUnitsData.h>
+#include <liblx/SBase.h>
+#include <liblx/Compartment.h>
+#include <liblx/CompartmentType.h>
+#include <liblx/Constraint.h>
+#include <liblx/Delay.h>
+#include <liblx/Event.h>
+#include <liblx/EventAssignment.h>
+#include <liblx/FunctionDefinition.h>
+#include <liblx/InitialAssignment.h>
+#include <liblx/KineticLaw.h>
+#include <liblx/ListOf.h>
+#include <liblx/Model.h>
+#include <liblx/Parameter.h>
+#include <liblx/Reaction.h>
+#include <liblx/SBMLDocument.h>
+#include <liblx/Species.h>
+#include <liblx/ModifierSpeciesReference.h>
+#include <liblx/SpeciesType.h>
+#include <liblx/Unit.h>
+#include <liblx/UnitDefinition.h>
+#include <liblx/units/FormulaUnitsData.h>
 
 
-#include <sbml/AlgebraicRule.h>
-#include <sbml/AssignmentRule.h>
-#include <sbml/RateRule.h>
+#include <liblx/AlgebraicRule.h>
+#include <liblx/AssignmentRule.h>
+#include <liblx/RateRule.h>
 
-#include <sbml/math/ASTNode.h>
-#include <sbml/math/FormulaParser.h>
+#include <liblx/math/ASTNode.h>
+#include <liblx/math/FormulaParser.h>
 
 #include <check.h>
 

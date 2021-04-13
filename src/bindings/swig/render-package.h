@@ -36,51 +36,51 @@
 
 #ifdef USE_RENDER
 
-#include <sbml/packages/render/extension/RenderExtension.h>
-#include <sbml/packages/render/extension/RenderListOfLayoutsPlugin.h>
-#include <sbml/packages/render/extension/RenderLayoutPlugin.h>
-#include <sbml/packages/render/extension/RenderGraphicalObjectPlugin.h>
+#include <liblx/packages/render/extension/RenderExtension.h>
+#include <liblx/packages/render/extension/RenderListOfLayoutsPlugin.h>
+#include <liblx/packages/render/extension/RenderLayoutPlugin.h>
+#include <liblx/packages/render/extension/RenderGraphicalObjectPlugin.h>
 
-#include <sbml/packages/render/sbml/Transformation.h>
-#include <sbml/packages/render/sbml/Transformation2D.h>
-#include <sbml/packages/render/sbml/GraphicalPrimitive1D.h>
-#include <sbml/packages/render/sbml/GraphicalPrimitive2D.h>
-#include <sbml/packages/render/sbml/RenderInformationBase.h>
-#include <sbml/packages/render/sbml/GradientBase.h>
-#include <sbml/packages/render/sbml/Style.h>
+#include <liblx/packages/render/sbml/Transformation.h>
+#include <liblx/packages/render/sbml/Transformation2D.h>
+#include <liblx/packages/render/sbml/GraphicalPrimitive1D.h>
+#include <liblx/packages/render/sbml/GraphicalPrimitive2D.h>
+#include <liblx/packages/render/sbml/RenderInformationBase.h>
+#include <liblx/packages/render/sbml/GradientBase.h>
+#include <liblx/packages/render/sbml/Style.h>
 
 
-#include <sbml/packages/render/sbml/ColorDefinition.h>
-#include <sbml/packages/render/sbml/RelAbsVector.h>
-#include <sbml/packages/render/sbml/Ellipse.h>
-#include <sbml/packages/render/sbml/GlobalRenderInformation.h>
-#include <sbml/packages/render/sbml/GlobalStyle.h>
-#include <sbml/packages/render/sbml/GradientStop.h>
-#include <sbml/packages/render/sbml/Image.h>
-#include <sbml/packages/render/sbml/Text.h>
-#include <sbml/packages/render/sbml/Rectangle.h>
-#include <sbml/packages/render/sbml/RenderPoint.h>
-#include <sbml/packages/render/sbml/RenderCubicBezier.h>
-#include <sbml/packages/render/sbml/RenderCurve.h>
-#include <sbml/packages/render/sbml/Polygon.h>
-#include <sbml/packages/render/sbml/RenderGroup.h>
-#include <sbml/packages/render/sbml/LinearGradient.h>
-#include <sbml/packages/render/sbml/LineEnding.h>
-#include <sbml/packages/render/sbml/LocalRenderInformation.h>
-#include <sbml/packages/render/sbml/LocalStyle.h>
-#include <sbml/packages/render/sbml/RadialGradient.h>
-#include <sbml/packages/render/sbml/DefaultValues.h>
+#include <liblx/packages/render/sbml/ColorDefinition.h>
+#include <liblx/packages/render/sbml/RelAbsVector.h>
+#include <liblx/packages/render/sbml/Ellipse.h>
+#include <liblx/packages/render/sbml/GlobalRenderInformation.h>
+#include <liblx/packages/render/sbml/GlobalStyle.h>
+#include <liblx/packages/render/sbml/GradientStop.h>
+#include <liblx/packages/render/sbml/Image.h>
+#include <liblx/packages/render/sbml/Text.h>
+#include <liblx/packages/render/sbml/Rectangle.h>
+#include <liblx/packages/render/sbml/RenderPoint.h>
+#include <liblx/packages/render/sbml/RenderCubicBezier.h>
+#include <liblx/packages/render/sbml/RenderCurve.h>
+#include <liblx/packages/render/sbml/Polygon.h>
+#include <liblx/packages/render/sbml/RenderGroup.h>
+#include <liblx/packages/render/sbml/LinearGradient.h>
+#include <liblx/packages/render/sbml/LineEnding.h>
+#include <liblx/packages/render/sbml/LocalRenderInformation.h>
+#include <liblx/packages/render/sbml/LocalStyle.h>
+#include <liblx/packages/render/sbml/RadialGradient.h>
+#include <liblx/packages/render/sbml/DefaultValues.h>
 
-#include <sbml/packages/render/sbml/ListOfColorDefinitions.h>
-#include <sbml/packages/render/sbml/ListOfCurveElements.h>
-#include <sbml/packages/render/sbml/ListOfDrawables.h>
-#include <sbml/packages/render/sbml/ListOfGlobalRenderInformation.h>
-#include <sbml/packages/render/sbml/ListOfGlobalStyles.h>
-#include <sbml/packages/render/sbml/ListOfGradientDefinitions.h>
-#include <sbml/packages/render/sbml/ListOfGradientStops.h>
-#include <sbml/packages/render/sbml/ListOfLineEndings.h>
-#include <sbml/packages/render/sbml/ListOfLocalRenderInformation.h>
-#include <sbml/packages/render/sbml/ListOfLocalStyles.h>
+#include <liblx/packages/render/sbml/ListOfColorDefinitions.h>
+#include <liblx/packages/render/sbml/ListOfCurveElements.h>
+#include <liblx/packages/render/sbml/ListOfDrawables.h>
+#include <liblx/packages/render/sbml/ListOfGlobalRenderInformation.h>
+#include <liblx/packages/render/sbml/ListOfGlobalStyles.h>
+#include <liblx/packages/render/sbml/ListOfGradientDefinitions.h>
+#include <liblx/packages/render/sbml/ListOfGradientStops.h>
+#include <liblx/packages/render/sbml/ListOfLineEndings.h>
+#include <liblx/packages/render/sbml/ListOfLocalRenderInformation.h>
+#include <liblx/packages/render/sbml/ListOfLocalStyles.h>
 #define FillMeInAsSizeCannotBeDeterminedAutomatically 12
 
 #endif

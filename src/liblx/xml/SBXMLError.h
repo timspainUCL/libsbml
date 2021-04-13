@@ -457,7 +457,7 @@
 #ifndef SBXMLERROR_H
 #define SBXMLERROR_H
 
-#include "sbml/xml/XMLError.h"
+#include "liblx/xml/XMLError.h"
 
 #define SEVERITY_OFFSET 3
 

@@ -26,8 +26,8 @@
  * ------------------------------------------------------------------------ -->
  */
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/packages/arrays/common/ArraysExtensionTypes.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/packages/arrays/common/ArraysExtensionTypes.h>
 
 
 using namespace std;

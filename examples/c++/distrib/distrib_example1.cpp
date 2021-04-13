@@ -39,15 +39,15 @@
  */
 
 #include <iostream>
-#include <sbml/SBMLTypes.h>
-#include <sbml/extension/SBasePlugin.h>
-#include <sbml/extension/SBaseExtensionPoint.h>
-#include <sbml/extension/SBMLDocumentPlugin.h>
-#include <sbml/extension/SBMLExtension.h>
-#include <sbml/extension/SBMLExtensionRegistry.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/extension/SBasePlugin.h>
+#include <liblx/extension/SBaseExtensionPoint.h>
+#include <liblx/extension/SBMLDocumentPlugin.h>
+#include <liblx/extension/SBMLExtension.h>
+#include <liblx/extension/SBMLExtensionRegistry.h>
 
-#include <sbml/packages/distrib/extension/DistribExtension.h>
-#include <sbml/packages/distrib/common/DistribExtensionTypes.h>
+#include <liblx/packages/distrib/extension/DistribExtension.h>
+#include <liblx/packages/distrib/common/DistribExtensionTypes.h>
 
 using namespace std;
 LIBSBML_CPP_NAMESPACE_USE

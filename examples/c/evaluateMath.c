@@ -25,11 +25,11 @@
 #include <stddef.h>
 #include <string.h>
 
-#include <sbml/util/util.h>
+#include <liblx/util/util.h>
 #include "util.h"
 
-#include <sbml/math/FormulaFormatter.h>
-#include <sbml/math/FormulaParser.h>
+#include <liblx/math/FormulaFormatter.h>
+#include <liblx/math/FormulaParser.h>
 
 
 #define SQR(x) ((x)*(x))

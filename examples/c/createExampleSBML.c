@@ -42,8 +42,8 @@
  */
 
 #include <stdio.h>
-#include <sbml/SBMLTypes.h>
-#include <sbml/xml/XMLTriple.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/xml/XMLTriple.h>
 /*
  * Functions for creating the Example SBML documents.
  */

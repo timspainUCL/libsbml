@@ -38,8 +38,8 @@
  * ------------------------------------------------------------------------ -->
  */
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/packages/fbc/common/FbcExtensionTypes.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/packages/fbc/common/FbcExtensionTypes.h>
 
 LIBSBML_CPP_NAMESPACE_USE
 

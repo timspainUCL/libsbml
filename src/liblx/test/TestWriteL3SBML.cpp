@@ -37,12 +37,12 @@
 #include <iostream>
 #include <sstream>
 
-#include <sbml/xml/XMLOutputStream.h>
-#include <sbml/xml/XMLNode.h>
-#include <sbml/util/util.h>
+#include <liblx/xml/XMLOutputStream.h>
+#include <liblx/xml/XMLNode.h>
+#include <liblx/util/util.h>
 
-#include <sbml/SBMLTypes.h>
-#include <sbml/SBMLWriter.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/SBMLWriter.h>
 
 #include <check.h>
 
@@ -54,7 +54,7 @@ LIBSBML_CPP_NAMESPACE_USE
 /** @endcond */
 
 
-#include <sbml/common/extern.h>
+#include <liblx/common/extern.h>
 
 BEGIN_C_DECLS
 

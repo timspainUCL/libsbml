@@ -34,10 +34,10 @@
  * also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/xml/XMLTriple.h>
-#include <sbml/xml/XMLAttributes.h>
-#include <sbml/xml/XMLConstructorException.h>
-#include <sbml/xml/sbmlMemoryStubs.h>
+#include <liblx/xml/XMLTriple.h>
+#include <liblx/xml/XMLAttributes.h>
+#include <liblx/xml/XMLConstructorException.h>
+#include <liblx/xml/sbmlMemoryStubs.h>
 
 /** @cond doxygenIgnored */
 using namespace std;

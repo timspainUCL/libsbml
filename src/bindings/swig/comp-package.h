@@ -37,34 +37,34 @@
 #ifdef USE_COMP
 
 
-#include <sbml/packages/comp/extension/CompExtension.h>
-#include <sbml/packages/comp/extension/CompSBasePlugin.h>
-#include <sbml/packages/comp/extension/CompModelPlugin.h>
-#include <sbml/packages/comp/extension/CompSBMLDocumentPlugin.h>
+#include <liblx/packages/comp/extension/CompExtension.h>
+#include <liblx/packages/comp/extension/CompSBasePlugin.h>
+#include <liblx/packages/comp/extension/CompModelPlugin.h>
+#include <liblx/packages/comp/extension/CompSBMLDocumentPlugin.h>
 
-#include <sbml/packages/comp/util/SBMLUri.h>
-#include <sbml/packages/comp/util/SBMLResolver.h>
-#include <sbml/packages/comp/util/SBMLFileResolver.h>
-#include <sbml/packages/comp/util/SBMLResolverRegistry.h>
-#include <sbml/packages/comp/util/CompFlatteningConverter.h>
+#include <liblx/packages/comp/util/SBMLUri.h>
+#include <liblx/packages/comp/util/SBMLResolver.h>
+#include <liblx/packages/comp/util/SBMLFileResolver.h>
+#include <liblx/packages/comp/util/SBMLResolverRegistry.h>
+#include <liblx/packages/comp/util/CompFlatteningConverter.h>
 
-#include <sbml/packages/comp/sbml/CompBase.h>
-#include <sbml/packages/comp/sbml/SBaseRef.h>
-#include <sbml/packages/comp/sbml/Replacing.h>
-#include <sbml/packages/comp/sbml/Deletion.h>
-#include <sbml/packages/comp/sbml/ExternalModelDefinition.h>
-#include <sbml/packages/comp/sbml/ListOfDeletions.h>
-#include <sbml/packages/comp/sbml/ListOfExternalModelDefinitions.h>
-#include <sbml/packages/comp/sbml/ListOfModelDefinitions.h>
-#include <sbml/packages/comp/sbml/ListOfPorts.h>
-#include <sbml/packages/comp/sbml/ListOfReplacedElements.h>
-#include <sbml/packages/comp/sbml/ListOfSubmodels.h>
-#include <sbml/packages/comp/sbml/ModelDefinition.h>
-#include <sbml/packages/comp/sbml/Port.h>
-#include <sbml/packages/comp/sbml/ReplacedBy.h>
-#include <sbml/packages/comp/sbml/ReplacedElement.h>
-#include <sbml/packages/comp/sbml/Submodel.h>
-#include <sbml/packages/comp/sbml/Replacing.h>
-#include <sbml/packages/comp/validator/CompSBMLError.h>
+#include <liblx/packages/comp/sbml/CompBase.h>
+#include <liblx/packages/comp/sbml/SBaseRef.h>
+#include <liblx/packages/comp/sbml/Replacing.h>
+#include <liblx/packages/comp/sbml/Deletion.h>
+#include <liblx/packages/comp/sbml/ExternalModelDefinition.h>
+#include <liblx/packages/comp/sbml/ListOfDeletions.h>
+#include <liblx/packages/comp/sbml/ListOfExternalModelDefinitions.h>
+#include <liblx/packages/comp/sbml/ListOfModelDefinitions.h>
+#include <liblx/packages/comp/sbml/ListOfPorts.h>
+#include <liblx/packages/comp/sbml/ListOfReplacedElements.h>
+#include <liblx/packages/comp/sbml/ListOfSubmodels.h>
+#include <liblx/packages/comp/sbml/ModelDefinition.h>
+#include <liblx/packages/comp/sbml/Port.h>
+#include <liblx/packages/comp/sbml/ReplacedBy.h>
+#include <liblx/packages/comp/sbml/ReplacedElement.h>
+#include <liblx/packages/comp/sbml/Submodel.h>
+#include <liblx/packages/comp/sbml/Replacing.h>
+#include <liblx/packages/comp/validator/CompSBMLError.h>
 
 #endif /* USE_COMP */

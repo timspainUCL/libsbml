@@ -36,7 +36,7 @@
  * also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#include <sbml/xml/ExpatAttributes.h>
+#include <liblx/xml/ExpatAttributes.h>
 
 using namespace std;
 

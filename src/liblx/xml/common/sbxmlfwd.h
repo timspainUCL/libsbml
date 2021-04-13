@@ -45,8 +45,8 @@
 #define sbxmlfwd_h
 
 
-#include <sbml/xml/common/libsbxml-namespace.h>
-#include <sbml/xml/common/libsbxml-version.h>
+#include <liblx/xml/common/libsbxml-namespace.h>
+#include <liblx/xml/common/libsbxml-version.h>
 
 
 #ifdef __cplusplus

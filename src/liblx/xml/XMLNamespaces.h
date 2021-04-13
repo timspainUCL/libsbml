@@ -64,8 +64,8 @@
 #ifndef XMLNamespaces_h
 #define XMLNamespaces_h
 
-#include <sbml/xml/XMLExtern.h>
-#include <sbml/xml/common/sbxmlfwd.h>
+#include <liblx/xml/XMLExtern.h>
+#include <liblx/xml/common/sbxmlfwd.h>
 
 
 #ifdef __cplusplus

@@ -36,15 +36,15 @@
 
 #ifdef USE_QUAL
 
-#include <sbml/packages/qual/extension/QualExtension.h>
-#include <sbml/packages/qual/extension/QualModelPlugin.h>
-#include <sbml/packages/qual/common/QualExtensionTypes.h>
-#include <sbml/packages/qual/sbml/DefaultTerm.h>
-#include <sbml/packages/qual/sbml/FunctionTerm.h>
-#include <sbml/packages/qual/sbml/Input.h>
-#include <sbml/packages/qual/sbml/Output.h>
-#include <sbml/packages/qual/sbml/QualitativeSpecies.h>
-#include <sbml/packages/qual/sbml/Transition.h>
-#include <sbml/packages/qual/validator/QualSBMLError.h>
+#include <liblx/packages/qual/extension/QualExtension.h>
+#include <liblx/packages/qual/extension/QualModelPlugin.h>
+#include <liblx/packages/qual/common/QualExtensionTypes.h>
+#include <liblx/packages/qual/sbml/DefaultTerm.h>
+#include <liblx/packages/qual/sbml/FunctionTerm.h>
+#include <liblx/packages/qual/sbml/Input.h>
+#include <liblx/packages/qual/sbml/Output.h>
+#include <liblx/packages/qual/sbml/QualitativeSpecies.h>
+#include <liblx/packages/qual/sbml/Transition.h>
+#include <liblx/packages/qual/validator/QualSBMLError.h>
 
 #endif

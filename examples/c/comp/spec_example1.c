@@ -42,16 +42,16 @@
 /*#include <iostream>
 #include <sstream>
 */
-#include <sbml/SBMLTypes.h>
-#include <sbml/extension/SBMLDocumentPlugin.h>
+#include <liblx/SBMLTypes.h>
+#include <liblx/extension/SBMLDocumentPlugin.h>
 
 
-#include <sbml/extension/SBMLExtensionRegister.h>
+#include <liblx/extension/SBMLExtensionRegister.h>
 
-#include <sbml/packages/comp/common/compfwd.h>
-#include <sbml/packages/comp/extension/CompSBMLDocumentPlugin.h>
-#include <sbml/packages/comp/extension/CompModelPlugin.h>
-#include <sbml/packages/comp/sbml/Submodel.h>
+#include <liblx/packages/comp/common/compfwd.h>
+#include <liblx/packages/comp/extension/CompSBMLDocumentPlugin.h>
+#include <liblx/packages/comp/extension/CompModelPlugin.h>
+#include <liblx/packages/comp/sbml/Submodel.h>
 
 LIBSBML_CPP_NAMESPACE_USE
 

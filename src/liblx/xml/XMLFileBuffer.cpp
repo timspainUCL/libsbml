@@ -42,9 +42,9 @@
 #include<iostream>
 #include<fstream>
 
-#include <sbml/xml/XMLFileBuffer.h>
-#include <sbml/xml/compress/CompressCommon.h>
-#include <sbml/xml/compress/InputDecompressor.h>
+#include <liblx/xml/XMLFileBuffer.h>
+#include <liblx/xml/compress/CompressCommon.h>
+#include <liblx/xml/compress/InputDecompressor.h>
 
 using namespace std;
 

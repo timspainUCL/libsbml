@@ -46,8 +46,8 @@
 
 #ifdef __cplusplus
 
-#include <sbml/xml/XMLExtern.h>
-#include <sbml/xml/XMLError.h>
+#include <liblx/xml/XMLExtern.h>
+#include <liblx/xml/XMLError.h>
 
 LIBSBXML_CPP_NAMESPACE_BEGIN
 

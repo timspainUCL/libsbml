@@ -43,8 +43,8 @@
 
 #include <string>
 
-#include <sbml/xml/XMLHandler.h>
-#include <sbml/xml/XercesTranscode.h>
+#include <liblx/xml/XMLHandler.h>
+#include <liblx/xml/XercesTranscode.h>
 #include <xercesc/sax2/DefaultHandler.hpp>
 
 LIBSBML_CPP_NAMESPACE_BEGIN

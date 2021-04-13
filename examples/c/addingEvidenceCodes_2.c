@@ -39,10 +39,10 @@
  */
 
 #include <stdio.h>
-#include <sbml/SBMLTypes.h>
+#include <liblx/SBMLTypes.h>
 
-#include <sbml/annotation/CVTerm.h>
-#include <sbml/xml/XMLTriple.h>
+#include <liblx/annotation/CVTerm.h>
+#include <liblx/xml/XMLTriple.h>
 
 int
 main (int argc, char *argv[])
