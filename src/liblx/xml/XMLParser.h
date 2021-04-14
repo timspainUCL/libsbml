@@ -58,7 +58,7 @@ class XMLErrorLog;
 class XMLHandler;
 
 
-class LIBSBXML_EXTERN XMLParser
+class LIBLX_EXTERN XMLParser
 {
 public:
 

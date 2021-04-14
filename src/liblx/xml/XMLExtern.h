@@ -1,6 +1,6 @@
 /**
  * @file    XMLExtern.h
- * @brief   Defines LIBSBXML_EXTERN
+ * @brief   Defines LIBLX_EXTERN
  * @author  Ben Bornstein
  * 
  * <!--------------------------------------------------------------------------
@@ -45,17 +45,17 @@
  * compiled with the LIBLAX_EXPORTS symbol defined on the command line.
  * This symbol should not be defined on any project that uses this
  * DLL. This way any other project whose source files include this file see
- * LIBSBXML_EXTERN functions as being imported from a DLL, wheras this DLL
+ * LIBLX_EXTERN functions as being imported from a DLL, wheras this DLL
  * sees symbols defined with this macro as being exported.
  */
 # if (defined(WIN32) && ! defined(CYGWIN) && ! defined(LIBLAX_STATIC) && !defined(__MINGW32__))
 #   if defined(LIBSBXML_EXPORTS)
-#     define LIBSBXML_EXTERN __declspec(dllexport)
+#     define LIBLX_EXTERN __declspec(dllexport)
 #   else
-#     define LIBSBXML_EXTERN __declspec(dllimport)
+#     define LIBLX_EXTERN __declspec(dllimport)
 #   endif
 # else
-#   define LIBSBXML_EXTERN
+#   define LIBLX_EXTERN
 # endif
 
 #undef BEGIN_C_DECLS

@@ -1,6 +1,6 @@
 /**
  * @file    extern.h
- * @brief   Definitions of LIBSBXML_EXTERN and related things.
+ * @brief   Definitions of LIBLX_EXTERN and related things.
  * @author  Ben Bornstein
  * 
  * <!--------------------------------------------------------------------------
@@ -34,8 +34,8 @@
  * also available online as http://sbml.org/software/libsbml/license.html
  * ---------------------------------------------------------------------- -->*/
 
-#ifndef LIBSBXML_EXTERN_H
-#define LIBSBXML_EXTERN_H
+#ifndef LIBLX_EXTERN_H
+#define LIBLX_EXTERN_H
 
 #include <liblx/xml/common/liblx-namespace.h>
 
@@ -48,19 +48,19 @@
  * compiled with the LIBSBML_EXPORTS symbol defined on the command line.
  * This symbol should not be defined on any project that uses this
  * DLL. This way any other project whose source files include this file see
- * LIBSBXML_EXTERN functions as being imported from a DLL, wheras this DLL
+ * LIBLX_EXTERN functions as being imported from a DLL, whereas this DLL
  * sees symbols defined with this macro as being exported.
  *
  * (From Andrew Finney's sbwdefs.h, with "SBW" replaced by "LIBSBML" :)
  */
 #if defined(LIBSBXML_EXPORTS)
-#  define LIBSBXML_EXTERN __declspec(dllexport)
+#  define LIBLX_EXTERN __declspec(dllexport)
 #else
-#  define LIBSBXML_EXTERN __declspec(dllimport)
+#  define LIBLX_EXTERN __declspec(dllimport)
 #endif
 
 #else
-#  define LIBSBXML_EXTERN
+#  define LIBLX_EXTERN
 #endif  /* LIBSBML_STATIC */
 
 /**
@@ -87,14 +87,14 @@
 #else
 
 /**
- * LIBSBXML_EXTERN is used under Windows to simplify exporting functions
+ * LIBLX_EXTERN is used under Windows to simplify exporting functions
  * from a DLL.  When compiling under Windows, all files within this DLL are
  * compiled with the LIBSBML_EXPORTS symbol defined on the command line.
  * This in turn causes extern.h to define a different version of
- * LIBSBXML_EXTERN that is appropriate for exporting functions to client
+ * LIBLX_EXTERN that is appropriate for exporting functions to client
  * code that uses the DLL.
  */
-#define LIBSBXML_EXTERN
+#define LIBLX_EXTERN
 
 #endif  /* WIN32 */
 
@@ -110,5 +110,5 @@
 #endif
 
 
-#endif  /** LIBSBXML_EXTERN_H **/
+#endif  /** LIBLX_EXTERN_H **/
 

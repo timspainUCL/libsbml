@@ -51,7 +51,7 @@
 
 LIBLX_CPP_NAMESPACE_BEGIN
 
-class LIBSBXML_EXTERN XMLLogOverride
+class LIBLX_EXTERN XMLLogOverride
 {
 public: 
 	XMLLogOverride(XMLErrorLog* log, XMLErrorSeverityOverride_t new_override);

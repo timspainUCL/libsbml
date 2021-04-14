@@ -92,7 +92,7 @@
 
 #include <liblx/xml/XMLExtern.h>
 
-class LIBSBXML_EXTERN OStream 
+class LIBLX_EXTERN OStream 
 {
   protected:
     std::ostream* Stream;
@@ -139,7 +139,7 @@ class LIBSBXML_EXTERN OStream
 };
   
 
-class LIBSBXML_EXTERN OFStream : public OStream 
+class LIBLX_EXTERN OFStream : public OStream 
 {
   public:
     /**
@@ -198,7 +198,7 @@ class LIBSBXML_EXTERN OFStream : public OStream
 };
   
 
-class LIBSBXML_EXTERN OStringStream : public OStream 
+class LIBLX_EXTERN OStringStream : public OStream 
 {
   public:
     /**

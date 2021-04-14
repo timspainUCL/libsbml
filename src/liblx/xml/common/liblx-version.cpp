@@ -61,7 +61,7 @@
 
 LIBLX_CPP_NAMESPACE_BEGIN
 
-LIBSBXML_EXTERN
+LIBLX_EXTERN
 int 
 getLibLXVersion ()
 { 
@@ -69,7 +69,7 @@ getLibLXVersion ()
 }
 
 
-LIBSBXML_EXTERN
+LIBLX_EXTERN
 const char* 
 getLibLXDottedVersion ()
 { 
@@ -77,14 +77,14 @@ getLibLXDottedVersion ()
 }
 
 
-LIBSBXML_EXTERN
+LIBLX_EXTERN
 const char* 
 getLibLXVersionString ()
 { 
   return LIBLX_VERSION_STRING;
 }
 
-LIBSBXML_EXTERN
+LIBLX_EXTERN
 int 
 isLibLXCompiledWith(const char* option)
 {
@@ -148,7 +148,7 @@ isLibLXCompiledWith(const char* option)
   return 0;
 }
 
-LIBSBXML_EXTERN
+LIBLX_EXTERN
 const char* 
 getLibLXDependencyVersionOf(const char* option)
 {

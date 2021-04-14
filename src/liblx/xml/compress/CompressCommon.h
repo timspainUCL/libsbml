@@ -54,7 +54,7 @@ LIBLX_CPP_NAMESPACE_BEGIN
  *  the library.
  *
  */
-class LIBSBXML_EXTERN NotLinked : public std::exception
+class LIBLX_EXTERN NotLinked : public std::exception
 {
 public:
    NotLinked() throw() { }
@@ -68,7 +68,7 @@ public:
  * zlib invoked and underlying libSBML is not linked with zlib.
  *
  */
-class LIBSBXML_EXTERN ZlibNotLinked : public NotLinked
+class LIBLX_EXTERN ZlibNotLinked : public NotLinked
 {
 public:
    ZlibNotLinked() throw() { }
@@ -83,7 +83,7 @@ public:
  *  bzip2.
  *
  */
-class LIBSBXML_EXTERN Bzip2NotLinked : public NotLinked
+class LIBLX_EXTERN Bzip2NotLinked : public NotLinked
 {
 public:
    Bzip2NotLinked() throw() { }
@@ -97,7 +97,7 @@ public:
  *
  * @return @c true if libSBML is linked with zlib, @c false otherwise.
  */
-LIBSBXML_EXTERN
+LIBLX_EXTERN
 bool hasZlib();
 
 
@@ -107,7 +107,7 @@ bool hasZlib();
  *
  * @return @c true if libSBML is linked with bzip2, @c false otherwise.
  */
-LIBSBXML_EXTERN
+LIBLX_EXTERN
 bool hasBzip2();
 
 LIBLX_CPP_NAMESPACE_END
