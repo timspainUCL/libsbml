@@ -46,7 +46,7 @@
 
 
 #include <liblx/xml/common/liblx-namespace.h>
-#include <liblx/xml/common/libsbxml-version.h>
+#include <liblx/xml/common/liblx-version.h>
 
 
 #ifdef __cplusplus

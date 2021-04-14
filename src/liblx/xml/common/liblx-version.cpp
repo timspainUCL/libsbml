@@ -1,5 +1,5 @@
 /**
- * @file    libsbml-version.cpp
+ * @file    liblx-version.cpp
  * @brief   Define libSBML version numbers for access from client software.
  * @author  Akiya Jouraku
  * 
@@ -35,7 +35,7 @@
  * ------------------------------------------------------------------------ -->
  */
 
-#include "libsbxml-version.h"
+#include "liblx-version.h"
 #include <string.h>
 
 #ifdef USE_EXPAT
@@ -63,30 +63,30 @@ LIBLX_CPP_NAMESPACE_BEGIN
 
 LIBSBXML_EXTERN
 int 
-getLibSBXMLVersion ()
+getLibLXVersion ()
 { 
-  return LIBSBXML_VERSION;
+  return LIBLX_VERSION;
 }
 
 
 LIBSBXML_EXTERN
 const char* 
-getLibSBXMLDottedVersion ()
+getLibLXDottedVersion ()
 { 
-  return LIBSBXML_DOTTED_VERSION;
+  return LIBLX_DOTTED_VERSION;
 }
 
 
 LIBSBXML_EXTERN
 const char* 
-getLibSBMLVersionString () 
+getLibLXVersionString ()
 { 
-  return LIBSBXML_VERSION_STRING;
+  return LIBLX_VERSION_STRING;
 }
 
 LIBSBXML_EXTERN
 int 
-isLibSBMLCompiledWith(const char* option)
+isLibLXCompiledWith(const char* option)
 {
   if (option == NULL) return 0;
 
@@ -150,7 +150,7 @@ isLibSBMLCompiledWith(const char* option)
 
 LIBSBXML_EXTERN
 const char* 
-getLibSBXMLDependencyVersionOf(const char* option)
+getLibLXDependencyVersionOf(const char* option)
 {
   if (option == NULL) return NULL;
   

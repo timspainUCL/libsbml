@@ -69,7 +69,7 @@
 
 #include <liblx/xml/common/libsbxml-config-common.h>
 
-#include <liblx/xml/common/libsbxml-version.h>
+#include <liblx/xml/common/liblx-version.h>
 
 
 #endif  /* LIBSBXML_CONFIG_H */

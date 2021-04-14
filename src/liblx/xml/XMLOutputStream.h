@@ -230,7 +230,7 @@ on yyyy-MM-dd HH:mm with libSBML version <libsbml version>. -->
 #include <locale>
 #include <string>
 #include <time.h>
-#include <liblx/xml/common/libsbxml-version.h>
+#include <liblx/xml/common/liblx-version.h>
 
 #include <liblx/xml/XMLExtern.h>
 

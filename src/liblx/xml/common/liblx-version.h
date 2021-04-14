@@ -1,5 +1,5 @@
 /**
- * @file    libsbml-version.h
+ * @file    liblx-version.h
  * @brief   Define libSBML version numbers for access from client software.
  * @author  Michael Hucka
  * 
@@ -35,95 +35,95 @@
  *------------------------------------------------------------------------- -->
  */
 
-#ifndef LIBSBXML_VERSION_H
-#define LIBSBXML_VERSION_H
+#ifndef LIBLX_VERSION_H
+#define LIBLX_VERSION_H
 
 #include <liblx/xml/common/extern.h>
 
 
 /**
- * LIBSBML_DOTTED_VERSION:
+ * LIBLX_DOTTED_VERSION:
  *
  * A version string of the form "1.2.3".
  */
-#define LIBSBXML_DOTTED_VERSION	"0.0.1"
+#define LIBLX_DOTTED_VERSION	"0.0.1"
 
 
 /**
- * LIBSBML_VERSION:
+ * LIBLX_VERSION:
  *
  * The version as an integer: version 1.2.3 becomes 10203.  Since the major
  * number comes first, the overall number will always increase when a new
  * libSBML is released, making it easy to use less-than and greater-than
  * comparisons when testing versions numbers.
  */
-#define LIBSBXML_VERSION		00001
+#define LIBLX_VERSION		00001
 
 
 /**
- * LIBSBML_VERSION_STRING:
+ * LIBLX_VERSION_STRING:
  *
  * The numeric version as a string: version 1.2.3 becomes "10203".
  */
-#define LIBSBXML_VERSION_STRING	"00001"
+#define LIBLX_VERSION_STRING	"00001"
 
 
 LIBLX_CPP_NAMESPACE_BEGIN
 BEGIN_C_DECLS
 
 /**
- * Returns the version number of this copy of libSBML as an integer.
+ * Returns the version number of this copy of libLX as an integer.
  *
- * @return the libSBML version as an integer; version 1.2.3 becomes 10203.
+ * @return the libLX version as an integer; version 1.2.3 becomes 10203.
  */
 LIBSBXML_EXTERN
 int 
-getLibSBMLVersion () ;
+getLibLXVersion () ;
 
 
 /**
- * Returns the version number of this copy of libSBML as a string.
+ * Returns the version number of this copy of libLX as a string.
  *
- * @return the libSBML version as a string; version 1.2.3 becomes
+ * @return the libLX version as a string; version 1.2.3 becomes
  * "1.2.3".
  *
- * @see getLibSBMLVersionString()
+ * @see getlibLXVersionString()
  */
 LIBSBXML_EXTERN
 const char* 
-getLibSBXMLDottedVersion ();
+getLibLXDottedVersion ();
 
 
 /**
- * Returns the version number of this copy of libSBML as a string without
+ * Returns the version number of this copy of libLX as a string without
  * periods.
  *
- * @return the libSBML version as a string: version 1.2.3 becomes "10203".
+ * @return the libLX version as a string: version 1.2.3 becomes "10203".
  *
- * @see getLibSBMLDottedVersion()
+ * @see getLibLXDottedVersion()
  */
 LIBSBXML_EXTERN
 const char* 
-getLibSBXMLVersionString ();
+getLibLXVersionString ();
 
 
 /**
- * Returns an indication whether libSBML has been compiled with
+ * Returns an indication whether libLX has been compiled with
  * against a specific library. 
  *
  * @param option the library to test against, this can be one of
  *        "expat", "libxml", "xerces-c", "bzip2", "zip"
  * 
- * @return 0 in case the libSBML has not been compiled against 
+ * @return 0 in case the libLX has not been compiled against
  *         that library and nonzero otherwise (for libraries 
  *         that define an integer version number that number will 
  *         be returned).
  *
- * @see getLibSBMLDependencyVersionOf(const char* option)
+ * @see getLibLXDependencyVersionOf(const char* option)
  */
 LIBSBXML_EXTERN
 int 
-isLibSBXMLCompiledWith(const char* option);
+isLibLXCompiledWith(const char* option);
 
 
 /**
@@ -133,17 +133,17 @@ isLibSBXMLCompiledWith(const char* option);
  *        should be retrieved, this can be one of
  *        "expat", "libxml", "xerces-c", "bzip2", "zip"
  * 
- * @return NULL in case libSBML has not been compiled against 
+ * @return NULL in case libLX has not been compiled against
  *         that library and a version string otherwise.
  *
- * @see isLibSBMLCompiledWith(const char* option)
+ * @see isLibLXCompiledWith(const char* option)
  */
 LIBSBXML_EXTERN
 const char* 
-getLibSBXMLDependencyVersionOf(const char* option);
+getLibLXDependencyVersionOf(const char* option);
 
 
 END_C_DECLS
 LIBLX_CPP_NAMESPACE_END
 
-#endif  /* LIBSBXML_VERSION_H */
+#endif  /* LIBLX_VERSION_H */

@@ -190,7 +190,7 @@ set(XML_SOURCES ${XML_SOURCES}
 	)
 
 set(XML_SOURCES ${XML_SOURCES}
-	liblx/xml/common/libsbxml-version.cpp
+	liblx/xml/common/liblx-version.cpp
 	)
 	
 set(XML_SOURCES ${XML_SOURCES}

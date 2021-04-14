@@ -49,7 +49,7 @@
 #include <liblx/xml/sbmlMemoryStubs.h>
 #include <liblx/xml/sbmlStubs.h>
 #include <liblx/xml/common/common.h>
-#include <liblx/xml/common/libsbxml-version.h>
+#include <liblx/xml/common/liblx-version.h>
 #if defined CYGWIN
 #include <string.h>
 #endif
@@ -194,7 +194,7 @@ std::string XMLOutputStream::mLibraryName = "libSBML";
 
 // the version of the library writing the file
 // TODO: Replace with a libSBXML version string
-std::string XMLOutputStream::mLibraryVersion = getLibSBXMLDottedVersion();
+std::string XMLOutputStream::mLibraryVersion = getLibLXDottedVersion();
 
 
 /**
