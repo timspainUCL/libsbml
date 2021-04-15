@@ -67,7 +67,7 @@ START_TEST (test_XMLError_create)
 
   error = new XMLError(DuplicateXMLAttribute);
   fail_unless( error->getErrorId()  == DuplicateXMLAttribute );
-  fail_unless( error->getSeverity() == LIBSBXML_SEV_ERROR );
+  fail_unless( error->getSeverity() == LIBLX_SEV_ERROR );
   fail_unless( error->getSeverityAsString() == "Error" );
   fail_unless( error->getCategory() == LIBSBXML_CAT_XML );
   fail_unless( error->getCategoryAsString() == "XML content");
@@ -78,17 +78,17 @@ START_TEST (test_XMLError_create)
   error = new XMLError(12345, "My message");
   fail_unless( error->getErrorId()  == 12345 );
   fail_unless( error->getMessage()  == "My message" );
-  fail_unless( error->getSeverity() == LIBSBXML_SEV_FATAL );
+  fail_unless( error->getSeverity() == LIBLX_SEV_FATAL );
   fail_unless( error->getSeverityAsString() == "Fatal" );
   fail_unless( error->getCategory() == LIBSBXML_CAT_INTERNAL );
   fail_unless( error->getCategoryAsString() == "Internal");
   delete error;
 
   error = new XMLError(12345, "My message", 0, 0,
-                       LIBSBXML_SEV_INFO, LIBSBXML_CAT_SYSTEM);
+                       LIBLX_SEV_INFO, LIBSBXML_CAT_SYSTEM);
   fail_unless( error->getErrorId()  == 12345 );
   fail_unless( error->getMessage()  == "My message" );
-  fail_unless( error->getSeverity() == LIBSBXML_SEV_INFO );
+  fail_unless( error->getSeverity() == LIBLX_SEV_INFO );
   fail_unless( error->getSeverityAsString() == "Informational" );
   fail_unless( error->getCategory() == LIBSBXML_CAT_SYSTEM );
   fail_unless( error->getCategoryAsString() == "Operating system");
@@ -97,10 +97,10 @@ START_TEST (test_XMLError_create)
   delete error;
 
   error = new XMLError(10000, "Another message", 0, 0,
-                       LIBSBXML_SEV_FATAL, LIBSBXML_CAT_XML);
+                       LIBLX_SEV_FATAL, LIBSBXML_CAT_XML);
   fail_unless( error->getErrorId()  == 10000 );
   fail_unless( error->getMessage()  == "Another message" );
-  fail_unless( error->getSeverity() == LIBSBXML_SEV_FATAL );
+  fail_unless( error->getSeverity() == LIBLX_SEV_FATAL );
   fail_unless( error->getSeverityAsString() == "Fatal" );
   fail_unless( error->getCategory() == LIBSBXML_CAT_XML );
   fail_unless( error->getCategoryAsString() == "XML content");

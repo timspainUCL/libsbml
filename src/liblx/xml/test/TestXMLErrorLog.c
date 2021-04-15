@@ -153,7 +153,7 @@ START_TEST(test_XMLErrorLog_override)
 
   XMLErrorLog_add( log, error );
   fail_unless(XMLErrorLog_getNumErrors(log) == 1);
-  fail_unless(XMLError_getSeverity(XMLErrorLog_getError(log, 0)) == LIBSBXML_SEV_WARNING);
+  fail_unless(XMLError_getSeverity(XMLErrorLog_getError(log, 0)) == LIBLX_SEV_WARNING);
 
   /* test that errors are logged normaly otherwise */
 
@@ -164,7 +164,7 @@ START_TEST(test_XMLErrorLog_override)
 
   XMLErrorLog_add( log, error );
   fail_unless(XMLErrorLog_getNumErrors(log) == 1);
-  fail_unless(XMLError_getSeverity(XMLErrorLog_getError(log, 0)) == LIBSBXML_SEV_FATAL);
+  fail_unless(XMLError_getSeverity(XMLErrorLog_getError(log, 0)) == LIBLX_SEV_FATAL);
 
   /* test that warnings are logged as errors */
   XMLErrorLog_clearLog(log);
@@ -178,7 +178,7 @@ START_TEST(test_XMLErrorLog_override)
   error = XMLError_create();
   XMLErrorLog_add( log, error );
   fail_unless(XMLErrorLog_getNumErrors(log) == 1);
-  fail_unless(XMLError_getSeverity(XMLErrorLog_getError(log, 0)) == LIBSBXML_SEV_FATAL);
+  fail_unless(XMLError_getSeverity(XMLErrorLog_getError(log, 0)) == LIBLX_SEV_FATAL);
 
   XMLError_free(error);
 

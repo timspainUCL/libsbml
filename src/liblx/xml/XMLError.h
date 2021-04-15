@@ -84,10 +84,10 @@
  * code; its value may be retrieved using the method
  * XMLError::getSeverity().  Severity code values are drawn from
  * @if clike the enumeration <a class="el" href="#XMLErrorSeverity_t">XMLErrorSeverity_t</a>@else a
- * set of constants whose names begin with the characters @c LIBSBXML_SEV_@endif,
+ * set of constants whose names begin with the characters @c LIBLX_SEV_@endif,
  * described below. Severity levels range from informational
- * (@sbmlconstant{LIBSBXML_SEV_INFO, XMLErrorSeverity_t}) to
- * fatal errors (@sbmlconstant{LIBSBXML_SEV_FATAL, XMLErrorSeverity_t}).
+ * (@sbmlconstant{LIBLX_SEV_INFO, XMLErrorSeverity_t}) to
+ * fatal errors (@sbmlconstant{LIBLX_SEV_FATAL, XMLErrorSeverity_t}).
  *
  * Finally, XMLError objects record the line and column near where the
  * problem occurred in the XML content.  The values can be retrieved using
@@ -143,7 +143,7 @@
  * To make this table more compact, we have shortened the identifiers for
  * the category and severity codes to their essential parts.  To get the
  * actual names of the constants, prepend <code>LIBSBXML_CAT_</code> to the
- * category names and <code>LIBSBXML_SEV_</code> to the severity names
+ * category names and <code>LIBLX_SEV_</code> to the severity names
  * shown in the two right-hand columns.
  * </caption>
  *  <tr style="background: lightgray" class="normal-font">
@@ -312,19 +312,19 @@
  *      <th style="text-align: left">Enumerator</th>
  *      <th>Meaning</th>
  *  </tr>
- * <tr><td>@sbmlconstant{LIBSBXML_SEV_INFO, XMLErrorSeverity_t}</td>
+ * <tr><td>@sbmlconstant{LIBLX_SEV_INFO, XMLErrorSeverity_t}</td>
  * <td>The error is actually informational and
  * not necessarily a serious problem.</td></tr>
- * <tr><td>@sbmlconstant{LIBSBXML_SEV_WARNING, XMLErrorSeverity_t}</td>
+ * <tr><td>@sbmlconstant{LIBLX_SEV_WARNING, XMLErrorSeverity_t}</td>
  * <td>The error object represents a problem
  * that is not serious enough to necessarily stop the problem, but
  * applications should take note of the problem and evaluate what its
  * implications may be.</td></tr>
- * <tr><td>@sbmlconstant{LIBSBXML_SEV_ERROR, XMLErrorSeverity_t}</td>
+ * <tr><td>@sbmlconstant{LIBLX_SEV_ERROR, XMLErrorSeverity_t}</td>
  * <td>The error object represents a serious
  * error.  The application may continue running but it is unlikely to be
  * able to continue processing the same XML file or data stream.</td></tr>
- * <tr><td>@sbmlconstant{LIBSBXML_SEV_FATAL, XMLErrorSeverity_t}</td>
+ * <tr><td>@sbmlconstant{LIBLX_SEV_FATAL, XMLErrorSeverity_t}</td>
  * <td>A serious error occurred, such as an
  * out-of-memory condition, and the software should terminate
  * immediately.</td></tr>
@@ -517,20 +517,20 @@ typedef enum
  */
 typedef enum 
 {
-    LIBSBXML_SEV_INFO    = 0 /*!< The error is actually informational and
+    LIBLX_SEV_INFO    = 0 /*!< The error is actually informational and
                           * not necessarily a serious problem. */
 
-  , LIBSBXML_SEV_WARNING     /*!< The error object represents a problem that is not
+  , LIBLX_SEV_WARNING     /*!< The error object represents a problem that is not
                           * serious enough to necessarily stop the problem, but
                           * applications should take note of the problem and
                           * evaluate what its implications may be. */
 
-  , LIBSBXML_SEV_ERROR       /*!< The error object represents a serious error.  The
+  , LIBLX_SEV_ERROR       /*!< The error object represents a serious error.  The
                           * application may continue running but it is unlikely
                           * to be able to continue processing the same XML file
                           * or data stream. */
 
-  , LIBSBXML_SEV_FATAL       /*!< A serious error occurred, such as an
+  , LIBLX_SEV_FATAL       /*!< A serious error occurred, such as an
                           * out-of-memory condition, and the software should
                           * terminate immediately. */
 } XMLErrorSeverity_t;
@@ -636,7 +636,7 @@ public:
    * href="#error-categories">standard category</a> codes, and every predefined 
    * error in libSBML has an associated value for severity and category taken
    * from these predefined sets.  These constants have symbol names
-   * prefixed with <code>LIBSBXML_SEV_</code> and <code>LIBSBXML_CAT_</code>,
+   * prefixed with <code>LIBLX_SEV_</code> and <code>LIBSBXML_CAT_</code>,
    * respectively.  If the value of @p errorId is one of the standard error
    * codes, callers do not need to fill in @p severity and @p category in a
    * call to this constructor.  Conversely, if @p errorId is not an existing
@@ -668,7 +668,7 @@ public:
     , const std::string details  = ""
     , const unsigned int line     = 0
     , const unsigned int column   = 0
-    , const unsigned int severity = LIBSBXML_SEV_FATAL
+    , const unsigned int severity = LIBLX_SEV_FATAL
     , const unsigned int category = LIBSBXML_CAT_INTERNAL
   );
 
@@ -879,7 +879,7 @@ public:
    *
    * This is equivalent to obtaining the severity code from an XMLError
    * object (via XMLError::getSeverity()) and then comparing it to the
-   * value @sbmlconstant{LIBSBXML_SEV_INFO, XMLErrorSeverity_t} from the
+   * value @sbmlconstant{LIBLX_SEV_INFO, XMLErrorSeverity_t} from the
    * @if clike enumeration #XMLErrorSeverity_t. @else set of predefined
    * severity codes.@endif@~
    *
@@ -899,7 +899,7 @@ public:
    *
    * This is equivalent to obtaining the severity code from an XMLError
    * object (via XMLError::getSeverity()) and then comparing it to the
-   * value @sbmlconstant{LIBSBXML_SEV_WARNING, XMLErrorSeverity_t} from the
+   * value @sbmlconstant{LIBLX_SEV_WARNING, XMLErrorSeverity_t} from the
    * @if clike enumeration #XMLErrorSeverity_t. @else set of predefined
    * severity codes.@endif@~
    *
@@ -918,7 +918,7 @@ public:
    *
    * This is equivalent to obtaining the severity code from an XMLError
    * object (via XMLError::getSeverity()) and then comparing it to the
-   * value @sbmlconstant{LIBSBXML_SEV_ERROR, XMLErrorSeverity_t} from the
+   * value @sbmlconstant{LIBLX_SEV_ERROR, XMLErrorSeverity_t} from the
    * @if clike enumeration #XMLErrorSeverity_t. @else set of predefined
    * severity codes.@endif@~
    *
@@ -937,7 +937,7 @@ public:
    *
    * This is equivalent to obtaining the severity code from an XMLError
    * object (via XMLError::getSeverity()) and then comparing it to the
-   * value @sbmlconstant{LIBSBXML_SEV_FATAL, XMLErrorSeverity_t} from the
+   * value @sbmlconstant{LIBLX_SEV_FATAL, XMLErrorSeverity_t} from the
    * @if clike enumeration #XMLErrorSeverity_t. @else set of predefined severity codes.@endif@~
    *
    * @return @c true if this error is a fatal error, @c false otherwise.

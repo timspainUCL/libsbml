@@ -57,7 +57,7 @@ LIBLX_CPP_NAMESPACE_BEGIN
 static const xmlErrorTableEntry errorTable[] =
 {
   // 0
-  { XMLUnknownError, LIBSBXML_CAT_INTERNAL, LIBSBXML_SEV_FATAL,
+  { XMLUnknownError, LIBSBXML_CAT_INTERNAL, LIBLX_SEV_FATAL,
     "Unknown error",
     "Unrecognized error encountered internally." },
 
@@ -65,27 +65,27 @@ static const xmlErrorTableEntry errorTable[] =
   // System diagnostics:
 
   // 0001
-  { XMLOutOfMemory, LIBSBXML_CAT_SYSTEM, LIBSBXML_SEV_FATAL,
+  { XMLOutOfMemory, LIBSBXML_CAT_SYSTEM, LIBLX_SEV_FATAL,
     "Out of memory",
     "Out of memory." },
 
   // 0002
-  { XMLFileUnreadable, LIBSBXML_CAT_SYSTEM, LIBSBXML_SEV_ERROR,
+  { XMLFileUnreadable, LIBSBXML_CAT_SYSTEM, LIBLX_SEV_ERROR,
     "File unreadable",
     "File unreadable." },
 
   // 0003
-  { XMLFileUnwritable, LIBSBXML_CAT_SYSTEM, LIBSBXML_SEV_ERROR,
+  { XMLFileUnwritable, LIBSBXML_CAT_SYSTEM, LIBLX_SEV_ERROR,
     "File unwritable",
     "File unwritable." },
 
   // 0004
-  { XMLFileOperationError, LIBSBXML_CAT_SYSTEM, LIBSBXML_SEV_ERROR,
+  { XMLFileOperationError, LIBSBXML_CAT_SYSTEM, LIBLX_SEV_ERROR,
     "File operation error",
     "Error encountered while attempting file operation." },
 
   // 0005
-  { XMLNetworkAccessError, LIBSBXML_CAT_SYSTEM, LIBSBXML_SEV_ERROR,
+  { XMLNetworkAccessError, LIBSBXML_CAT_SYSTEM, LIBLX_SEV_ERROR,
     "Network access error",
     "Network access error." },
 
@@ -93,17 +93,17 @@ static const xmlErrorTableEntry errorTable[] =
   // Internal diagnostics:
 
   // 0101
-  { InternalXMLParserError, LIBSBXML_CAT_INTERNAL, LIBSBXML_SEV_FATAL,
+  { InternalXMLParserError, LIBSBXML_CAT_INTERNAL, LIBLX_SEV_FATAL,
     "Internal XML parser error",
     "Internal XML parser state error." },
 
   // 0102
-  { UnrecognizedXMLParserCode, LIBSBXML_CAT_INTERNAL, LIBSBXML_SEV_FATAL,
+  { UnrecognizedXMLParserCode, LIBSBXML_CAT_INTERNAL, LIBLX_SEV_FATAL,
     "Unrecognized XML parser code",
     "XML parser returned an unrecognized error code." },
 
   // 0102
-  { XMLTranscoderError, LIBSBXML_CAT_INTERNAL, LIBSBXML_SEV_FATAL,
+  { XMLTranscoderError, LIBSBXML_CAT_INTERNAL, LIBLX_SEV_FATAL,
     "Transcoder error",
     "Character transcoder error." },
 
@@ -111,177 +111,177 @@ static const xmlErrorTableEntry errorTable[] =
   // Diagnostics about XML content:
 
   // 1001
-  { MissingXMLDecl, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { MissingXMLDecl, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Missing XML declaration",
     "Missing XML declaration at beginning of XML input." },
 
   // 1002
-  { MissingXMLEncoding, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { MissingXMLEncoding, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Missing XML encoding attribute",
     "Missing encoding attribute in XML declaration." },
 
   // 1003
-  { BadXMLDecl, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadXMLDecl, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad XML declaration",
     "Invalid or unrecognized XML declaration or XML encoding." },
 
   // 1004
-  { BadXMLDOCTYPE, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadXMLDOCTYPE, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad XML DOCTYPE",
     "Invalid, malformed or unrecognized XML DOCTYPE declaration." },
 
   // 1005
-  { InvalidCharInXML, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { InvalidCharInXML, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Invalid character",
     "Invalid character in XML content." },
 
   // 1006
-  { BadlyFormedXML, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadlyFormedXML, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Badly formed XML",
     "XML content is not well-formed." },
 
   // 1007
-  { UnclosedXMLToken, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { UnclosedXMLToken, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Unclosed token",
     "Unclosed XML token." },
 
   // 1008
-  { InvalidXMLConstruct, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { InvalidXMLConstruct, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Invalid XML construct",
     "XML construct is invalid or not permitted." },
 
   // 1009
-  { XMLTagMismatch, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { XMLTagMismatch, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "XML tag mismatch",
     "Element tag mismatch or missing tag." },
 
   // 1010
-  { DuplicateXMLAttribute, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { DuplicateXMLAttribute, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Duplicate attribute",
     "Duplicate XML attribute." },
 
   // 1011
-  { UndefinedXMLEntity, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { UndefinedXMLEntity, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Undefined XML entity",
     "Undefined XML entity." },
 
   // 1012
-  { BadProcessingInstruction, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadProcessingInstruction, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad XML processing instruction",
     "Invalid, malformed or unrecognized XML processing instruction." },
 
   // 1013
-  { BadXMLPrefix, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadXMLPrefix, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad XML prefix",
     "Invalid or undefined XML namespace prefix." },
 
   // 1014
-  { BadXMLPrefixValue, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadXMLPrefixValue, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad XML prefix value",
     "Invalid XML namespace prefix value." },
 
   // 1015
-  { MissingXMLRequiredAttribute, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { MissingXMLRequiredAttribute, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Missing required attribute",
     "Missing a required XML attribute." },
 
   // 1016
-  { XMLAttributeTypeMismatch, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { XMLAttributeTypeMismatch, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Attribute type mismatch",
     "Data type mismatch for the value of an attribute." },
 
   // 1017
-  { XMLBadUTF8Content, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { XMLBadUTF8Content, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad UTF8 content",
     "Invalid UTF8 content." },
 
   // 1018
-  { MissingXMLAttributeValue, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { MissingXMLAttributeValue, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Missing attribute value",
     "Missing or improperly formed attribute value." },
 
   // 1019
-  { BadXMLAttributeValue, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadXMLAttributeValue, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad attribute value",
     "Invalid or unrecognizable attribute value." },
 
   // 1020
-  { BadXMLAttribute, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadXMLAttribute, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad XML attribute",
     "Invalid, unrecognized or malformed attribute." },
 
   // 1021
-  { UnrecognizedXMLElement, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { UnrecognizedXMLElement, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Unrecognized XML element",
     "Element either not recognized or not permitted." },
 
   // 1022
-  { BadXMLComment, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadXMLComment, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad XML comment",
     "Badly formed XML comment." },
 
   // 1023
-  { BadXMLDeclLocation, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadXMLDeclLocation, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad XML declaration location",
     "XML declaration not permitted in this location." },
 
   // 1024
-  { XMLUnexpectedEOF, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { XMLUnexpectedEOF, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Unexpected EOF",
     "Reached end of input unexpectedly." },
 
   // 1025
-  { BadXMLIDValue, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadXMLIDValue, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad XML ID value",
     "Value is invalid for XML ID, or has already been used." },
 
   // 1026
-  { BadXMLIDRef, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadXMLIDRef, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad XML IDREF",
     "XML ID value was never declared." },
 
   // 1027
-  { UninterpretableXMLContent, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { UninterpretableXMLContent, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Uninterpretable XML content",
     "Unable to interpret content." },
 
   // 1028
-  { BadXMLDocumentStructure, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { BadXMLDocumentStructure, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad XML document structure",
     "Bad XML document structure." },
 
   // 1029
-  { InvalidAfterXMLContent, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { InvalidAfterXMLContent, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Invalid content after XML content",
     "Encountered invalid content after expected content." },
 
   // 1031
-  { XMLExpectedQuotedString, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { XMLExpectedQuotedString, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Expected quoted string",
     "Expected to find a quoted string." },
 
   // 1032
-  { XMLEmptyValueNotPermitted, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { XMLEmptyValueNotPermitted, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Empty value not permitted",
     "An empty value is not permitted in this context." },
 
   // 1033
-  { XMLBadNumber, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { XMLBadNumber, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Bad number",
     "Invalid or unrecognized number." },
 
   // 1034
-  { XMLBadColon, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { XMLBadColon, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Colon character not permitted",
     "Colon characters are invalid in this context." },
 
   // 1035
-  { MissingXMLElements, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { MissingXMLElements, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Missing XML elements",
     "One or more expected elements are missing." },
 
   // 1036
-  { XMLContentEmpty, LIBSBXML_CAT_XML, LIBSBXML_SEV_ERROR,
+  { XMLContentEmpty, LIBSBXML_CAT_XML, LIBLX_SEV_ERROR,
     "Empty XML content",
     "Main XML content is empty." },
 
@@ -295,10 +295,10 @@ static const xmlErrorTableEntry errorTable[] =
  */
 const char * xmlSeverityStringTable[] =
 {
-  "Informational"                       // LIBSBXML_SEV_INFO
-, "Warning"                             // LIBSBXML_SEV_WARNING
-, "Error"                               // LIBSBXML_SEV_ERROR
-, "Fatal"                               // LIBSBXML_SEV_FATAL
+  "Informational"                       // LIBLX_SEV_INFO
+, "Warning"                             // LIBLX_SEV_WARNING
+, "Error"                               // LIBLX_SEV_ERROR
+, "Fatal"                               // LIBLX_SEV_FATAL
 };
 
 
@@ -391,7 +391,7 @@ XMLError::XMLError (  const int errorId
       mMessage.append("\n");
     }
 
-    mSeverity = LIBSBXML_SEV_WARNING;
+    mSeverity = LIBLX_SEV_WARNING;
     mCategory = errorTable[0].category;
     
     mSeverityString = stringForSeverity(mSeverity);
@@ -415,8 +415,8 @@ XMLError::XMLError (  const int errorId
 
   // Other initializations.
 
-  if (severity == LIBSBXML_SEV_UNKNOWN) {
-    mSeverity = LIBSBXML_SEV_ERROR;
+  if (severity == LIBLX_SEV_UNKNOWN) {
+    mSeverity = LIBLX_SEV_ERROR;
   }
   else {
     mSeverity = severity;
@@ -612,7 +612,7 @@ XMLError::getErrorIdOffset () const
 bool
 XMLError::isInfo () const
 {
-  return (mSeverity == LIBSBXML_SEV_INFO);
+  return (mSeverity == LIBLX_SEV_INFO);
 }
 
 
@@ -622,7 +622,7 @@ XMLError::isInfo () const
 bool
 XMLError::isWarning () const
 {
-  return (mSeverity == LIBSBXML_SEV_WARNING);
+  return (mSeverity == LIBLX_SEV_WARNING);
 }
 
 
@@ -632,7 +632,7 @@ XMLError::isWarning () const
 bool
 XMLError::isError () const
 {
-  return (mSeverity == LIBSBXML_SEV_ERROR);
+  return (mSeverity == LIBLX_SEV_ERROR);
 }
 
 
@@ -642,7 +642,7 @@ XMLError::isError () const
 bool
 XMLError::isFatal () const
 {
-  return (mSeverity == LIBSBXML_SEV_FATAL);
+  return (mSeverity == LIBLX_SEV_FATAL);
 }
 
 
@@ -750,7 +750,7 @@ XMLError::getStandardMessage (const int code)
  */
 std::string XMLError::stringForSeverity(unsigned int code) const
 {
-  if ( code >= LIBSBXML_SEV_INFO && code <= LIBSBXML_SEV_FATAL)
+  if ( code >= LIBLX_SEV_INFO && code <= LIBLX_SEV_FATAL)
     return xmlSeverityStringTable[code];
   else 
     return "";
@@ -782,9 +782,9 @@ std::string XMLError::stringForCategory(unsigned int code) const
  * Implementation note:
  * The following code was originally written before the implementation of
  * xmlSeverityStringTable[] and getSeverityAsString().  It previously used
- * hard-code strings, and for LIBSBXML_SEV_INFO, it printed "Advisory"
+ * hard-code strings, and for LIBLX_SEV_INFO, it printed "Advisory"
  * instead of "Information".  However, an inspection of the libSBML code
- * showed that nothing ever used LIBSBXML_SEV_INFO!  Therefore, changing the
+ * showed that nothing ever used LIBLX_SEV_INFO!  Therefore, changing the
  * severity string used here to be the same as what getSeverityAsString()
  * returns should not break any caller code.
  */

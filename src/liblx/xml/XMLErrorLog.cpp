@@ -139,15 +139,15 @@ XMLErrorLog::add (const XMLError& error)
   }
 
   if (mOverriddenSeverity == LIBSBXML_OVERRIDE_WARNING &&
-    cerror->getSeverity() > LIBSBXML_SEV_WARNING)
+    cerror->getSeverity() > LIBLX_SEV_WARNING)
   {
-    cerror->mSeverity = LIBSBXML_SEV_WARNING;
+    cerror->mSeverity = LIBLX_SEV_WARNING;
     cerror->mSeverityString = "Warning";
   }
   else if (mOverriddenSeverity == LIBSBXML_OVERRIDE_ERROR &&
-    cerror->getSeverity() == LIBSBXML_SEV_WARNING)
+    cerror->getSeverity() == LIBLX_SEV_WARNING)
   {
-    cerror->mSeverity = LIBSBXML_SEV_ERROR;
+    cerror->mSeverity = LIBLX_SEV_ERROR;
     cerror->mSeverityString = "Error";
   }
 

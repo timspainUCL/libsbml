@@ -1,6 +1,6 @@
 /**
- * @file    SBMLError.h
- * @brief   Represents SBML errors and other diagnostics
+ * @file    LibLXError.h
+ * @brief   Represents LibLX errors and other diagnostics
  * @author  Michael Hucka
  * @author  Sarah Keating
  *
@@ -454,16 +454,16 @@
  * @endif@~
  */
 
-#ifndef SBXMLERROR_H
-#define SBXMLERROR_H
+#ifndef LIBLXERROR_H
+#define LIBLXERROR_H
 
 #include "liblx/xml/XMLError.h"
 
 #define SEVERITY_OFFSET 3
 
 /**
- * @enum SBXMLErrorSeverity_t
- * Severity codes for SBXMLError diagnostics.
+ * @enum LibLXErrorSeverity_t
+ * Severity codes for LibLXError diagnostics.
  *
  * The only publicly-reported values of this type are the four from #XMLErrorSeverity_t.
  *
@@ -475,10 +475,10 @@ typedef enum
 
   /* The following is used in initializing the XMLError class   */
 
-  LIBSBXML_SEV_UNKNOWN = (LIBSBXML_SEV_FATAL + SEVERITY_OFFSET)
+  LIBLX_SEV_UNKNOWN = (LIBLX_SEV_FATAL + SEVERITY_OFFSET)
   /*!< This error code is used as the default argument to the XMLError constructor, so the constructor can know if the caller deliberately set the severity or not. */
 
   /** @endcond **/
-} SBXMLErrorSeverity_t;
+} LibLXErrorSeverity_t;
 
-#endif /* SBXMLERROR_H */
+#endif /* LIBLXERROR_H */
