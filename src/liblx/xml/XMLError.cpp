@@ -42,7 +42,7 @@
 #include <liblx/xml/XMLError.h>
 #include <liblx/xml/XMLAttributes.h>
 #include <liblx/xml/XMLConstructorException.h>
-#include <liblx/xml/SBXMLError.h>
+#include <liblx/xml/LibLXError.h>
 #include <liblx/xml/operationReturnValues.h>
 
 /** @cond doxygenIgnored */
